@@ -2398,7 +2398,7 @@
 				)
 			)
 		)
-		(symbol "Memory_EEPROM:AT24CS08-SSHM"
+		(symbol "Memory_EEPROM:AT24CS04-SSHM"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2410,7 +2410,7 @@
 					)
 				)
 			)
-			(property "Value" "AT24CS08-SSHM"
+			(property "Value" "AT24CS04-SSHM"
 				(at 2.54 -6.35 0)
 				(effects
 					(font
@@ -2437,7 +2437,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "I2C Serial EEPROM, 8Kb (1024x8) with Unique Serial Number, SO8"
+			(property "Description" "I2C Serial EEPROM, 4Kb (512x8) with Unique Serial Number, SO8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2464,7 +2464,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AT24CS08-SSHM_1_1"
+			(symbol "AT24CS04-SSHM_1_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -2494,10 +2494,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -7.62 0 0)
-					(length 2.54) hide
-					(name "NC"
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3784,6 +3784,12 @@
 		(uuid "6a3834f2-f637-47d5-a1b4-f810ff38bbe0")
 	)
 	(junction
+		(at 165.1 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d6de83a-60c2-4bdf-870f-a4162fbcc281")
+	)
+	(junction
 		(at 21.59 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3918,6 +3924,16 @@
 	(no_connect
 		(at 152.4 67.31)
 		(uuid "f48c4796-69de-4471-866c-b778a196d46a")
+	)
+	(wire
+		(pts
+			(xy 161.29 139.7) (xy 161.29 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06f4b464-986a-40ad-9bbf-287ecc525054")
 	)
 	(wire
 		(pts
@@ -4394,6 +4410,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 147.32) (xy 165.1 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7e981fa-b30a-467a-9b66-8426f6c026ed")
+	)
+	(wire
+		(pts
 			(xy 106.68 170.18) (xy 106.68 172.72)
 		)
 		(stroke
@@ -4572,6 +4598,16 @@
 			(type default)
 		)
 		(uuid "e56c1f86-0e99-43b6-95ed-ca8912f162ae")
+	)
+	(wire
+		(pts
+			(xy 165.1 139.7) (xy 161.29 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e818c9d4-3747-4e49-adde-f2c9b9c2960a")
 	)
 	(wire
 		(pts
@@ -5589,7 +5625,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Memory_EEPROM:AT24CS08-SSHM")
+		(lib_id "Memory_EEPROM:AT24CS04-SSHM")
 		(at 175.26 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5607,7 +5643,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AT24CS08-SSHM"
+		(property "Value" "AT24CS04-SSHM"
 			(at 177.4541 132.08 0)
 			(effects
 				(font
@@ -5634,7 +5670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "I2C Serial EEPROM, 8Kb (1024x8) with Unique Serial Number, SO8"
+		(property "Description" "I2C Serial EEPROM, 4Kb (512x8) with Unique Serial Number, SO8"
 			(at 175.26 139.7 0)
 			(effects
 				(font
