@@ -5,6 +5,126 @@
 	(uuid "663bf731-536b-42b3-b9f4-50c5905050cf")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Socket"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Socket"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0.508)
+					(mid -0.5058 0)
+					(end 0 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016) hide)
@@ -158,252 +278,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Connector:Conn_01x04_Socket"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04_Socket"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_Socket_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
-					(mid -0.5058 2.54)
-					(end 0 2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4830,7 +4704,7 @@
 	)
 	(global_label "DEBUG_UART_TX"
 		(shape input)
-		(at 173.99 40.64 180)
+		(at 173.99 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4838,9 +4712,9 @@
 			)
 			(justify right)
 		)
-		(uuid "42fb9116-3799-4baa-947f-b726bc19731a")
+		(uuid "48f44f64-b825-4c27-a196-141abb3704f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.9463 40.64 0)
+			(at 155.9463 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4934,28 +4808,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DEBUG_UART_RX"
-		(shape input)
-		(at 173.99 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "699a20e4-72ef-48ed-a9cf-7239e8f8c720")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.6439 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -5088,6 +4940,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DEBUG_UART_RX"
+		(shape input)
+		(at 173.99 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9771189e-ce8a-43ef-96c8-c6d3a054be6c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.6439 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5609,6 +5483,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 273.05 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8bfe46c1-ac08-45de-9aeb-fbead6d628e5")
 		)
@@ -5671,6 +5554,15 @@
 			)
 		)
 		(property "Description" "I2C Serial EEPROM, 4Kb (512x8) with Unique Serial Number, SO8"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C615473"
 			(at 175.26 139.7 0)
 			(effects
 				(font
@@ -6032,6 +5924,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 21.59 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aa0d4c31-95fb-4c44-8f0d-144c3dacd073")
 		)
@@ -6094,6 +5995,15 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 119.38 45.72 0)
 			(effects
 				(font
@@ -6169,6 +6079,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 179.07 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6a6279f-1252-41db-9b99-23dcd7084bce")
 		)
@@ -6229,6 +6148,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17630"
 			(at 74.93 58.42 0)
 			(effects
 				(font
@@ -6373,6 +6301,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 119.38 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "532761d5-a42f-4e29-859d-11e5eda98c4e")
 		)
@@ -6430,6 +6367,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 67.31 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19171391"
 			(at 67.31 58.42 0)
 			(effects
 				(font
@@ -6514,6 +6460,85 @@
 			(project "hackeriot_board"
 				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 179.07 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "314a54be-b3b3-4100-87f4-4933f0c6a544")
+		(property "Reference" "J5"
+			(at 180.34 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 180.34 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 179.07 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 179.07 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 179.07 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "63e8196e-bca3-47ce-827a-a20236f51b93")
+		)
+		(pin "1"
+			(uuid "2db9dba7-187e-46f1-b03c-16a3a0e17c51")
+		)
+		(instances
+			(project "hackeriot_board"
+				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -6773,6 +6798,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 255.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2572915e-e565-437f-81ba-d64f8428035e")
 		)
@@ -6909,6 +6943,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 87.63 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "86e320ad-bd5f-4045-b8ec-260b2bd75371")
 		)
@@ -6919,73 +6962,6 @@
 			(project "hackeriot_board"
 				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 173.99 35.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "425cf6e5-a999-4590-b1e7-7dcee4d79b31")
-		(property "Reference" "#PWR034"
-			(at 177.8 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 170.18 35.5599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 173.99 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7f05c8e-9300-4c8b-88e6-cb0e1245fb4b")
-		)
-		(instances
-			(project "hackeriot_board"
-				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
-					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7111,6 +7087,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17408"
+			(at 31.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "08e17693-84f5-4dce-9bcf-af403b1fd552")
 		)
@@ -7121,81 +7106,6 @@
 			(project "hackeriot_board"
 				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 179.07 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "52ef12d5-b746-41e5-a786-fda53df8f617")
-		(property "Reference" "J5"
-			(at 180.34 38.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 180.34 40.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 179.07 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 179.07 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f01379f2-2122-41b0-8677-40968c2c8117")
-		)
-		(pin "3"
-			(uuid "6547b72a-0f2b-4849-a495-46608bfcfbd1")
-		)
-		(pin "4"
-			(uuid "88ba0952-dea9-431a-a317-125b75ba7f05")
-		)
-		(pin "2"
-			(uuid "6db618ed-b163-42b2-91e3-697c7c3846dd")
-		)
-		(instances
-			(project ""
-				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -7248,6 +7158,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 93.98 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2920042"
 			(at 93.98 130.81 0)
 			(effects
 				(font
@@ -7324,6 +7243,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 31.75 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7484"
 			(at 31.75 172.72 0)
 			(effects
 				(font
@@ -7483,6 +7411,73 @@
 			(project "hackeriot_board"
 				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 66.04 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dc1ab26-b69b-40cb-977d-e0dbb206c9a7")
+		(property "Reference" "#PWR035"
+			(at 167.64 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e18d66ca-7bdd-4074-a282-244599fbbc33")
+		)
+		(instances
+			(project "hackeriot_board"
+				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -7742,6 +7737,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 214.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2b0b0b36-fad3-483f-95d4-624362810755")
 		)
@@ -7878,6 +7882,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1779"
+			(at 73.66 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "857ffb39-1453-468a-936d-3cf06f6e2a1b")
 		)
@@ -7940,6 +7953,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 179.07 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 179.07 26.67 0)
 			(effects
 				(font
@@ -8018,6 +8040,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2920042"
+			(at 119.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "773940f9-355b-4ea6-b0ce-602462707dae")
 		)
@@ -8040,17 +8071,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 173.99 43.18 270)
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 179.07 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7d4f1213-6522-4b69-8cbb-a848b7d1d4cb")
-		(property "Reference" "#PWR035"
-			(at 167.64 43.18 0)
+		(uuid "83fb758b-5e28-4d6d-b6d0-d5b1d16d387d")
+		(property "Reference" "J7"
+			(at 180.34 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 180.34 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+			(at 179.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8058,17 +8107,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 170.18 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 43.18 0)
+		(property "Datasheet" "~"
+			(at 179.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8076,8 +8116,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 173.99 43.18 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 179.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8085,8 +8125,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 43.18 0)
+		(property "LCSC" ""
+			(at 179.07 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8095,12 +8135,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9cd83676-f165-4844-a4a3-f3eb79d1e6fa")
+			(uuid "08d65bae-4aa3-4c57-8621-e6147994a3b9")
 		)
 		(instances
-			(project "hackeriot_board"
+			(project ""
 				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
-					(reference "#PWR035")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -8151,6 +8191,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 67.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19171393"
 			(at 67.31 48.26 0)
 			(effects
 				(font
@@ -8221,6 +8270,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 179.07 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 179.07 54.61 0)
 			(effects
 				(font
@@ -8306,6 +8364,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 229.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b09c0842-6e0b-4b65-acbc-c3d23d6dc8eb")
 		)
@@ -8368,6 +8435,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 43.18 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2920042"
 			(at 43.18 130.81 0)
 			(effects
 				(font
@@ -8444,6 +8520,15 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 119.38 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 119.38 33.02 0)
 			(effects
 				(font
@@ -8651,6 +8736,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 133.35 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "36fd4a07-06e0-438f-abe1-7df8d8e28fcb")
 		)
@@ -8735,6 +8829,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 240.03 148.59 0)
 			(effects
 				(font
@@ -9012,6 +9115,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 50.8 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66226f70-f10f-40f3-9bda-59b8a626fb3e")
 		)
@@ -9148,6 +9260,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 256.54 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba1de27c-ab88-41ae-8e48-e922492c6c77")
 		)
@@ -9210,6 +9331,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 240.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 240.03 99.06 0)
 			(effects
 				(font
@@ -9422,6 +9552,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 119.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "df08ff98-9aac-48f5-8592-52e43a9deb4c")
 		)
@@ -9479,6 +9618,15 @@
 			)
 		)
 		(property "Description" "USB Micro Type B connector"
+			(at 25.4 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C428495"
 			(at 25.4 78.74 0)
 			(effects
 				(font
@@ -9559,6 +9707,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C51118"
 			(at 39.37 31.75 0)
 			(effects
 				(font
@@ -10111,6 +10268,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 106.68 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c6929046-3f3e-4520-901f-df8ea9c9c447")
 		)
@@ -10377,6 +10543,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17557"
+			(at 74.93 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "566af21b-b2db-4b01-bdf3-b30dbba03015")
 		)
@@ -10440,6 +10615,15 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 32KB flash, 8KB RAM, 64 MHz, 2.0-3.6V, 17 GPIO, TSSOP20"
+			(at 241.3 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C529330"
 			(at 241.3 55.88 0)
 			(effects
 				(font
@@ -10572,6 +10756,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 24.13 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "37b43f2c-49f9-406f-bf3c-26054cc0be4d")
 		)
@@ -10642,6 +10835,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25826"
+			(at 265.43 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b2ac4c12-977f-4679-a96a-2d18ffbf6de1")
 		)
@@ -10704,6 +10906,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 68.58 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2920042"
 			(at 68.58 130.81 0)
 			(effects
 				(font
