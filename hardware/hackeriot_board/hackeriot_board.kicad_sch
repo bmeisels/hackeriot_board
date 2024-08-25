@@ -5483,15 +5483,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 273.05 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8bfe46c1-ac08-45de-9aeb-fbead6d628e5")
 		)
@@ -5562,7 +5553,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C615473"
+		(property "MPN" "C6205"
 			(at 175.26 139.7 0)
 			(effects
 				(font
@@ -5924,7 +5915,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "MPN" "C28323"
 			(at 21.59 44.45 0)
 			(effects
 				(font
@@ -6003,15 +5994,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 119.38 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "67fd2864-6597-47cc-bf69-1ba1ae33888d")
 		)
@@ -6071,15 +6053,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 179.07 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
 			(at 179.07 17.78 0)
 			(effects
 				(font
@@ -6156,7 +6129,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17630"
+		(property "MPN" "C17630"
 			(at 74.93 58.42 0)
 			(effects
 				(font
@@ -6301,15 +6274,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 119.38 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "532761d5-a42f-4e29-859d-11e5eda98c4e")
 		)
@@ -6375,7 +6339,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19171391"
+		(property "MPN" " C2296"
 			(at 67.31 58.42 0)
 			(effects
 				(font
@@ -6512,15 +6476,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 179.07 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
 			(at 179.07 36.83 0)
 			(effects
 				(font
@@ -6798,7 +6753,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C49678"
+		(property "MPN" "C49678"
 			(at 255.27 97.79 0)
 			(effects
 				(font
@@ -6943,7 +6898,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C49678"
+		(property "MPN" "C49678"
 			(at 87.63 30.48 0)
 			(effects
 				(font
@@ -7087,7 +7042,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17408"
+		(property "MPN" "C17408"
 			(at 31.75 130.81 0)
 			(effects
 				(font
@@ -7166,7 +7121,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2920042"
+		(property "MPN" ""
 			(at 93.98 130.81 0)
 			(effects
 				(font
@@ -7251,7 +7206,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7484"
+		(property "MPN" "C7484"
 			(at 31.75 172.72 0)
 			(effects
 				(font
@@ -7737,7 +7692,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "MPN" "C17414"
 			(at 214.63 97.79 0)
 			(effects
 				(font
@@ -7882,7 +7837,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1779"
+		(property "MPN" "C1779"
 			(at 73.66 30.48 0)
 			(effects
 				(font
@@ -7961,15 +7916,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 179.07 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "ef21bad0-01d9-45c5-ac2c-c14587ce3403")
 		)
@@ -8040,7 +7986,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2920042"
+		(property "MPN" ""
 			(at 119.38 130.81 0)
 			(effects
 				(font
@@ -8125,15 +8071,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 179.07 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "08d65bae-4aa3-4c57-8621-e6147994a3b9")
 		)
@@ -8199,7 +8136,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19171393"
+		(property "MPN" "C2297"
 			(at 67.31 48.26 0)
 			(effects
 				(font
@@ -8270,15 +8207,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 179.07 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
 			(at 179.07 54.61 0)
 			(effects
 				(font
@@ -8364,7 +8292,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "MPN" "C17414"
 			(at 229.87 148.59 0)
 			(effects
 				(font
@@ -8443,7 +8371,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2920042"
+		(property "MPN" ""
 			(at 43.18 130.81 0)
 			(effects
 				(font
@@ -8520,15 +8448,6 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
-			(at 119.38 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
 			(at 119.38 33.02 0)
 			(effects
 				(font
@@ -8736,15 +8655,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 133.35 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "36fd4a07-06e0-438f-abe1-7df8d8e28fcb")
 		)
@@ -8837,7 +8747,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "MPN" "C17414"
 			(at 240.03 148.59 0)
 			(effects
 				(font
@@ -9115,7 +9025,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "MPN" "C28323"
 			(at 50.8 35.56 0)
 			(effects
 				(font
@@ -9260,15 +9170,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 256.54 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "ba1de27c-ab88-41ae-8e48-e922492c6c77")
 		)
@@ -9331,15 +9232,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
 			(at 240.03 99.06 0)
 			(effects
 				(font
@@ -9552,15 +9444,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 119.38 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "df08ff98-9aac-48f5-8592-52e43a9deb4c")
 		)
@@ -9626,7 +9509,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C428495"
+		(property "MPN" "C428495"
 			(at 25.4 78.74 0)
 			(effects
 				(font
@@ -9715,7 +9598,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C51118"
+		(property "MPN" "C51118"
 			(at 39.37 31.75 0)
 			(effects
 				(font
@@ -10268,7 +10151,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C49678"
+		(property "MPN" "C49678"
 			(at 106.68 176.53 0)
 			(effects
 				(font
@@ -10311,12 +10194,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 106.68 165.1 0)
+		(property "Value" "VBUS"
+			(at 109.22 168.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -10543,7 +10427,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17557"
+		(property "MPN" "C17557"
 			(at 74.93 48.26 0)
 			(effects
 				(font
@@ -10623,7 +10507,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C529330"
+		(property "MPN" "C529330"
 			(at 241.3 55.88 0)
 			(effects
 				(font
@@ -10756,7 +10640,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "MPN" "C17414"
 			(at 24.13 34.29 0)
 			(effects
 				(font
@@ -10835,7 +10719,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25826"
+		(property "MPN" "C17633"
 			(at 265.43 90.17 0)
 			(effects
 				(font
@@ -10914,7 +10798,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2920042"
+		(property "MPN" ""
 			(at 68.58 130.81 0)
 			(effects
 				(font

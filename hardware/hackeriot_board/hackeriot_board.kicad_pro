@@ -506,8 +506,8 @@
         },
         {
           "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
+          "label": "MPN",
+          "name": "MPN",
           "show": true
         },
         {
