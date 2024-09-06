@@ -79,4 +79,8 @@ fp-info-cache
 *.csv
 
 # project specific
-/hardware/CYMOCAN_G0-backups
+/hardware/hackeriot_board/fabrication-toolkit-options.json
+/hardware/hackeriot_board/freerouting.frb
+/hardware/hackeriot_board/production/
+
+
