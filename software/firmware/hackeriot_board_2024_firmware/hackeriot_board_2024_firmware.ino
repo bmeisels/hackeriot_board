@@ -9,8 +9,8 @@
 #include <Wire.h>
 #endif
 
-#define PREV_BUTTON_PIN PA0
-#define NEXT_BUTTON_PIN PA1
+#define NEXT_BUTTON_PIN PA0
+#define PREV_BUTTON_PIN PA1
 #define NEOPIXEL_PIN PB7
 #define NUMPIXELS 4
 #define DEBOUNCE_DELAY 10
@@ -105,14 +105,22 @@ byte i2c_scan() {
 
 #ifdef EEPROM_INIT
 void eeprom_init() {
-  // from https://www.color-hex.com/color-palette/1223
   static const byte colors[] = {
-    0xff, 0xd4, 0xe5,
-    0xd4, 0xff, 0xea,
-    0xee, 0xcb, 0xff,
-    0xfe, 0xff, 0xa3,
-    0xdb, 0xdc, 0xff,
+    // from https://www.color-hex.com/color-palette/1050148
+    0xff, 0x8d, 0x1f, // orange
+    0x56, 0xff, 0xd0, // cyan
+    0xfd, 0x39, 0x9b, // hot pink
+    0xcc, 0xff, 0x37, // light green
+    0x9c, 0x42, 0xff, // purple
+
+    // from https://www.color-hex.com/color-palette/1038606
+    0xff, 0x14, 0x93, // neon pink
+    0x48, 0xdb, 0x48, // neon green
+    0xb1, 0x6e, 0xec, // neon purple
+    0xff, 0xab, 0x33, // neon orange
+    0x2b, 0xcd, 0xff, // neon light blue
   };
+
   static const struct eeprom_header initial = {
     .magic = EEPROM_MAGIC,
     .palette_length = (sizeof colors) / (3 * sizeof *colors),
@@ -130,11 +138,13 @@ void eeprom_init() {
 #endif
 
 void eeprom_read_color() {
+  byte rgb[3];
   uint16_t addr = sizeof(struct eeprom_header) + 3 * palette_curr;
-  if (3 != eeprom.readBuffer(addr, (byte*) &color_curr, 3)) {
+  if (sizeof rgb != eeprom.readBuffer(addr, rgb, sizeof rgb)) {
     Serial.println("Cannot read current color; aborting");
     pixels_blink_infinitely(250, 3, COLOR_RED);
   }
+  color_curr = pixels.Color(rgb[0], rgb[1], rgb[2]);
   Serial.print("Current color is ");
   Serial.println(color_curr, HEX);
 }
@@ -193,7 +203,7 @@ void setup() {
 
   // setup the four neopixels
   pixels.begin();
-  pixels.setBrightness(25);
+  pixels.setBrightness(35);
   Serial.println("Pixels boot sequence...");
   pixels_boot_sequence(250, alt_mode ? COLOR_CYAN : COLOR_PURPLE);
 
