@@ -17,7 +17,11 @@
 
 #define COLOR_CYAN   0x00FFFF
 #define COLOR_PURPLE 0xFF00FF
+#define COLOR_YELLOW 0xFFFF00
+#define COLOR_WHITE  0xFFFFFF
 #define COLOR_RED    0xFF0000
+
+static const uint32_t boot_colors[] = {COLOR_PURPLE, COLOR_CYAN, COLOR_YELLOW, COLOR_WHITE};
 
 #define LINE_BUFFER_SIZE 80
 
@@ -27,7 +31,7 @@
 struct eeprom_header {
   uint32_t magic;
   byte palette_length;
-  byte palette_curr;
+  byte palette_curr;  // not used since we do not write the eeprom normally
 };
 
 // global variables
@@ -35,7 +39,7 @@ AT24C04 eeprom(AT24C04_ADDRESS_0);
 Adafruit_Debounce button_previous(PREV_BUTTON_PIN, LOW);
 Adafruit_Debounce button_next(NEXT_BUTTON_PIN, LOW);
 Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXEL_PIN);
-bool alt_mode = false;
+byte alt_mode = 0;
 byte palette_length = 0;
 byte palette_curr = 0;
 uint32_t color_curr = 0;
@@ -196,16 +200,16 @@ void setup() {
   button_previous.begin();
   button_next.begin();
 
-  if (button_previous.isPressed() || button_next.isPressed()) {
-    Serial.println("A button is pressed; setting alternative mode");
-    alt_mode = true;
+  if (alt_mode = 2*button_previous.isPressed() + button_next.isPressed()) {
+    Serial.print("A button is pressed; setting alternative mode ");
+    Serial.println(alt_mode);
   }
 
   // setup the four neopixels
   pixels.begin();
   pixels.setBrightness(35);
   Serial.println("Pixels boot sequence...");
-  pixels_boot_sequence(250, alt_mode ? COLOR_CYAN : COLOR_PURPLE);
+  pixels_boot_sequence(250, boot_colors[alt_mode]);
 
   // setup I2C [hardware I2C1: PA9_R-SCL, PA10_R-SDA]
   Wire.begin();
@@ -240,7 +244,7 @@ void setup() {
     Serial.println(header.magic, HEX);
     pixels_blink_infinitely(250, 1, COLOR_RED);
     #endif
-  } else if (alt_mode) {
+  } else if (alt_mode == 3) {
     #ifdef EEPROM_INIT
     Serial.println("Initializing I2C EEPROM");
     eeprom_init();
@@ -286,7 +290,9 @@ void loop() {
 
   // TODO: rework stupid animation
   pixels.clear();
-  pixels.setPixelColor((frame++ >> 6) % NUMPIXELS, color_curr);
+  //pixels.setPixelColor((frame++ >> 6) % NUMPIXELS, color_curr);
+  byte tmp = (frame++ >> 6) % (2*NUMPIXELS-2);
+  pixels.setPixelColor(tmp < NUMPIXELS ? tmp : 2*NUMPIXELS-2-tmp , color_curr); // KITT
   pixels.show();
   
   #ifdef UART_CLI
