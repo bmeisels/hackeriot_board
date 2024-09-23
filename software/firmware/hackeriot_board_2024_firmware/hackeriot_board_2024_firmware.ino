@@ -15,13 +15,13 @@
 #define NUMPIXELS 4
 #define DEBOUNCE_DELAY 10
 
-#define COLOR_CYAN   0x00FFFF
+#define COLOR_CYAN 0x00FFFF
 #define COLOR_PURPLE 0xFF00FF
 #define COLOR_YELLOW 0xFFFF00
-#define COLOR_WHITE  0xFFFFFF
-#define COLOR_RED    0xFF0000
+#define COLOR_WHITE 0xFFFFFF
+#define COLOR_RED 0xFF0000
 
-static const uint32_t boot_colors[] = {COLOR_PURPLE, COLOR_CYAN, COLOR_YELLOW, COLOR_WHITE};
+static const uint32_t boot_colors[] = { COLOR_PURPLE, COLOR_CYAN, COLOR_YELLOW, COLOR_WHITE };
 
 #define LINE_BUFFER_SIZE 80
 
@@ -68,7 +68,7 @@ void pixels_boot_sequence(uint32_t ms, uint32_t color) {
 }
 
 void pixels_blink_infinitely(uint32_t ms, byte idx, uint32_t color) {
-   for (;;) {
+  for (;;) {
     pixels.setPixelColor(idx, color);
     pixels.show();
     delay(ms);
@@ -89,7 +89,7 @@ byte i2c_scan() {
     Wire.beginTransmission(addr);
     byte error = Wire.endTransmission();
 
-    if ( ! error) {
+    if (!error) {
       nDevices++;
       Serial.print("I2C device found");
     } else if (error == 4) {
@@ -101,7 +101,7 @@ byte i2c_scan() {
       Serial.print("0");
     Serial.println(addr, HEX);
   }
-  if ( ! nDevices) Serial.println("No I2C devices found");
+  if (!nDevices) Serial.println("No I2C devices found");
 
   return nDevices;
 }
@@ -111,18 +111,18 @@ byte i2c_scan() {
 void eeprom_init() {
   static const byte colors[] = {
     // from https://www.color-hex.com/color-palette/1050148
-    0xff, 0x8d, 0x1f, // orange
-    0x56, 0xff, 0xd0, // cyan
-    0xfd, 0x39, 0x9b, // hot pink
-    0xcc, 0xff, 0x37, // light green
-    0x9c, 0x42, 0xff, // purple
+    0xff, 0x8d, 0x1f,  // orange
+    0x56, 0xff, 0xd0,  // cyan
+    0xfd, 0x39, 0x9b,  // hot pink
+    0xcc, 0xff, 0x37,  // light green
+    0x9c, 0x42, 0xff,  // purple
 
     // from https://www.color-hex.com/color-palette/1038606
-    0xff, 0x14, 0x93, // neon pink
-    0x48, 0xdb, 0x48, // neon green
-    0xb1, 0x6e, 0xec, // neon purple
-    0xff, 0xab, 0x33, // neon orange
-    0x2b, 0xcd, 0xff, // neon light blue
+    0xff, 0x14, 0x93,  // neon pink
+    0x48, 0xdb, 0x48,  // neon green
+    0xb1, 0x6e, 0xec,  // neon purple
+    0xff, 0xab, 0x33,  // neon orange
+    0x2b, 0xcd, 0xff,  // neon light blue
   };
 
   static const struct eeprom_header initial = {
@@ -131,7 +131,7 @@ void eeprom_init() {
     .palette_curr = 0
   };
   eeprom.put(0x0, initial);
-  if ( ! eeprom.getLastError()) 
+  if (!eeprom.getLastError())
     eeprom.put(sizeof initial, colors);
 
   if (eeprom.getLastError()) {
@@ -165,21 +165,21 @@ void handle_uart_commands() {
   }
 
   String line_string = Serial.readStringUntil('\n');
-  if(line_string.length() >= LINE_BUFFER_SIZE) {
+  if (line_string.length() >= LINE_BUFFER_SIZE) {
     Serial.println("Input too long");
     return;
   }
   line_string.toLowerCase();
   line_string.toCharArray(line, LINE_BUFFER_SIZE);
   char *cmd = strtok(line, " ");
-  if ( ! cmd) {
+  if (!cmd) {
     Serial.println("Cannot read command");
     return;
   }
-  if ( ! strcmp(cmd, "help")) {
+  if (!strcmp(cmd, "help")) {
     Serial.println("The following commands are available:\nHELP\nLED\n");
     Serial.println("You can for instance type HELP LED for more info on the LED command.");
-  } else if ( ! strcmp(cmd, "led")) {
+  } else if (!strcmp(cmd, "led")) {
     Serial.println("Not yet implemented");
   } else {
     Serial.print("Unknown command: ");
@@ -200,7 +200,7 @@ void setup() {
   button_previous.begin();
   button_next.begin();
 
-  if (alt_mode = 2*button_previous.isPressed() + button_next.isPressed()) {
+  if (alt_mode = 2 * button_previous.isPressed() + button_next.isPressed()) {
     Serial.print("A button is pressed; setting alternative mode ");
     Serial.println(alt_mode);
   }
@@ -219,37 +219,37 @@ void setup() {
   eeprom.get(0, header);
   byte err = eeprom.getLastError();
   if (err) {
-    if (err == 2) { // no answer
-      #ifdef I2C_SCAN    
+    if (err == 2) {  // no answer
+#ifdef I2C_SCAN
       Serial.println("No response from I2C EEPROM; scanning...");
       i2c_scan();
-      #else
+#else
       Serial.println("No response from I2C EEPROM; aborting");
-      #endif
+#endif
     } else {
       Serial.println("Unknown I2C EEPROM error; aborting");
     }
     pixels_blink_infinitely(250, 0, COLOR_RED);
-  } else { // all OK
+  } else {  // all OK
     Serial.println("Header read from I2C EEPROM");
   }
-  
+
   // verify magic
   if (header.magic != EEPROM_MAGIC) {
-    #ifdef EEPROM_INIT
+#ifdef EEPROM_INIT
     Serial.println("Unexpected I2C EEPROM contents; initializing");
     eeprom_init();
-    #else
+#else
     Serial.println("Unexpected I2C EEPROM contents; aborting");
     Serial.println(header.magic, HEX);
     pixels_blink_infinitely(250, 1, COLOR_RED);
-    #endif
+#endif
   } else if (alt_mode == 3) {
-    #ifdef EEPROM_INIT
+#ifdef EEPROM_INIT
     Serial.println("Initializing I2C EEPROM");
     eeprom_init();
     alt_mode = 0;
-    #endif
+#endif
   }
 
   // roughly 10, and in any case not more than (512-6)/3=168
@@ -276,11 +276,11 @@ void normal_mode() {
   if (button_previous.justPressed()) {
     Serial.println("Previous button pressed!");
 
-    if ( ! palette_curr) palette_curr = palette_length;
+    if (!palette_curr) palette_curr = palette_length;
     --palette_curr;
     eeprom_read_color();
   }
-  
+
   if (button_next.justPressed()) {
     Serial.println("Next button pressed!");
 
@@ -292,15 +292,15 @@ void normal_mode() {
   // TODO: rework stupid animation
   pixels.clear();
   //pixels.setPixelColor((frame++ >> 6) % NUMPIXELS, color_curr);
-  byte tmp = (frame++ >> 6) % (2*NUMPIXELS-2);
-  pixels.setPixelColor(tmp < NUMPIXELS ? tmp : 2*NUMPIXELS-2-tmp , color_curr); // KITT
+  byte tmp = (frame++ >> 6) % (2 * NUMPIXELS - 2);
+  pixels.setPixelColor(tmp < NUMPIXELS ? tmp : 2 * NUMPIXELS - 2 - tmp, color_curr);  // KITT
   pixels.show();
-  
-  #ifdef UART_CLI
+
+#ifdef UART_CLI
   if (Serial.available()) {
     handle_uart_commands();
   }
-  #endif
+#endif
 
   delay(DEBOUNCE_DELAY);
 }
@@ -339,4 +339,4 @@ void rainbow() {
       } else if (alt_mode == 2) {
         theaterChaseRainbow();
       }
-}
+    }
