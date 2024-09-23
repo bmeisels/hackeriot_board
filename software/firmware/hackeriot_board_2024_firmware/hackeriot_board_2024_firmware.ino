@@ -248,6 +248,7 @@ void setup() {
     #ifdef EEPROM_INIT
     Serial.println("Initializing I2C EEPROM");
     eeprom_init();
+    alt_mode = 0;
     #endif
   }
 
@@ -266,7 +267,7 @@ void setup() {
   Serial.println("Setup test complete\nPlease press the buttons, or type in commands");
 }
 
-void loop() {
+void normal_mode() {
   static uint32_t frame = 0;
 
   button_previous.update();
@@ -302,4 +303,40 @@ void loop() {
   #endif
 
   delay(DEBOUNCE_DELAY);
+}
+
+void rainbow() {
+  for (long firstPixelHue = 0; firstPixelHue < 5 * 65536; firstPixelHue += 256) {
+    pixels.rainbow(firstPixelHue);
+    pixels.show();
+    delay(10);
+  }
+}
+
+  void theaterChaseRainbow() {
+    int firstPixelHue = 0;
+    for (int a = 0; a < 30; a++) {
+      for (int b = 0; b < 3; b++) {
+        pixels.clear();
+ 
+        for (int c = b; c < pixels.numPixels(); c += 3) {
+          int hue = firstPixelHue + c * 65536L / pixels.numPixels();
+          uint32_t color = pixels.gamma32(pixels.ColorHSV(hue));
+          pixels.setPixelColor(c, color);
+        }
+        pixels.show();
+        delay(400);
+        firstPixelHue += 65536 / 90;
+      }
+    }
+  }
+
+    void loop() {
+      if (alt_mode == 0) {
+        normal_mode();
+      } else if (alt_mode == 1) {
+        rainbow();
+      } else if (alt_mode == 2) {
+        theaterChaseRainbow();
+      }
 }
