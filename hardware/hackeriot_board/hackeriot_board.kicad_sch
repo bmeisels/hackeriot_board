@@ -6014,7 +6014,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "680"
 			(at 74.93 54.61 90)
 			(effects
 				(font
@@ -6049,7 +6049,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C17630"
+		(property "MPN" "C17798"
 			(at 74.93 58.42 0)
 			(effects
 				(font
@@ -10315,7 +10315,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "390"
 			(at 74.93 44.45 90)
 			(effects
 				(font
@@ -10350,7 +10350,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C17557"
+		(property "MPN" "C17655"
 			(at 74.93 48.26 0)
 			(effects
 				(font
