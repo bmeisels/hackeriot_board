@@ -4,6 +4,10 @@
 	(generator_version "8.0")
 	(uuid "663bf731-536b-42b3-b9f4-50c5905050cf")
 	(paper "A4")
+	(title_block
+		(title "Hackeriot Board")
+		(rev "1.0.1")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
