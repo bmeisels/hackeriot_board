@@ -5,126 +5,6 @@
 	(uuid "663bf731-536b-42b3-b9f4-50c5905050cf")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Socket"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Socket"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016) hide)
@@ -3628,6 +3508,12 @@
 		(uuid "08550b01-3346-4298-95c9-80d4bdfc4548")
 	)
 	(junction
+		(at 173.99 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20b00cd6-7968-43d2-945e-c6bfa9e1c603")
+	)
+	(junction
 		(at 81.28 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4043,6 +3929,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 67.31) (xy 173.99 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f80bd82-eddc-4fbe-9856-13cef0875831")
+	)
+	(wire
+		(pts
 			(xy 50.8 31.75) (xy 50.8 29.21)
 		)
 		(stroke
@@ -4284,6 +4180,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 67.31) (xy 173.99 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7cabe28-ce99-4430-a539-5f1cdf6dbac5")
+	)
+	(wire
+		(pts
 			(xy 161.29 147.32) (xy 165.1 147.32)
 		)
 		(stroke
@@ -4311,6 +4217,16 @@
 			(type default)
 		)
 		(uuid "afb69867-8cc3-4233-8b18-3b06062d0126")
+	)
+	(wire
+		(pts
+			(xy 173.99 67.31) (xy 173.99 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3d6ccde-d3c6-438e-9a64-350264f46b31")
 	)
 	(wire
 		(pts
@@ -7373,7 +7289,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 173.99 66.04 270)
+		(at 172.72 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7382,7 +7298,7 @@
 		(fields_autoplaced yes)
 		(uuid "5dc1ab26-b69b-40cb-977d-e0dbb206c9a7")
 		(property "Reference" "#PWR035"
-			(at 167.64 66.04 0)
+			(at 166.37 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7391,7 +7307,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 66.0399 90)
+			(at 168.91 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7400,7 +7316,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 66.04 0)
+			(at 172.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7409,7 +7325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 66.04 0)
+			(at 172.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7418,7 +7334,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 66.04 0)
+			(at 172.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8017,7 +7933,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
+		(lib_id "Connector:Conn_01x02_Socket")
 		(at 179.07 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8025,9 +7941,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "83fb758b-5e28-4d6d-b6d0-d5b1d16d387d")
+		(uuid "8bf55c09-b1f0-4c29-b5ff-eac845300456")
 		(property "Reference" "J7"
-			(at 180.34 64.7699 0)
+			(at 180.34 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,8 +7951,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x01_Socket"
-			(at 180.34 67.3099 0)
+		(property "Value" "Conn_01x02_Socket"
+			(at 180.34 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,7 +7960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 179.07 66.04 0)
 			(effects
 				(font
@@ -8062,7 +7978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
+		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 179.07 66.04 0)
 			(effects
 				(font
@@ -8071,11 +7987,14 @@
 				(hide yes)
 			)
 		)
+		(pin "2"
+			(uuid "98461d35-3ab0-44b5-8674-9a10576be3b0")
+		)
 		(pin "1"
-			(uuid "08d65bae-4aa3-4c57-8621-e6147994a3b9")
+			(uuid "11c00a12-6844-4c14-8191-4650a2a811f3")
 		)
 		(instances
-			(project ""
+			(project "hackeriot_board"
 				(path "/663bf731-536b-42b3-b9f4-50c5905050cf"
 					(reference "J7")
 					(unit 1)
