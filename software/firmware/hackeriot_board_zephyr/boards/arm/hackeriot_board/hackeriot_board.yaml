@@ -1,0 +1,15 @@
+identifier: hackeriot_board
+name: Hackeriot Board
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
+  - i2c
+  - spi
+ram: 8
+flash: 64
+vendor: hackeriot

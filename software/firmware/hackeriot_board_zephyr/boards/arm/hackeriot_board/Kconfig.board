@@ -1,0 +1,8 @@
+# Hackeriot board with STM32G030F6 MCU configuration
+
+# Copyright (c) 2022 Joylab AG <team@joylab.ch>
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_HACKERIOT_BOARD
+	bool "Hackeriot Board"
+	depends on SOC_STM32G030XX

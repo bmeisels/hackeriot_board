@@ -82,5 +82,7 @@ fp-info-cache
 /hardware/hackeriot_board/fabrication-toolkit-options.json
 /hardware/hackeriot_board/freerouting.frb
 /hardware/hackeriot_board/production/
-
+.venv/
+.vscode/
+build/
 
