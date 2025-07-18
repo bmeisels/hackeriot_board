@@ -1,0 +1,32 @@
+{
+  "projects": {
+    "hackeriot_firmware": {
+      "rel_path": "hackeriot_firmware",
+      "name": "hackeriot_firmware",
+      "buildConfigs": {
+        "build/hackeriot_board_2025": {
+          "relBoardDir": "boards",
+          "relBoardSubDir": "hackeriot_board_2025",
+          "board": "hackeriot_board_2025",
+          "name": "build/hackeriot_board_2025",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {}
+        }
+      },
+      "twisterConfigs": {},
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    }
+  }
+}
