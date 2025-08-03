@@ -3190,157 +3190,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "hackeriot_2025:DebugEdge_02x05"
+		(symbol "hackeriot_board_2025:DebugEdge_02x05"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3365,7 +3215,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "debug_edge:DebugEdge_2x05_Target"
+			(property "Footprint" "hackeriot_board_2025:DebugEdge_2x05_Target"
 				(at 0 10.16 0)
 				(effects
 					(font
@@ -3589,7 +3439,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "hackeriot_2025:PCA9306DCUR"
+		(symbol "hackeriot_board_2025:PCA9306DCUR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3609,7 +3459,7 @@
 					)
 				)
 			)
-			(property "Footprint" "hackeriot_2025:SSOP-8_L2.0-W2.3-P0.50-LS3.1-BR"
+			(property "Footprint" "hackeriot_board_2025:SSOP-8_L2.0-W2.3-P0.50-LS3.1-BR"
 				(at 0 -11.43 0)
 				(effects
 					(font
@@ -3818,6 +3668,234 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "hackeriot_board_2025:TS110426045"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TS110426045"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C22375341"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TS110426045_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.52) (xy 0 0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0.76)
+					(radius 0.25)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -0.76)
+					(radius 0.25)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.76) (xy 0.25 -1.02)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TS110426045_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5133,6 +5211,10 @@
 		(uuid "fcdd4e3f-43ef-4a56-8424-bc774c7a1ceb")
 	)
 	(no_connect
+		(at 396.24 238.76)
+		(uuid "0151132b-0bf4-4f95-a680-3c761733746c")
+	)
+	(no_connect
 		(at 153.67 214.63)
 		(uuid "03b2db98-4713-48af-9d2c-69d4252ae5e0")
 	)
@@ -5153,6 +5235,10 @@
 		(uuid "2560a51d-bf07-4bbb-9b28-98651219079b")
 	)
 	(no_connect
+		(at 300.99 228.6)
+		(uuid "2a4433e1-fb3b-45fd-89dd-60fb7a2c2232")
+	)
+	(no_connect
 		(at 53.34 111.76)
 		(uuid "31f05ef0-8b42-4dcf-a695-ba6d3d17cd17")
 	)
@@ -5165,12 +5251,28 @@
 		(uuid "4c4c3ae0-7af5-4877-9124-66b61f21225a")
 	)
 	(no_connect
+		(at 391.16 228.6)
+		(uuid "4d6c8581-3744-4626-b3fd-e0ee5830a530")
+	)
+	(no_connect
+		(at 318.77 228.6)
+		(uuid "4d9f8654-6020-4b8f-8d4a-449176a1a9b1")
+	)
+	(no_connect
 		(at 121.92 105.41)
 		(uuid "4e30290d-31d2-47c3-a6c1-b7a0d7187986")
 	)
 	(no_connect
 		(at 121.92 97.79)
 		(uuid "4edbb6c2-811e-4552-9e7f-b833dd9d9333")
+	)
+	(no_connect
+		(at 336.55 228.6)
+		(uuid "50de3bfb-f638-440f-b48b-284bf58afd3a")
+	)
+	(no_connect
+		(at 359.41 238.76)
+		(uuid "5aa5f3d5-ccee-453f-95d9-910060240a76")
 	)
 	(no_connect
 		(at 331.47 43.18)
@@ -5185,12 +5287,36 @@
 		(uuid "7b289866-7aa4-4d22-bf01-b4eeef6de79b")
 	)
 	(no_connect
+		(at 341.63 238.76)
+		(uuid "8ac4fd95-d0f3-47e4-9dbd-763df0cc25ce")
+	)
+	(no_connect
 		(at 121.92 95.25)
 		(uuid "8b9e67e2-4d59-4916-94a1-5ccaff22835e")
 	)
 	(no_connect
 		(at 80.01 38.1)
 		(uuid "8f3f71bc-c950-46a9-b4d5-9317b3f501ec")
+	)
+	(no_connect
+		(at 372.11 228.6)
+		(uuid "90c49301-a553-445d-a297-40f94b4c17ad")
+	)
+	(no_connect
+		(at 306.07 238.76)
+		(uuid "9bba844d-da4f-4529-a913-41afa25d961a")
+	)
+	(no_connect
+		(at 323.85 238.76)
+		(uuid "a2e84887-deed-4acf-93e4-ef75e9f455de")
+	)
+	(no_connect
+		(at 379.73 119.38)
+		(uuid "a7770f27-505c-4ab1-98a7-52d5bc57f5d4")
+	)
+	(no_connect
+		(at 377.19 238.76)
+		(uuid "a8f0d7cd-1af2-4582-80c7-ddf7f18fefd1")
 	)
 	(no_connect
 		(at 53.34 109.22)
@@ -5203,6 +5329,14 @@
 	(no_connect
 		(at 199.39 217.17)
 		(uuid "b5e7e610-b381-43a1-9336-700a7529382b")
+	)
+	(no_connect
+		(at 354.33 228.6)
+		(uuid "c4776d4b-cd5a-402a-ad78-ccb953a346cd")
+	)
+	(no_connect
+		(at 374.65 109.22)
+		(uuid "c6079a5e-3c19-41c7-8123-957cbbd8fc68")
 	)
 	(no_connect
 		(at 199.39 214.63)
@@ -5549,6 +5683,16 @@
 			(type default)
 		)
 		(uuid "1f6a3569-39b9-46fb-aa59-3240cd3e505d")
+	)
+	(wire
+		(pts
+			(xy 377.19 109.22) (xy 379.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7fcc9c-1679-4b40-8cf0-0680abfe7160")
 	)
 	(wire
 		(pts
@@ -6115,16 +6259,6 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 105.41) (xy 377.19 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c65cad0-1791-4dda-b85f-f7ef73a2945f")
-	)
-	(wire
-		(pts
 			(xy 87.63 204.47) (xy 100.33 204.47)
 		)
 		(stroke
@@ -6496,6 +6630,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 119.38) (xy 374.65 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "887ef65f-1574-4946-9a2d-989f39912ac4")
+	)
+	(wire
+		(pts
 			(xy 53.34 234.95) (xy 53.34 247.65)
 		)
 		(stroke
@@ -6854,6 +6998,16 @@
 			(type default)
 		)
 		(uuid "a80d8795-7599-4c81-affa-66db7c1cc8ed")
+	)
+	(wire
+		(pts
+			(xy 377.19 102.87) (xy 377.19 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa09e2a7-6db9-4d2e-b006-d8c7d74aba65")
 	)
 	(wire
 		(pts
@@ -8402,7 +8556,7 @@
 	)
 	(global_label "B_Button"
 		(shape input)
-		(at 325.12 228.6 90)
+		(at 323.85 228.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8412,7 +8566,7 @@
 		)
 		(uuid "6cd1148a-80da-4be4-aa0d-2b81c32ba2be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 325.12 217.2088 90)
+			(at 323.85 217.2088 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8732,7 +8886,7 @@
 	)
 	(global_label "Right_Button"
 		(shape input)
-		(at 382.27 228.6 90)
+		(at 396.24 228.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8742,7 +8896,7 @@
 		)
 		(uuid "a6362ef3-b0c5-4596-9a11-2385f4d6feac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 382.27 213.5803 90)
+			(at 396.24 213.5803 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8952,7 +9106,7 @@
 	)
 	(global_label "Up_Button"
 		(shape input)
-		(at 339.09 228.6 90)
+		(at 341.63 228.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8962,7 +9116,7 @@
 		)
 		(uuid "bff7610a-f241-4403-90f3-ce45b2d34888")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 339.09 215.9993 90)
+			(at 341.63 215.9993 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8996,7 +9150,7 @@
 	)
 	(global_label "Down_Button"
 		(shape input)
-		(at 353.06 228.6 90)
+		(at 359.41 228.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9006,7 +9160,7 @@
 		)
 		(uuid "c189db00-1a27-4ff8-ab62-3251d2b6377d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 353.06 213.5803 90)
+			(at 359.41 213.5803 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9040,7 +9194,7 @@
 	)
 	(global_label "A_Button"
 		(shape input)
-		(at 311.15 228.6 90)
+		(at 306.07 228.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9050,7 +9204,7 @@
 		)
 		(uuid "c2ea48df-ad09-4b49-a0ee-2cd953687f05")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 311.15 217.3902 90)
+			(at 306.07 217.3902 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9304,7 +9458,7 @@
 	)
 	(global_label "Left_Button"
 		(shape input)
-		(at 368.3 228.6 90)
+		(at 377.19 228.6 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9314,7 +9468,7 @@
 		)
 		(uuid "e1cae410-d66f-40e4-b84f-21642b7f976d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 368.3 214.9107 90)
+			(at 377.19 214.9107 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10911,7 +11065,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 353.06 238.76 0)
+		(at 354.33 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10920,7 +11074,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d58d4d6-0a75-4fd4-90dc-651c1cdc9949")
 		(property "Reference" "#PWR045"
-			(at 353.06 245.11 0)
+			(at 354.33 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10929,7 +11083,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 353.06 243.84 0)
+			(at 354.33 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10937,7 +11091,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 353.06 238.76 0)
+			(at 354.33 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10946,7 +11100,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 353.06 238.76 0)
+			(at 354.33 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10955,7 +11109,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 353.06 238.76 0)
+			(at 354.33 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12136,7 +12290,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 382.27 238.76 0)
+		(at 391.16 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12145,7 +12299,7 @@
 		(fields_autoplaced yes)
 		(uuid "36c0276c-634e-4c7f-8055-6f5f9c8680bb")
 		(property "Reference" "#PWR047"
-			(at 382.27 245.11 0)
+			(at 391.16 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12154,7 +12308,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 382.27 243.84 0)
+			(at 391.16 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12162,7 +12316,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 382.27 238.76 0)
+			(at 391.16 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12171,7 +12325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 382.27 238.76 0)
+			(at 391.16 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12180,7 +12334,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 382.27 238.76 0)
+			(at 391.16 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12201,7 +12355,7 @@
 		)
 	)
 	(symbol
-		(lib_id "hackeriot_2025:PCA9306DCUR")
+		(lib_id "hackeriot_board_2025:PCA9306DCUR")
 		(at 171.45 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12442,7 +12596,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 377.19 115.57 0)
+		(at 368.3 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12451,7 +12605,7 @@
 		(fields_autoplaced yes)
 		(uuid "38bb5215-a72b-44e7-8e6b-277498c2a546")
 		(property "Reference" "#PWR01"
-			(at 377.19 121.92 0)
+			(at 368.3 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12460,7 +12614,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 377.19 120.65 0)
+			(at 368.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12468,7 +12622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 377.19 115.57 0)
+			(at 368.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12477,7 +12631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 377.19 115.57 0)
+			(at 368.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12486,7 +12640,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 377.19 115.57 0)
+			(at 368.3 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14010,7 +14164,7 @@
 		)
 	)
 	(symbol
-		(lib_id "hackeriot_2025:DebugEdge_02x05")
+		(lib_id "hackeriot_board_2025:DebugEdge_02x05")
 		(at 102.87 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14337,7 +14491,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 368.3 238.76 0)
+		(at 372.11 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14346,7 +14500,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a52d782-db6f-4505-bcc1-a1f228e5d1d0")
 		(property "Reference" "#PWR046"
-			(at 368.3 245.11 0)
+			(at 372.11 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14355,7 +14509,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 368.3 243.84 0)
+			(at 372.11 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14363,7 +14517,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 238.76 0)
+			(at 372.11 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14372,7 +14526,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.3 238.76 0)
+			(at 372.11 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14381,7 +14535,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 238.76 0)
+			(at 372.11 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15038,8 +15192,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 311.15 233.68 270)
+		(lib_id "hackeriot_board_2025:TS110426045")
+		(at 303.53 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15048,7 +15202,7 @@
 		(fields_autoplaced yes)
 		(uuid "75c8964c-f016-4d73-8f63-f0a94681f302")
 		(property "Reference" "SW2"
-			(at 314.96 232.4099 90)
+			(at 307.34 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15057,7 +15211,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 314.96 234.9499 90)
+			(at 307.34 234.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15066,7 +15220,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 316.23 233.68 0)
+			(at 293.37 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15075,7 +15229,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 316.23 233.68 0)
+			(at 303.53 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15084,7 +15238,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 311.15 233.68 0)
+			(at 303.53 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15093,7 +15247,16 @@
 			)
 		)
 		(property "MPN" "C22375341"
-			(at 311.15 233.68 0)
+			(at 303.53 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22375341"
+			(at 290.83 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15106,6 +15269,12 @@
 		)
 		(pin "2"
 			(uuid "a3a32409-6879-46d7-b207-577989c3857c")
+		)
+		(pin "3"
+			(uuid "2c7bc2a3-ceeb-453e-87df-5e207e5c1b9a")
+		)
+		(pin "4"
+			(uuid "2d857357-7caa-4c4f-a135-35b009b3dbff")
 		)
 		(instances
 			(project "hackeriot_board_2025"
@@ -16678,8 +16847,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 382.27 233.68 270)
+		(lib_id "hackeriot_board_2025:TS110426045")
+		(at 393.7 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16688,7 +16857,7 @@
 		(fields_autoplaced yes)
 		(uuid "97d819f4-61a0-43d4-bc92-3115a6c86e8e")
 		(property "Reference" "SW7"
-			(at 386.08 232.4099 90)
+			(at 397.51 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16697,7 +16866,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 386.08 234.9499 90)
+			(at 397.51 234.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16706,7 +16875,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 387.35 233.68 0)
+			(at 383.54 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16715,7 +16884,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 387.35 233.68 0)
+			(at 393.7 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16724,7 +16893,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 382.27 233.68 0)
+			(at 393.7 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16733,7 +16902,16 @@
 			)
 		)
 		(property "MPN" "C22375341"
-			(at 382.27 233.68 0)
+			(at 393.7 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22375341"
+			(at 381 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16746,6 +16924,12 @@
 		)
 		(pin "2"
 			(uuid "38200a78-422f-4a69-bf4d-16df99bf04a5")
+		)
+		(pin "3"
+			(uuid "fc4ac802-3de4-44fa-b04e-0168c50aeac1")
+		)
+		(pin "4"
+			(uuid "2ab582bf-ee4c-4db9-bf43-750136fadf2d")
 		)
 		(instances
 			(project "hackeriot_board_2025"
@@ -17558,8 +17742,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 368.3 233.68 270)
+		(lib_id "hackeriot_board_2025:TS110426045")
+		(at 374.65 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17568,7 +17752,7 @@
 		(fields_autoplaced yes)
 		(uuid "a96a77e7-3b89-4178-816c-9834e4f27d2c")
 		(property "Reference" "SW6"
-			(at 372.11 232.4099 90)
+			(at 378.46 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17577,7 +17761,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 372.11 234.9499 90)
+			(at 378.46 234.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17586,7 +17770,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 373.38 233.68 0)
+			(at 364.49 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17595,7 +17779,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 373.38 233.68 0)
+			(at 374.65 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17604,7 +17788,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 368.3 233.68 0)
+			(at 374.65 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17613,7 +17797,16 @@
 			)
 		)
 		(property "MPN" "C22375341"
-			(at 368.3 233.68 0)
+			(at 374.65 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22375341"
+			(at 361.95 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17626,6 +17819,12 @@
 		)
 		(pin "2"
 			(uuid "55f37e03-2116-4194-b357-9173932ecce6")
+		)
+		(pin "3"
+			(uuid "4243ac15-c2f3-4052-bc22-f0e2eb1d2c26")
+		)
+		(pin "4"
+			(uuid "b3bfc7d5-68ca-47c5-b316-262998e635d3")
 		)
 		(instances
 			(project "hackeriot_board_2025"
@@ -17835,7 +18034,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "hackeriot_board_2025:TS110426045")
 		(at 339.09 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17863,7 +18062,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 344.17 233.68 0)
+			(at 328.93 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17872,7 +18071,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 344.17 233.68 0)
+			(at 339.09 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17898,11 +18097,26 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C22375341"
+			(at 326.39 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b4d121b7-fa55-408f-940e-044d77ae534c")
 		)
 		(pin "2"
 			(uuid "916f8e5d-617f-4e9a-96f2-cb430501c198")
+		)
+		(pin "3"
+			(uuid "9686d7b7-e2f9-4ab0-b988-84521d6cb31e")
+		)
+		(pin "4"
+			(uuid "2092e0e0-4eba-4336-b4bc-e648acf09a86")
 		)
 		(instances
 			(project "hackeriot_board_2025"
@@ -18283,7 +18497,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 339.09 238.76 0)
+		(at 336.55 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18292,7 +18506,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7d95885-8463-4167-b14e-f102dbf8ae8e")
 		(property "Reference" "#PWR044"
-			(at 339.09 245.11 0)
+			(at 336.55 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18301,7 +18515,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.09 243.84 0)
+			(at 336.55 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18309,7 +18523,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 238.76 0)
+			(at 336.55 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18318,7 +18532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 238.76 0)
+			(at 336.55 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18327,7 +18541,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 339.09 238.76 0)
+			(at 336.55 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18627,8 +18841,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 325.12 233.68 270)
+		(lib_id "hackeriot_board_2025:TS110426045")
+		(at 321.31 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18637,7 +18851,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0f94aac-b47e-42dd-b989-eb08b3854ec2")
 		(property "Reference" "SW3"
-			(at 328.93 232.4099 90)
+			(at 325.12 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18646,7 +18860,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 328.93 234.9499 90)
+			(at 325.12 234.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18655,7 +18869,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 330.2 233.68 0)
+			(at 311.15 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18664,7 +18878,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 330.2 233.68 0)
+			(at 321.31 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18673,7 +18887,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 325.12 233.68 0)
+			(at 321.31 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18682,7 +18896,16 @@
 			)
 		)
 		(property "MPN" "C22375341"
-			(at 325.12 233.68 0)
+			(at 321.31 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22375341"
+			(at 308.61 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18695,6 +18918,12 @@
 		)
 		(pin "2"
 			(uuid "8dd9643f-057c-4e73-8c7a-1df1e759661d")
+		)
+		(pin "4"
+			(uuid "6e1bdb31-9b4d-4d76-8da7-ef474a5bf8a7")
+		)
+		(pin "3"
+			(uuid "18e9f71a-438c-4a1c-9a19-6712e41f51fc")
 		)
 		(instances
 			(project "hackeriot_board_2025"
@@ -20255,8 +20484,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 377.19 110.49 270)
+		(lib_id "hackeriot_board_2025:TS110426045")
+		(at 377.19 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20265,7 +20494,7 @@
 		(fields_autoplaced yes)
 		(uuid "e76d039a-e5d7-484d-9a77-19ccf92353d0")
 		(property "Reference" "SW1"
-			(at 381 109.2199 90)
+			(at 381 113.0299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20274,7 +20503,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 381 111.7599 90)
+			(at 381 115.5699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20283,7 +20512,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 382.27 110.49 0)
+			(at 367.03 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20292,7 +20521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 382.27 110.49 0)
+			(at 377.19 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20301,7 +20530,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 377.19 110.49 0)
+			(at 377.19 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20310,7 +20539,16 @@
 			)
 		)
 		(property "MPN" "C22375341"
-			(at 377.19 110.49 0)
+			(at 377.19 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22375341"
+			(at 364.49 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20323,6 +20561,12 @@
 		)
 		(pin "2"
 			(uuid "8d3fdb88-8499-4fbd-8138-4d089d6f04e4")
+		)
+		(pin "3"
+			(uuid "5735d17c-4562-4076-860d-a5b54366e30d")
+		)
+		(pin "4"
+			(uuid "5c73d1ae-3817-4b74-818a-7f20e2a9f3f3")
 		)
 		(instances
 			(project ""
@@ -20413,17 +20657,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 353.06 233.68 270)
+		(lib_id "hackeriot_board_2025:TS110426045")
+		(at 356.87 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eb9d0250-23c0-4183-a822-d930354adccd")
 		(property "Reference" "SW5"
-			(at 356.87 232.4099 90)
+			(at 360.68 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20432,7 +20675,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 356.87 234.9499 90)
+			(at 360.68 234.9499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20441,7 +20684,7 @@
 			)
 		)
 		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
-			(at 358.14 233.68 0)
+			(at 346.71 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20450,7 +20693,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 358.14 233.68 0)
+			(at 356.87 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20459,7 +20702,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 353.06 233.68 0)
+			(at 356.87 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20468,7 +20711,16 @@
 			)
 		)
 		(property "MPN" "C22375341"
-			(at 353.06 233.68 0)
+			(at 356.87 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C22375341"
+			(at 344.17 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20481,6 +20733,12 @@
 		)
 		(pin "2"
 			(uuid "cb5f0a23-1daa-4909-acf9-91a4f8714a71")
+		)
+		(pin "3"
+			(uuid "5708151d-4654-4918-b870-184f519d9300")
+		)
+		(pin "4"
+			(uuid "06c471a7-277d-4be0-8317-b2dd88ea2681")
 		)
 		(instances
 			(project "hackeriot_board_2025"
@@ -20964,7 +21222,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 311.15 238.76 0)
+		(at 300.99 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20973,7 +21231,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7c45bf9-8c93-4b96-84aa-5f4c3d2fcf6f")
 		(property "Reference" "#PWR042"
-			(at 311.15 245.11 0)
+			(at 300.99 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20982,7 +21240,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 311.15 243.84 0)
+			(at 300.99 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20990,7 +21248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 311.15 238.76 0)
+			(at 300.99 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20999,7 +21257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 311.15 238.76 0)
+			(at 300.99 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21008,7 +21266,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 311.15 238.76 0)
+			(at 300.99 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21030,7 +21288,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 325.12 238.76 0)
+		(at 318.77 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21039,7 +21297,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9a23023-e7e5-46f2-b43a-f613b1e0cfb5")
 		(property "Reference" "#PWR043"
-			(at 325.12 245.11 0)
+			(at 318.77 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21048,7 +21306,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 325.12 243.84 0)
+			(at 318.77 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21056,7 +21314,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 325.12 238.76 0)
+			(at 318.77 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21065,7 +21323,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 325.12 238.76 0)
+			(at 318.77 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21074,7 +21332,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 325.12 238.76 0)
+			(at 318.77 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
