@@ -3929,6 +3929,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VBUS"
 			(power)
 			(pin_numbers
@@ -4358,6 +4459,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ee28080-2cbf-4fd9-b1dc-b04a8061bdad")
+	)
+	(junction
+		(at 189.23 232.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f5160dd-c37d-43b2-a348-644e918f5f2f")
 	)
 	(junction
 		(at 91.44 234.95)
@@ -6209,7 +6316,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 232.41) (xy 193.04 232.41)
+			(xy 186.69 232.41) (xy 189.23 232.41)
 		)
 		(stroke
 			(width 0)
@@ -7292,6 +7399,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 232.41) (xy 195.58 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db2a212b-3aba-40ab-8980-96c8a0d6bccb")
+	)
+	(wire
+		(pts
 			(xy 78.74 179.07) (xy 78.74 184.15)
 		)
 		(stroke
@@ -7817,6 +7934,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 152.4 237.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2b5745b9-35e7-4b07-900d-dbf2145c3cf3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.7959 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8723,6 +8862,28 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 152.4 240.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ba3f392e-6aee-4710-a4bf-0593d621baef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.7354 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "COM5"
 		(shape output)
 		(at 24.13 255.27 180)
@@ -9338,28 +9499,6 @@
 				(hide yes)
 			)
 		)
-	)
-	(hierarchical_label "LED_DRIVER_SDA"
-		(shape bidirectional)
-		(at 152.4 240.03 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "14fd52cd-654c-476d-898d-ba5959a41714")
-	)
-	(hierarchical_label "LED_DRIVER_SCL"
-		(shape bidirectional)
-		(at 152.4 237.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e8691d82-c95d-4862-9ac1-bfd0d8729bed")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -10488,7 +10627,7 @@
 				)
 			)
 		)
-		(property "Footprint" "hackeriot_2025:SOP-28_L17.9-W7.5-P1.27-LS10.3-BL"
+		(property "Footprint" "hackeriot_board_2025:SOP-28_L17.9-W7.5-P1.27-LS10.3-BL"
 			(at 176.53 227.33 0)
 			(effects
 				(font
@@ -12087,7 +12226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "hackeriot_2025:SSOP-8_L2.0-W2.3-P0.50-LS3.1-BR"
+		(property "Footprint" "hackeriot_board_2025:SSOP-8_L2.0-W2.3-P0.50-LS3.1-BR"
 			(at 171.45 247.65 0)
 			(effects
 				(font
@@ -13898,7 +14037,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "hackeriot_2025:DebugEdge_2x05_Target"
+		(property "Footprint" "hackeriot_board_2025:DebugEdge_2x05_Target"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -14334,6 +14473,72 @@
 			(project "hackeriot_board_2025"
 				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
 					(reference "D41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 203.2 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d6fd6ed-478e-47aa-82e4-282f98c17d1b")
+		(property "Reference" "#PWR022"
+			(at 203.2 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 203.2 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 203.2 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4aa6a891-bf8b-4d8b-a249-7d36ca382e5c")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -14860,7 +15065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 316.23 233.68 0)
 			(effects
 				(font
@@ -16500,7 +16705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 387.35 233.68 0)
 			(effects
 				(font
@@ -16849,7 +17054,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 232.41 90)
+		(at 199.39 232.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16858,7 +17063,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0441e57-7c27-4d8c-ad20-43c3e8d55f39")
 		(property "Reference" "R5"
-			(at 196.85 226.06 90)
+			(at 199.39 226.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16866,7 +17071,7 @@
 			)
 		)
 		(property "Value" "200K"
-			(at 196.85 228.6 90)
+			(at 199.39 228.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16874,7 +17079,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 196.85 234.188 90)
+			(at 199.39 234.188 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16883,7 +17088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 232.41 0)
+			(at 199.39 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16892,7 +17097,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 196.85 232.41 0)
+			(at 199.39 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16901,7 +17106,7 @@
 			)
 		)
 		(property "MPN" "C17539"
-			(at 196.85 232.41 0)
+			(at 199.39 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17068,7 +17273,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 200.66 232.41 270)
+		(at 203.2 232.41 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17077,7 +17282,7 @@
 		(fields_autoplaced yes)
 		(uuid "a455d646-6c44-4c97-9361-be205098f6f6")
 		(property "Reference" "#PWR030"
-			(at 196.85 232.41 0)
+			(at 199.39 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17086,7 +17291,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 204.47 232.4099 90)
+			(at 207.01 232.4099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17095,7 +17300,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 232.41 0)
+			(at 203.2 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17104,7 +17309,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 232.41 0)
+			(at 203.2 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17113,7 +17318,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 200.66 232.41 0)
+			(at 203.2 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17380,7 +17585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 373.38 233.68 0)
 			(effects
 				(font
@@ -17657,7 +17862,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 344.17 233.68 0)
 			(effects
 				(font
@@ -17929,6 +18134,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 189.23 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b350b69f-3b78-43d6-add4-9eae7146bb21")
+		(property "Reference" "#FLG01"
+			(at 189.23 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 189.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 189.23 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7858f38-6b66-4dca-84db-790da5223bb6")
+		)
+		(instances
+			(project ""
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 165.1 92.71 0)
 		(unit 1)
@@ -17956,7 +18227,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
 			(at 165.1 92.71 0)
 			(effects
 				(font
@@ -18383,7 +18654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 330.2 233.68 0)
 			(effects
 				(font
@@ -18429,6 +18700,85 @@
 			(project "hackeriot_board_2025"
 				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 203.2 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c262911a-6de5-41f9-94fd-a08ccf0cf458")
+		(property "Reference" "C8"
+			(at 207.01 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 207.01 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 204.1652 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 203.2 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C49678"
+			(at 203.2 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3946f925-9756-412c-8322-e87feed3b895")
+		)
+		(pin "1"
+			(uuid "6b41bc98-62c3-4da9-9e52-9d2062fb177c")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -18759,7 +19109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
 			(at 165.1 102.87 0)
 			(effects
 				(font
@@ -18885,6 +19235,72 @@
 			(project "hackeriot_board_2025"
 				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
 					(reference "D55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8b93263-9199-405c-87d1-62e219c59de4")
+		(property "Reference" "#PWR049"
+			(at 203.2 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "385c6987-7f20-4691-9d61-9c1a51258b57")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -19866,7 +20282,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 382.27 110.49 0)
 			(effects
 				(font
@@ -20024,7 +20440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "hackeriot_board_2025:SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
 			(at 358.14 233.68 0)
 			(effects
 				(font
@@ -20706,7 +21122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
 			(at 165.1 115.57 0)
 			(effects
 				(font
