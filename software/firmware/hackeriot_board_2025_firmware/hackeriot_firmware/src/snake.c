@@ -46,7 +46,7 @@ void snake_data_init(struct snake_data_t *sd)
 
 inline bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 {
-	for (unsigned i = 1; i < sd->len; i++)
+	for (unsigned i = 0; i < sd->len; i++)
 		if (pos == sd->pos[i]) return true;
 	return false;
 }
