@@ -192,15 +192,15 @@
 		(uuid "a3a00b42-9a57-49d1-84fa-a5221f23a93c")
 	)
 	(embedded_fonts no)
-	(model "/easy.3dshapes/SW-SMD_4P-L6.0-W6.0-P4.50-LS11.0.wrl"
+	(model "${KIPRJMOD}/hackeriot_board_2025.3dshapes/SW-SMD_4P-L6.0-W6.0-P4.50-LS11.0.wrl"
 		(offset
-			(xyz 0 -0 0)
+			(xyz -3 -0 2.25)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

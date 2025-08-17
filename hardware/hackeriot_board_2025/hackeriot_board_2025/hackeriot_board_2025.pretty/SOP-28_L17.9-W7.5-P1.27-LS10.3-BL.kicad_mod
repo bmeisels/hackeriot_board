@@ -314,7 +314,7 @@
 		(uuid "0f007951-39a9-472a-a37d-17ce69d2bfb6")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/SOP-28_L17.9-W7.5-P1.27-LS10.3-BL.wrl"
+	(model "${KIPRJMOD}/hackeriot_board_2025.3dshapes/SOP-28_L17.9-W7.5-P1.27-LS10.3-BL.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)
