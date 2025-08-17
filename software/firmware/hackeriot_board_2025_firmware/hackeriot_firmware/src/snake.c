@@ -64,13 +64,13 @@ void snake_update(const struct device *led, struct snake_data_t *sd)
 		led_set_brightness(led, 0, 100);
 		for (unsigned i = 0; i < 64; i++) {
 			led_off(led, POS_TO_LED(i));
-			led_off(led, POS_TO_LED(i) | 8); // targets
+			led_off(led, POS_TO_LED(i) | 8); // TODO: monochrome fix
 		}
 		snake_data_init(sd);
 		led_on(led, POS_TO_LED(sd->pos[0]));
 
 		unsigned tpos = sd->target_pos;
-		led_on(led, POS_TO_LED(tpos) | 8); // blink not working?
+		led_on(led, POS_TO_LED(tpos) | 8); // TODO: monochrome fix
 
 		printk("New snake game\n");
 	} 
@@ -95,47 +95,47 @@ void snake_update(const struct device *led, struct snake_data_t *sd)
 	}
 	
 	// update head
-	unsigned pos = sd->pos[0];
+	unsigned head = sd->pos[0];
 	switch(sd->direction) {
 		case 0:
-			pos = (pos + 8) & 63;
+			head = (head + 8) & 63;
 			break;
 		case 1:
-			pos += ((pos & 7) == 7) ? -7 : 1;
+			head += ((head & 7) == 7) ? -7 : 1;
 			break;
 		case 2:
-			pos = (pos + 56) & 63;
+			head = (head + 56) & 63;
 			break;
 		case 3:
-			pos += (pos & 7) ? -1 : 7;
+			head += (head & 7) ? -1 : 7;
 			break;
 	}
 	// handle crash
-	if (snake_inside(sd, pos)) {
-		printk("Crash at pos=%d\n", pos);
+	if (snake_inside(sd, head)) {
+		printk("Crash at pos=%d\n", head);
 		sd->len = 0;
 		sd->pause = true;
 		led_blink(led, 0, 500, 500);
 		led_set_brightness(led, 0, 100);
 	} else {
-		sd->pos[0] = pos;
-		led_on(led, POS_TO_LED(pos));
+		sd->pos[0] = head;
+		led_on(led, POS_TO_LED(head));
 	}
 	// check if target reached
-	if (pos == sd->target_pos) {
-		printk("Target at pos=%d acquired\n", pos);
-		led_off(led, POS_TO_LED(pos)|8);
+	if (head == sd->target_pos) {
+		printk("Target at pos=%d acquired\n", head);
+		led_off(led, POS_TO_LED(head)|8);
 
 		++sd->grow;
 		++sd->points;
+
 		// randomize new target outside snake
 		uint8_t tpos;
 		do
 			tpos = sys_rand8_get() & 63;
 		while(snake_inside(sd, tpos));
 		sd->target_pos = tpos;
-		led_on(led, POS_TO_LED(tpos)|8);
-
 		printk("New target at pos=%d\n", tpos);
+		led_on(led, POS_TO_LED(tpos)|8);
 	}
 }
