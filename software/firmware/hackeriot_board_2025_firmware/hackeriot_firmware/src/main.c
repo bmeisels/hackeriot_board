@@ -18,17 +18,27 @@
 #define LED_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(holtek_ht16k33)
 #define BTN_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(gpio_keys)
 
-const uint8_t breath[] = {
-	100, 100, 100, 100, 100, 99, 99, 99, 98, 98, 97, 96, 96, 95,
-	94, 93, 92, 92, 90, 89, 88, 87, 86, 85, 83, 82, 81, 79, 78, 
-	76, 74, 73, 71, 69, 67, 66, 64, 62, 60, 58, 56, 54, 52, 50, 
-	48, 46, 43, 41, 39, 37, 34, 32, 30, 27, 25, 23, 20, 18, 16, 
-	13, 11, 8, 6, 3, 1, 3, 6, 8, 11, 13, 16, 18, 20, 23, 25, 27, 
-	30, 32, 34, 37, 39, 41, 43, 46, 48, 50, 52, 54, 56, 58, 60, 
-	62, 64, 66, 67, 69, 71, 73, 74, 76, 78, 79, 81, 82, 83, 85, 
-	86, 87, 88, 89, 90, 92, 92, 93, 94, 95, 96, 96, 97, 98, 98, 
-	99, 99, 99, 100, 100, 100, 100
-};
+void breath_thread_func()
+{
+	const struct device *const led = DEVICE_DT_GET(LED_NODE);
+	if ( ! device_is_ready(led)) {
+		printk("[bt] LED device not ready\n");
+		return;
+	}
+	// n=15; [int(.48+(1000*2/math.pi)*(math.asin((i+1)/n)-math.asin(i/n))) for i in range(n)][::-1]
+	static const uint8_t delta[] = {
+		234, 99, 77, 66, 59, 55, 52, 49, 47, 46, 44, 44, 43, 43, 42};
+	while(1) {
+		for (int i = 0; i < 15; i++) {
+			led_set_brightness(led, 0, (15-i)*100/15);
+			k_usleep(delta[i]*400);
+		}
+		for (int i = 0; i < 15; i++) {
+			led_set_brightness(led, 0, i*100/15);
+			k_usleep(delta[14-i]*400);
+		}
+	}
+}
 
 int main(void)
 {
@@ -45,16 +55,25 @@ int main(void)
 		return 0;
 	}
 
-	unsigned tick = 0;
-	while (1) {
-		++tick;
-		if ( ! (tick & 31)) snake_update(led, &snake_data);
-		if (konami_code.active && snake_data.len)
-			led_set_brightness(led, 0, breath[tick & 127]);
+	// prepare LED breath thread
+	static K_THREAD_STACK_DEFINE(breath_thread_stack, 500);
+	struct k_thread breath_thread;
+	k_tid_t breath_tid = 0;
 
+	while (1) {
+		// launch LED breath thread upon KC
+		if (konami_code.active && ! breath_tid)
+			breath_tid = k_thread_create(
+				&breath_thread, breath_thread_stack,
+				K_THREAD_STACK_SIZEOF(breath_thread_stack),
+				breath_thread_func, NULL, NULL, NULL,
+				5, 0, K_NO_WAIT);
+
+		snake_update(led, &snake_data);
+		
 		// increase speed every 5 points
 		unsigned speed = snake_data.base + (snake_data.points / 5);
-		k_sleep(K_MSEC(48 / speed));
+		k_msleep(1400 / speed);
 	}
 
 	return 0;
