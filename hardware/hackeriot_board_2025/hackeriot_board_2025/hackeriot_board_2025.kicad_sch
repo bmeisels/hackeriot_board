@@ -20180,6 +20180,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" " C146243"
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff7cf274-dd2f-4cb1-bc29-5267457bbda7")
 		)
@@ -21163,6 +21172,15 @@
 			)
 		)
 		(property "LCSC" " C146243"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" " C146243"
 			(at 165.1 102.87 0)
 			(effects
 				(font
@@ -23392,6 +23410,15 @@
 			)
 		)
 		(property "LCSC" " C50950"
+			(at 165.1 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" " C50950"
 			(at 165.1 115.57 0)
 			(effects
 				(font
