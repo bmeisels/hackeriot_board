@@ -241,6 +241,7 @@ int main(void)
 	k_tid_t breath_tid = 0;
 
 	while (1) {
+#if 0
 		// launch LED breath thread upon KC
 		if (konami_code.active && ! breath_tid)
 			breath_tid = k_thread_create(
@@ -248,6 +249,7 @@ int main(void)
 				K_THREAD_STACK_SIZEOF(breath_thread_stack),
 				breath_thread_func, NULL, NULL, NULL,
 				5, 0, K_NO_WAIT);
+#endif
 
 		snake_update(led, &snake_data);
 		
