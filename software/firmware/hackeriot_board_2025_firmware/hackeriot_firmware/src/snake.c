@@ -11,6 +11,7 @@
 #include <zephyr/sys/printk.h>
 
 #include "snake.h"
+#include "led.h"
 
 void snake_button_cb(struct input_event *evt, void *userdata)
 {
