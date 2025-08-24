@@ -5,3 +5,5 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(hackeriot_firmware)
 
 target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE src/snake.c)
+target_sources(app PRIVATE src/kc.c)
