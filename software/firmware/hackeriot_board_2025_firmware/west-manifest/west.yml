@@ -11,8 +11,7 @@ manifest:
       import:
         path-prefix: external
         name-allowlist:
-          - cmsis
-          - cmsis-dsp
+          - cmsis_6
           - picolibc
           - segger
           - hal_stm32
