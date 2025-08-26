@@ -12,6 +12,7 @@
 
 void led_swipe(const struct device *led, uint64_t cur, uint64_t new,
 	char direction, uint32_t delay);
+uint64_t led_glyph(char c);
 void boot_animation(const struct device *led);
 void breath_thread_func(void*, void*, void*);
 

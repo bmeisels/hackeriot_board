@@ -119,6 +119,22 @@ const uint64_t font_hebrew[] = {
 	0x00FC666666E6E600UL,	// Char 154 (ת)
 };
 
+uint64_t led_glyph(char c) {
+	if (c == ' ') 
+		return 0;
+	if (c >= '0' && c <= '9')
+		return font_digits[c-'0'];
+	if (c >= 'A' && c <= 'Z')
+		return font_uppercase[c-'A'];
+	if (c >= 'a' && c <= 'z')
+		return font_uppercase[c-'a'];
+	uint8_t uc = c;
+	if (uc >= 0x80 && uc <= 0x9b)
+		return font_hebrew[uc-0x80];
+
+	return 0xA5A5A5A5A5A5A5A5ULL; // unknown glyph
+}
+
 void led_swipe(const struct device *led, uint64_t cur, uint64_t new,
 	char direction, uint32_t delay)
 {
@@ -166,11 +182,11 @@ void boot_animation(const struct device *led)
 	printk("boot animation started\n");
 
 	uint64_t cur = 0;
-	const char s1[] = "HACKERIOT";
+	const char s1[] = "Hackeriot";
 
 	for (const char *c = s1; *c; ++c) {
 		uint64_t old = cur;
-		cur = font_uppercase[*c - 'A'];
+		cur = led_glyph(*c);
 		led_swipe(led, old, cur, 'L', 100);
 	}
 
@@ -180,7 +196,7 @@ void boot_animation(const struct device *led)
 	const char s2[] = {0x84, 0x80, 0x97, 0x98, 0x89, 0x85, 0x9a, 0};
 	for (const char *c = s2; *c; ++c) {
 		uint64_t old = cur;
-		cur = font_hebrew[*c - 0x80];
+		cur = led_glyph(*c);
 		led_swipe(led, old, cur, 'R', 100);
 	}
 
