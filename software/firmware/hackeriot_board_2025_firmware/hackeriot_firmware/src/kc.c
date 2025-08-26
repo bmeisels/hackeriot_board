@@ -9,6 +9,14 @@
 #include <zephyr/sys/printk.h>
 
 #include "kc.h"
+#include "led.h"
+
+struct konami_code_t konami_code;
+
+// LED breath thread globals
+static K_THREAD_STACK_DEFINE(breath_thread_stack, 500);
+static struct k_thread breath_thread;
+static k_tid_t breath_tid = 0;
 
 static void kc_button_cb(struct input_event *evt, void *userdata)
 {
@@ -34,9 +42,30 @@ static void kc_button_cb(struct input_event *evt, void *userdata)
 	if (code == konami_code[st]) {
 		++st;
 		if (st == ARRAY_SIZE(konami_code)) {
+			printk("Konami code entered\n");
 			st = 0;
 			kc->active = ! kc->active;
-			printk("Konami code entered\n");
+
+			if (kc->active) {
+				// start/resume LED breath thread
+				if ( ! breath_tid)
+					breath_tid = k_thread_create(
+						&breath_thread,                                  // new_thread
+						breath_thread_stack,                             // stack
+						K_THREAD_STACK_SIZEOF(breath_thread_stack),      // stack_size
+						&breath_thread_func,                             // entry
+						NULL,                                            // p1
+						NULL,                                            // p2
+						NULL,                                            // p3
+						5,                                               // prio
+						0,                                               // options
+						K_NO_WAIT);                                      // delay
+				else
+					k_thread_resume(breath_tid);
+			} else {
+				// suspend thread
+				k_thread_suspend(breath_tid);
+			}
 		}
 	} else if (code == konami_code[0]) {
 		if (st != 2) st = 1;	// 2 stays 2
@@ -46,7 +75,5 @@ static void kc_button_cb(struct input_event *evt, void *userdata)
 	if (st > 2)
 		printk("state=%u active=%c\n", st, "NY"[kc->active]);
 }
-
-struct konami_code_t konami_code;
 
 INPUT_CALLBACK_DEFINE(NULL, kc_button_cb, &konami_code);

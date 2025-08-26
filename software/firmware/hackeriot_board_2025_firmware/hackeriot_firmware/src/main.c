@@ -9,7 +9,6 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/sys/printk.h>
 
-#include "kc.h"
 #include "snake.h"
 #include "led.h"
 
@@ -35,26 +34,7 @@ int main(void)
 
 	boot_animation(led);
 
-	// prepare LED breath thread
-	static K_THREAD_STACK_DEFINE(breath_thread_stack, 500);
-	struct k_thread breath_thread;
-	k_tid_t breath_tid = 0;
-
 	while (1) {
-		// launch LED breath thread upon KC
-		if (konami_code.active && ! breath_tid)
-			breath_tid = k_thread_create(
-				&breath_thread,                                  // new_thread
-				breath_thread_stack,                             // stack
-				K_THREAD_STACK_SIZEOF(breath_thread_stack),      // stack_size
-				&breath_thread_func,                             // entry
-				NULL,                                            // p1
-				NULL,                                            // p2
-				NULL,                                            // p3
-				5,                                               // prio
-				0,                                               // options
-				K_NO_WAIT);                                      // delay
-
 		snake_update(led, &snake_data);
 		
 		// increase speed every 5 points
