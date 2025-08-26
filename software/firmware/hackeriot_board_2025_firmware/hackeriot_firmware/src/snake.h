@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2025 Benny Meisels <benny.meisels@gmail.com>
+ *                    Rani Hod <rani.hod@gmail.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#ifndef __SNAKE_H__
+#define __SNAKE_H__
+
+
 #define MAX_SNAKE_LEN 50
 #define INITIAL_SNAKE_LEN 3
 #define INITIAL_SNAKE_SPEED 2
@@ -13,6 +24,6 @@ struct snake_data_t {
 	uint8_t pos[MAX_SNAKE_LEN]; // head first
 };
 
-extern struct snake_data_t snake_data;
+void play_snake(const struct device *led);
 
-void snake_update(const struct device *led, struct snake_data_t *sd);
+#endif // __SNAKE_H__

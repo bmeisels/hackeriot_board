@@ -54,7 +54,7 @@ inline bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 // for Benny's dual-colored HT16K33
 #define POS_TO_LED(x) ((x&7) | ((x&~7) << 1))
 
-void snake_update(const struct device *led, struct snake_data_t *sd)
+static void snake_update(const struct device *led, struct snake_data_t *sd)
 {
 	if (sd->pause) return;	// no updates while paused
 
@@ -137,5 +137,16 @@ void snake_update(const struct device *led, struct snake_data_t *sd)
 		sd->target_pos = tpos;
 		printk("New target at pos=%d\n", tpos);
 		led_on(led, POS_TO_LED(tpos)|8);
+	}
+}
+
+void play_snake(const struct device *led)
+{
+	while (1) {
+		snake_update(led, &snake_data);
+		
+		// increase speed every 5 points
+		unsigned speed = snake_data.base + (snake_data.points / 5);
+		k_msleep(1400 / speed);
 	}
 }

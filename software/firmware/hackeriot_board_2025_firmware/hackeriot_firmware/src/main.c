@@ -34,13 +34,7 @@ int main(void)
 
 	boot_animation(led);
 
-	while (1) {
-		snake_update(led, &snake_data);
-		
-		// increase speed every 5 points
-		unsigned speed = snake_data.base + (snake_data.points / 5);
-		k_msleep(1400 / speed);
-	}
+	play_snake(led);
 
 	return 0;
 }
