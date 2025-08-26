@@ -9,13 +9,32 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/sys/printk.h>
 
-#include "snake.h"
 #include "led.h"
+#include "maze.h"
+#include "simon.h"
+#include "snake.h"
 
 #define LED_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(holtek_ht16k33)
 #define BTN_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(gpio_keys)
 
+#define GAME_SNAKE	0
+#define GAME_SIMON	1
+#define GAME_MAZE	2
 
+uint8_t do_menu(const struct device *led)
+{
+	static const char * const menu_options[] = {
+		"Snake ",	// keep terminal space
+		"Simon ",	// keep terminal space
+		"Maze ",	// keep terminal space
+	};
+
+	uint8_t menu_pos = 0;
+
+	// TODO: implement menu navigation
+
+	return menu_pos;
+}
 
 int main(void)
 {
@@ -34,7 +53,21 @@ int main(void)
 
 	boot_animation(led);
 
-	play_snake(led);
+	uint8_t choice = do_menu(led);
+
+	switch(choice) {
+		case GAME_SNAKE:
+			play_snake(led);
+			break;	// not reachable
+
+		case GAME_SIMON:
+			play_simon(led);
+			break;	// not reachable
+
+		case GAME_MAZE:
+			play_maze(led);
+			break;	// not reachable
+	}
 
 	return 0;
 }
