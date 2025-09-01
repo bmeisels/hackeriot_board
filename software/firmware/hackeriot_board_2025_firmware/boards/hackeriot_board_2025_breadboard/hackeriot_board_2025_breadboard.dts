@@ -6,13 +6,13 @@
  */
 
 /dts-v1/;
-#include <st/g0/stm32g030X8.dtsi>
+#include <st/g0/stm32g030X6.dtsi>
 #include <st/g0/stm32g030f6px-pinctrl.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-	model = "Hackeriot Board 2025";
-	compatible = "st,hackeriot_board_2025";
+	model = "Hackeriot Board 2025 Breadboard";
+	compatible = "st,hackeriot_board_2025_breadboard";
 
 	chosen {
 		zephyr,console = &usart2;

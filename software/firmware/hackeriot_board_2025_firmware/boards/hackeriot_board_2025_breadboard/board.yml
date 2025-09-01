@@ -1,0 +1,6 @@
+board:
+  name: hackeriot_board_2025_breadboard
+  full_name: Hackeriot Board 2025 Breadboard
+  vendor: st
+  socs:
+    - name: stm32g030xx
