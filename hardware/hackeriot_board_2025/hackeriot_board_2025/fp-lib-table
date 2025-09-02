@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "hackeriot_board_2025")(type "KiCad")(uri "${KIPRJMOD}/hackeriot_board_2025.pretty")(options "")(descr ""))
+)

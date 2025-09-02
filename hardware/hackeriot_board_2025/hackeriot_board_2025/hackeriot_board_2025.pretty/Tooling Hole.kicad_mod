@@ -1,0 +1,80 @@
+(footprint "Tooling Hole"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "03b92893-0950-4289-9d86-8b103df9651e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Tooling Hole"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6989f19e-b3ca-43cb-949d-af7f0cbfc122")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "59551a3d-5a6b-486f-9c39-268265bbab9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "059480f8-9795-4492-b81e-a7455e34b620")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "32b77a2a-ea00-4b07-b01b-881cb43d7ef7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 1.152 1.152)
+		(drill 1.152)
+		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin 0.148)
+		(solder_paste_margin 1.152)
+		(clearance 0.5)
+		(uuid "db33a7de-b55e-44f0-9fcd-02c5d1c9daab")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,10888 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "fd51cc61-08f5-4178-863a-cde39b760f94")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EasyEDA:HT16K33A-28SOP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U2"
+				(at 0 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HT16K33A-28SOP"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:SOP-28_L17.9-W7.5-P1.27-LS10.3-BL"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C5444737"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "HT16K33A-28SOP_0_1"
+				(rectangle
+					(start -20.32 20.83)
+					(end 20.32 -18.29)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -19.05 19.56)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -19.05 19.56)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin output line
+					(at -22.86 12.7 0)
+					(length 2.54)
+					(name "COM1/KS0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 10.16 0)
+					(length 2.54)
+					(name "COM2/KS1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 7.62 0)
+					(length 2.54)
+					(name "COM3/KS2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 5.08 0)
+					(length 2.54)
+					(name "COM4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 2.54 0)
+					(length 2.54)
+					(name "COM5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 0 0)
+					(length 2.54)
+					(name "COM6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -2.54 0)
+					(length 2.54)
+					(name "COM7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -5.08 0)
+					(length 2.54)
+					(name "ROW15/K13/INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -7.62 0)
+					(length 2.54)
+					(name "ROW14/K12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -10.16 0)
+					(length 2.54)
+					(name "ROW13/K11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -12.7 0)
+					(length 2.54)
+					(name "ROW12/K10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 -15.24 0)
+					(length 2.54)
+					(name "ROW11/K9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 15.24 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 22.86 12.7 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 10.16 180)
+					(length 2.54)
+					(name "ROW0/A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 7.62 180)
+					(length 2.54)
+					(name "ROW1/A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 5.08 180)
+					(length 2.54)
+					(name "ROW2/A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 2.54 180)
+					(length 2.54)
+					(name "ROW3/K1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 0 180)
+					(length 2.54)
+					(name "ROW4/K2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -2.54 180)
+					(length 2.54)
+					(name "ROW5/K3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -5.08 180)
+					(length 2.54)
+					(name "ROW6/K4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -7.62 180)
+					(length 2.54)
+					(name "ROW7/K5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -10.16 180)
+					(length 2.54)
+					(name "ROW8/K6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -12.7 180)
+					(length 2.54)
+					(name "ROW9/K7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 -15.24 180)
+					(length 2.54)
+					(name "ROW10/K8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "HT16K33A-28SOP_1_1"
+				(pin power_in line
+					(at -22.86 17.78 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -22.86 15.24 0)
+					(length 2.54)
+					(name "COM0/AD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 22.86 17.78 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "hackeriot_2025:PCA9306DCUR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U4"
+				(at 0 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PCA9306DCUR"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "hackeriot_2025:SSOP-8_L2.0-W2.3-P0.50-LS3.1-BR"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Interface-ICs_TI_PCA9306DCUR_PCA9306DCUR_C33196.html"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "C33196"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PCA9306DCUR_0_1"
+				(rectangle
+					(start -12.7 6.86)
+					(end 12.7 -6.86)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -11.43 5.59)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -11.43 5.59)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at -15.24 3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 1.27 0)
+					(length 2.54)
+					(name "VREF1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -1.27 0)
+					(length 2.54)
+					(name "SCL1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -3.81 0)
+					(length 2.54)
+					(name "SDA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 3.81 180)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -1.27 180)
+					(length 2.54)
+					(name "SCL2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -3.81 180)
+					(length 2.54)
+					(name "SDA2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PCA9306DCUR_1_1"
+				(pin power_in line
+					(at 15.24 1.27 180)
+					(length 2.54)
+					(name "VREF2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VCC"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 96.52 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "003547e6-abca-4dba-a57e-e6ac227fb079")
+	)
+	(junction
+		(at 121.92 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04376b3c-778b-433b-97f1-609a599610eb")
+	)
+	(junction
+		(at 33.02 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "076ffc92-4782-427f-aed5-5562b32dc9ab")
+	)
+	(junction
+		(at 224.79 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0880b03d-d036-40ec-a3d8-cbddb993b20a")
+	)
+	(junction
+		(at 67.31 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f86a969-97db-4b05-920c-63bfb67bc2b8")
+	)
+	(junction
+		(at 96.52 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "111ac759-abfe-4015-9745-62df38ac4243")
+	)
+	(junction
+		(at 105.41 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11286a5d-1e0b-43bb-bd7a-befbb5305a5d")
+	)
+	(junction
+		(at 58.42 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "150882f8-c21b-4e65-a453-279b69330d0e")
+	)
+	(junction
+		(at 121.92 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15650f75-0abb-4a20-adef-bbb9ab4e63f6")
+	)
+	(junction
+		(at 109.22 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "190550c1-c9fb-4f02-9fa4-a286beb245b9")
+	)
+	(junction
+		(at 118.11 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a0d3c72-eeda-4fbd-a687-b1b06c57e8d4")
+	)
+	(junction
+		(at 45.72 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1abaf71b-0bbb-4f8f-9dc4-a37f33b8aa8f")
+	)
+	(junction
+		(at 33.02 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ed022cb-a991-459d-9602-8582971a0de2")
+	)
+	(junction
+		(at 71.12 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f9b97ea-06c3-452d-8f08-cfce99d5cf25")
+	)
+	(junction
+		(at 80.01 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "239c0841-48bb-402e-acbb-b8658fca54ba")
+	)
+	(junction
+		(at 96.52 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27671844-8b0b-4488-8307-c6a247756f35")
+	)
+	(junction
+		(at 105.41 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28805cdd-8e33-400a-94a4-cccf3659e268")
+	)
+	(junction
+		(at 109.22 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2aadc1e5-aa3d-4f65-9e31-b6cb255cc3b8")
+	)
+	(junction
+		(at 41.91 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ade5f67-8827-433d-8f16-1729ca9cf631")
+	)
+	(junction
+		(at 41.91 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c5481a1-6258-4d87-a95a-52f6469ce99e")
+	)
+	(junction
+		(at 83.82 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cbb12ba-99f8-4a2a-8fcf-25216fd73597")
+	)
+	(junction
+		(at 71.12 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e5abe85-8bd2-4ae7-bb5e-558d8b04eb58")
+	)
+	(junction
+		(at 92.71 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "331a46b2-e33e-46fb-8a6e-f193661be4f2")
+	)
+	(junction
+		(at 96.52 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "336c7059-4792-45ec-b505-99b585b9bae3")
+	)
+	(junction
+		(at 118.11 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f3412e5-3aff-4670-a943-dc146e36e139")
+	)
+	(junction
+		(at 121.92 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f49028e-3558-4ac6-8421-783a557894c8")
+	)
+	(junction
+		(at 33.02 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41a24525-837d-4c23-abb3-cb5e4dcfb0fd")
+	)
+	(junction
+		(at 80.01 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4298a032-3b91-4b3b-bb6a-972ef1eaf871")
+	)
+	(junction
+		(at 121.92 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "429a96fa-17d6-4f2f-907d-74a7d8d6a4a5")
+	)
+	(junction
+		(at 71.12 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "445ef4f8-55b1-4f17-a722-7fdc09a3fb68")
+	)
+	(junction
+		(at 121.92 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44e4c1dd-74fd-4dad-8db1-8e106b44f751")
+	)
+	(junction
+		(at 105.41 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4604df73-77f4-4e0d-aa8f-517338b1e71a")
+	)
+	(junction
+		(at 105.41 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "461945dc-0489-417a-a0b4-f416853c6d4b")
+	)
+	(junction
+		(at 41.91 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e0bd6af-a98f-4495-8909-f71ae40b01a9")
+	)
+	(junction
+		(at 54.61 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f9b467a-38b6-4baa-bfb4-a927220ed132")
+	)
+	(junction
+		(at 83.82 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50a765c8-c942-4f45-a684-005e14b44c00")
+	)
+	(junction
+		(at 92.71 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52a43634-a394-4b18-bcc0-656b42365e3d")
+	)
+	(junction
+		(at 71.12 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55bcaeec-3fc5-4f53-9910-53e17c56f2c3")
+	)
+	(junction
+		(at 54.61 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56eff3c0-0d53-4929-80cb-f8825d109c18")
+	)
+	(junction
+		(at 80.01 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "578d85cd-458e-4990-a788-1ad887c70b12")
+	)
+	(junction
+		(at 118.11 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59bcf9c1-3798-4809-a8cf-b456e61fe4f0")
+	)
+	(junction
+		(at 45.72 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c7f1ec5-9a77-40d9-aa88-efc239bed514")
+	)
+	(junction
+		(at 67.31 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cba3c34-d20c-4c01-842a-6c6ece7aa815")
+	)
+	(junction
+		(at 109.22 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fb4dac5-6e91-4cea-9061-e4cd5c151903")
+	)
+	(junction
+		(at 58.42 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "615af5be-e3d6-4968-87d9-58a442b98bf9")
+	)
+	(junction
+		(at 92.71 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66ff8ffa-5faa-44ff-8c46-1eea3d02b162")
+	)
+	(junction
+		(at 67.31 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "676d9361-1de5-4de2-a232-334247c0e21b")
+	)
+	(junction
+		(at 41.91 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "677f9fd7-42be-4520-892f-84c858000306")
+	)
+	(junction
+		(at 80.01 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "684575df-c814-4453-b8e1-43eaf319b4d9")
+	)
+	(junction
+		(at 105.41 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6857715f-a694-4be3-bf07-7c7e0f9204d6")
+	)
+	(junction
+		(at 58.42 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69c5b834-8224-41d8-90b9-20f56a20affa")
+	)
+	(junction
+		(at 105.41 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bd745ff-45a9-4f33-9191-12d25e2c598f")
+	)
+	(junction
+		(at 83.82 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c2f5b32-b9b4-4f68-aa9c-3e105e173ba9")
+	)
+	(junction
+		(at 96.52 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ff561ab-78c1-417a-9398-a9814dcb2ab5")
+	)
+	(junction
+		(at 54.61 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70019d6e-33ab-4252-8433-bbdc356d5aab")
+	)
+	(junction
+		(at 41.91 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7363f703-0bf3-4d38-bd2c-47b0048a0e3e")
+	)
+	(junction
+		(at 83.82 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "741865f5-9eb4-4a3d-8fbc-1375882008bd")
+	)
+	(junction
+		(at 118.11 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75a4e0a7-b7d2-4117-87a5-0554f8739391")
+	)
+	(junction
+		(at 58.42 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76317985-99be-422f-a7db-bdde427d24d0")
+	)
+	(junction
+		(at 83.82 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "763c443d-9173-4bcb-b63b-675106096144")
+	)
+	(junction
+		(at 96.52 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79dc2e1a-5083-4f46-86e4-a40df0f6de31")
+	)
+	(junction
+		(at 105.41 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80d0f22e-de2a-4188-877c-8c0193f1e7e7")
+	)
+	(junction
+		(at 190.5 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80ddd867-8132-45bc-890e-d0e88e81b86f")
+	)
+	(junction
+		(at 92.71 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86997070-99b7-40bb-a4e6-da0f7676cf90")
+	)
+	(junction
+		(at 92.71 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86bb6ee8-becf-4b94-96fe-e34c980f999f")
+	)
+	(junction
+		(at 118.11 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "874e4a06-a846-4d90-87bb-6f0fd8b4e61e")
+	)
+	(junction
+		(at 83.82 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87d3d910-014d-4d6f-bf8b-fd29d2c68fa5")
+	)
+	(junction
+		(at 71.12 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8976f4ca-3014-493f-9923-c4f894cb31c3")
+	)
+	(junction
+		(at 71.12 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8aa7106e-7621-4c44-ad64-6c457546ca6b")
+	)
+	(junction
+		(at 41.91 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9284b055-149e-48ed-9859-14a31f0947fb")
+	)
+	(junction
+		(at 54.61 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "933af4e1-b1ef-40f1-a6af-920804fd0607")
+	)
+	(junction
+		(at 45.72 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "933e2795-7067-42d6-9895-23a51761f5c6")
+	)
+	(junction
+		(at 109.22 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99495ceb-63e4-405a-8570-354a9f8eb8fa")
+	)
+	(junction
+		(at 96.52 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a565a28-bdc5-4ddc-8317-a834845e6853")
+	)
+	(junction
+		(at 58.42 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a82b94c1-f720-40e6-a403-53186ee2fd7a")
+	)
+	(junction
+		(at 54.61 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab8c1084-9d39-4bfc-a808-4666785dced8")
+	)
+	(junction
+		(at 118.11 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abc6ceb9-e255-421e-9198-b80a204f7f07")
+	)
+	(junction
+		(at 83.82 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae9fe49a-c59f-42de-b99c-2ebf4f427dd0")
+	)
+	(junction
+		(at 121.92 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2fa71af-75c1-40fe-b393-029df6548c4c")
+	)
+	(junction
+		(at 121.92 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b914f05e-8e83-47f5-971f-26d840f3e3f9")
+	)
+	(junction
+		(at 67.31 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3485af1-f670-40af-ae25-6822db4d550e")
+	)
+	(junction
+		(at 33.02 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c51df213-1b0f-4c23-bc69-bf4d3d7fdde2")
+	)
+	(junction
+		(at 92.71 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7f8e401-4327-477f-ad3b-43afc83dbd62")
+	)
+	(junction
+		(at 118.11 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8d242f8-a65e-41c0-aebd-670bf223e73e")
+	)
+	(junction
+		(at 33.02 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cce596e9-d3f9-44ae-88ea-0f58ec6a46e0")
+	)
+	(junction
+		(at 45.72 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0bc7444-9a67-468c-b7d9-70ebf37ebf32")
+	)
+	(junction
+		(at 45.72 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1163b85-0220-4c82-9b53-84f748b3aa48")
+	)
+	(junction
+		(at 80.01 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d28f5757-7ab6-4bad-86ae-df4539197d69")
+	)
+	(junction
+		(at 67.31 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d30de82e-85ce-4af0-add2-ede17078f6c1")
+	)
+	(junction
+		(at 109.22 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d376a67b-2f91-48f9-9716-a82430664228")
+	)
+	(junction
+		(at 92.71 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d422b02d-f0f4-4d2c-b2fe-99fa824ba0d0")
+	)
+	(junction
+		(at 33.02 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4f3b874-573d-4b9a-87f8-f302ee645daf")
+	)
+	(junction
+		(at 118.11 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5d8f58c-694e-4235-8526-47c2747d1f71")
+	)
+	(junction
+		(at 67.31 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6328471-d153-410c-9828-dc1fd40e171b")
+	)
+	(junction
+		(at 67.31 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7c4b0e2-be64-4d2f-85b2-b12a59a14c95")
+	)
+	(junction
+		(at 109.22 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da72c46f-05c1-4e6d-ba9d-9c0a6d31b541")
+	)
+	(junction
+		(at 109.22 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbf6371f-14c9-43f1-8a3a-339cbe5625ed")
+	)
+	(junction
+		(at 45.72 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dca560ab-721e-4e07-ba58-f9f7c1c0a65c")
+	)
+	(junction
+		(at 33.02 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de5efd58-502b-4829-bd6d-8c9f7f900e39")
+	)
+	(junction
+		(at 71.12 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0332f49-0b4d-4d39-ad2b-9f762656c965")
+	)
+	(junction
+		(at 105.41 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e20de29f-ff9d-45c8-a872-7b329210afba")
+	)
+	(junction
+		(at 54.61 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e21dbfe3-c756-4122-9f43-a95e013093c6")
+	)
+	(junction
+		(at 58.42 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5b20392-4a1e-4f4b-a2ef-398df8ab6d18")
+	)
+	(junction
+		(at 80.01 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e794b6a4-efff-49d4-b7ac-3b8467936932")
+	)
+	(junction
+		(at 41.91 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e856f5e6-3227-4873-b62c-ccec50bbaf1e")
+	)
+	(junction
+		(at 67.31 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea5083df-93f6-4daa-b9f5-969f48c80013")
+	)
+	(junction
+		(at 45.72 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eabb0487-ba76-4b3d-9e37-6bedf2e5ed04")
+	)
+	(junction
+		(at 41.91 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebf3afed-a5e6-441d-ad8d-ed75f10499ef")
+	)
+	(junction
+		(at 92.71 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed288408-6791-46e1-80b4-a15d2c974685")
+	)
+	(junction
+		(at 58.42 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed319a15-babd-4508-b68b-a2e4423849ba")
+	)
+	(junction
+		(at 80.01 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edfebcde-f2e1-4f36-9f54-f9dd7b3fbec9")
+	)
+	(junction
+		(at 54.61 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eec38bf9-bfd2-4e22-9c30-c458dd68b126")
+	)
+	(junction
+		(at 54.61 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb35b81a-6e73-4e9b-968d-5f97c429a8d1")
+	)
+	(junction
+		(at 80.01 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe66b179-363b-441a-8548-4f085622d7c0")
+	)
+	(no_connect
+		(at 234.95 73.66)
+		(uuid "2c61df04-b248-445c-ab4b-e433b3ab79db")
+	)
+	(no_connect
+		(at 189.23 78.74)
+		(uuid "41954acc-70c6-4bd0-94a4-8adfa6fe19b4")
+	)
+	(no_connect
+		(at 234.95 78.74)
+		(uuid "5f03ca38-62b5-473c-a644-aea7976ecba6")
+	)
+	(no_connect
+		(at 189.23 71.12)
+		(uuid "830762ab-872f-46bb-a7cb-d443f716e2a4")
+	)
+	(no_connect
+		(at 189.23 68.58)
+		(uuid "b47d016d-e482-4396-97c4-362a51a7e6f5")
+	)
+	(no_connect
+		(at 189.23 76.2)
+		(uuid "b9a0271f-cf8b-4504-bdb6-ae4d2884f574")
+	)
+	(no_connect
+		(at 189.23 73.66)
+		(uuid "f259657a-643d-4f89-bfe7-c39639395e4d")
+	)
+	(no_connect
+		(at 234.95 76.2)
+		(uuid "f4ae9516-45ef-495b-8682-61efd45d712b")
+	)
+	(wire
+		(pts
+			(xy 121.92 72.39) (xy 121.92 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04463fee-6dd5-4752-87c2-9f81266ec801")
+	)
+	(wire
+		(pts
+			(xy 71.12 110.49) (xy 80.01 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044c5c9d-1fb7-4041-b6c5-303b5fda37cb")
+	)
+	(wire
+		(pts
+			(xy 83.82 59.69) (xy 83.82 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050fb9b1-774d-4aa6-96c1-2ffeaed5c752")
+	)
+	(wire
+		(pts
+			(xy 121.92 34.29) (xy 130.81 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0551e26f-c238-4eae-94ef-ccf36433bacf")
+	)
+	(wire
+		(pts
+			(xy 29.21 41.91) (xy 41.91 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0565ade3-ee57-46f7-9a0a-784101a9ecc7")
+	)
+	(wire
+		(pts
+			(xy 71.12 123.19) (xy 80.01 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0741b30e-538f-4b3c-9c13-c15cf2a65cfd")
+	)
+	(wire
+		(pts
+			(xy 109.22 29.21) (xy 109.22 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08501767-ad7b-43f9-bafb-a10efbe34d38")
+	)
+	(wire
+		(pts
+			(xy 29.21 54.61) (xy 41.91 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0940a4e6-58a5-4d52-ba1d-fba8b0593a20")
+	)
+	(wire
+		(pts
+			(xy 83.82 97.79) (xy 83.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b984e1e-f2ce-461a-a86d-a79f24a37209")
+	)
+	(wire
+		(pts
+			(xy 80.01 80.01) (xy 92.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bb3dccd-7bbd-47ec-873a-dcdeeadb6f65")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.39) (xy 33.02 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0c66fe-1c0d-4088-bc84-530c1013f9e6")
+	)
+	(wire
+		(pts
+			(xy 58.42 29.21) (xy 58.42 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c28348e-399b-484e-b4f5-a903bd6c272f")
+	)
+	(wire
+		(pts
+			(xy 33.02 59.69) (xy 33.02 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6cd845-cca7-40cd-b73f-5f46fc135968")
+	)
+	(wire
+		(pts
+			(xy 83.82 34.29) (xy 83.82 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10dd4995-d821-46be-b314-f16033ea5021")
+	)
+	(wire
+		(pts
+			(xy 96.52 97.79) (xy 105.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "121af61b-cd7a-45a5-b1aa-39a1da0f5f03")
+	)
+	(wire
+		(pts
+			(xy 109.22 85.09) (xy 109.22 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1292bbf0-a545-477f-8a80-504c163b31ee")
+	)
+	(wire
+		(pts
+			(xy 185.42 116.84) (xy 190.5 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15163c4e-6ee3-41f4-b6a1-7d53cf48bb4e")
+	)
+	(wire
+		(pts
+			(xy 83.82 85.09) (xy 83.82 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "182f46c7-f8fd-4b8e-b94c-a285bc2a6d47")
+	)
+	(wire
+		(pts
+			(xy 96.52 72.39) (xy 96.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab1ccc2-3818-4abf-adc3-313b0ee9f009")
+	)
+	(wire
+		(pts
+			(xy 54.61 92.71) (xy 67.31 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1abc19a0-11a0-45b9-bff3-fa553224752a")
+	)
+	(wire
+		(pts
+			(xy 71.12 46.99) (xy 80.01 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ace9b1d-a64f-4028-bfc8-1a33d977491f")
+	)
+	(wire
+		(pts
+			(xy 45.72 34.29) (xy 45.72 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cca90c1-31b2-4556-ba0b-8b992975648e")
+	)
+	(wire
+		(pts
+			(xy 45.72 85.09) (xy 54.61 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ddb7e9b-329d-48c7-bb3c-c94c270ebe19")
+	)
+	(wire
+		(pts
+			(xy 71.12 29.21) (xy 71.12 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1feca25c-bc6a-446c-b719-c67eb65544d8")
+	)
+	(wire
+		(pts
+			(xy 121.92 59.69) (xy 121.92 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23a81460-2b12-4a31-8400-35f01e2f60cc")
+	)
+	(wire
+		(pts
+			(xy 33.02 97.79) (xy 33.02 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "248622ac-28cc-46ae-9c86-e769ee32becc")
+	)
+	(wire
+		(pts
+			(xy 80.01 130.81) (xy 92.71 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25461a26-ad8c-47cf-a704-aab1ed8b6022")
+	)
+	(wire
+		(pts
+			(xy 58.42 110.49) (xy 67.31 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2569fe26-0216-43d9-83be-8c3c412c3128")
+	)
+	(wire
+		(pts
+			(xy 71.12 110.49) (xy 71.12 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26b45a8d-389b-4470-adae-3c53a57c06c2")
+	)
+	(wire
+		(pts
+			(xy 109.22 46.99) (xy 109.22 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26df2c1f-f33e-4744-b076-42b7e4946935")
+	)
+	(wire
+		(pts
+			(xy 83.82 110.49) (xy 92.71 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271461cc-e29d-42ea-8a2f-12e08770073a")
+	)
+	(wire
+		(pts
+			(xy 54.61 130.81) (xy 67.31 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271cc7df-fab9-4f63-a38f-796473219142")
+	)
+	(wire
+		(pts
+			(xy 96.52 110.49) (xy 96.52 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a56ef69-33f7-48c7-b514-5dcbb6850354")
+	)
+	(wire
+		(pts
+			(xy 58.42 72.39) (xy 67.31 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a6bb53c-74f9-4813-85b8-69ab5d8df48f")
+	)
+	(wire
+		(pts
+			(xy 118.11 118.11) (xy 130.81 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd1a543-e826-4c46-bfb9-263c5776e98b")
+	)
+	(wire
+		(pts
+			(xy 96.52 110.49) (xy 105.41 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3149d929-29b4-4be6-b0d8-ead24060f430")
+	)
+	(wire
+		(pts
+			(xy 96.52 97.79) (xy 96.52 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32d967b5-5905-455b-a026-15a2731d63c1")
+	)
+	(wire
+		(pts
+			(xy 67.31 118.11) (xy 80.01 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33151443-e095-4e3f-9f8a-facd0e281306")
+	)
+	(wire
+		(pts
+			(xy 109.22 72.39) (xy 118.11 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33398cf1-5054-43ec-835a-6a3e36881989")
+	)
+	(wire
+		(pts
+			(xy 105.41 130.81) (xy 118.11 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "366fbe50-7981-4147-b018-5870dc890992")
+	)
+	(wire
+		(pts
+			(xy 33.02 34.29) (xy 33.02 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b2ccb3-7bfc-4352-b1a9-713db4c29d48")
+	)
+	(wire
+		(pts
+			(xy 105.41 41.91) (xy 118.11 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36c406f3-b648-49ea-8e4a-4fcce1e646ce")
+	)
+	(wire
+		(pts
+			(xy 58.42 46.99) (xy 58.42 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3881ac3e-b6f4-4a79-bd89-53f90af8bb1b")
+	)
+	(wire
+		(pts
+			(xy 109.22 46.99) (xy 118.11 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3987b2c3-0c59-4a02-bcf5-e8878980d98f")
+	)
+	(wire
+		(pts
+			(xy 45.72 46.99) (xy 45.72 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aaa978f-f1f1-4958-9dc7-c440f1ee9568")
+	)
+	(wire
+		(pts
+			(xy 83.82 46.99) (xy 92.71 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c36a1c4-57ef-4029-9f50-40d70e29cb43")
+	)
+	(wire
+		(pts
+			(xy 58.42 34.29) (xy 58.42 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d57e519-cfc7-4337-949f-34c19363d0e2")
+	)
+	(wire
+		(pts
+			(xy 33.02 34.29) (xy 41.91 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "402a5b74-807c-4552-a61a-dd1f1f8cb43a")
+	)
+	(wire
+		(pts
+			(xy 67.31 105.41) (xy 80.01 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40f804af-1093-4c9b-a52e-af67cff850d5")
+	)
+	(wire
+		(pts
+			(xy 121.92 72.39) (xy 130.81 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4217b323-e830-44cf-a1a5-073c2ae2bd96")
+	)
+	(wire
+		(pts
+			(xy 58.42 46.99) (xy 67.31 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4281b1a4-c7a6-4b37-9b0a-c51c1090ce9d")
+	)
+	(wire
+		(pts
+			(xy 105.41 105.41) (xy 118.11 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a99fe0d-12c0-4a01-8af9-67bc075a0e22")
+	)
+	(wire
+		(pts
+			(xy 33.02 46.99) (xy 41.91 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bd3e44b-02af-4cfd-a552-84b9fb047785")
+	)
+	(wire
+		(pts
+			(xy 96.52 46.99) (xy 96.52 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4be821d3-996a-4782-8f7f-4afa6ab8383a")
+	)
+	(wire
+		(pts
+			(xy 121.92 29.21) (xy 121.92 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c595796-2015-435d-a810-751076d8dd29")
+	)
+	(wire
+		(pts
+			(xy 67.31 80.01) (xy 80.01 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5107f2fd-745f-4163-ac9d-f23d0cda3108")
+	)
+	(wire
+		(pts
+			(xy 71.12 46.99) (xy 71.12 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5320df60-26b1-4cb8-89f8-086b02b314dc")
+	)
+	(wire
+		(pts
+			(xy 109.22 97.79) (xy 118.11 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5408092f-251f-4673-8ef7-7e33f4305dfb")
+	)
+	(wire
+		(pts
+			(xy 109.22 34.29) (xy 118.11 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54906222-ea59-4900-9f11-e314122920bd")
+	)
+	(wire
+		(pts
+			(xy 33.02 85.09) (xy 33.02 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56321abc-ee5d-41d8-83ec-e241a5ab11cc")
+	)
+	(wire
+		(pts
+			(xy 45.72 85.09) (xy 45.72 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a8d8556-cb71-44fb-b230-84eefd9b9998")
+	)
+	(wire
+		(pts
+			(xy 71.12 34.29) (xy 80.01 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5add2315-169b-43fe-9c37-e2cd60e0a783")
+	)
+	(wire
+		(pts
+			(xy 105.41 80.01) (xy 118.11 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bd5b576-7d2b-4ec6-8a73-b9c57e31defc")
+	)
+	(wire
+		(pts
+			(xy 33.02 59.69) (xy 41.91 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd3d55d-2092-471b-babf-a66fe45fc329")
+	)
+	(wire
+		(pts
+			(xy 83.82 72.39) (xy 83.82 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d75a397-903d-401b-aa69-9962136decbf")
+	)
+	(wire
+		(pts
+			(xy 109.22 59.69) (xy 109.22 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fb45132-d60c-4efc-b333-fb2c70371ec1")
+	)
+	(wire
+		(pts
+			(xy 92.71 67.31) (xy 105.41 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fddf5b8-e594-4689-b028-bc7438f92943")
+	)
+	(wire
+		(pts
+			(xy 33.02 29.21) (xy 33.02 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a94e12-a8ba-47d7-84b5-7a1891a5849f")
+	)
+	(wire
+		(pts
+			(xy 58.42 97.79) (xy 58.42 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61db9313-2270-4e0f-891c-8c9b7fa9f139")
+	)
+	(wire
+		(pts
+			(xy 29.21 105.41) (xy 41.91 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64ef5c39-41ee-4194-afe5-d232dd139a6e")
+	)
+	(wire
+		(pts
+			(xy 96.52 46.99) (xy 105.41 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65a9c09b-fa2b-4dae-a41b-e1c7df92509d")
+	)
+	(wire
+		(pts
+			(xy 33.02 46.99) (xy 33.02 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65eb28cb-1f0e-44d7-b377-51560201c294")
+	)
+	(wire
+		(pts
+			(xy 71.12 34.29) (xy 71.12 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "666b8b19-6953-4dab-8dd8-0df628fef634")
+	)
+	(wire
+		(pts
+			(xy 54.61 41.91) (xy 67.31 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6964f76d-0c38-4242-8056-f6bfccd4328d")
+	)
+	(wire
+		(pts
+			(xy 96.52 59.69) (xy 96.52 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69debd43-ac2a-423d-a826-de621fa6fa7f")
+	)
+	(wire
+		(pts
+			(xy 187.96 99.06) (xy 191.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a2886d5-a206-49a2-b739-47da87bb0a70")
+	)
+	(wire
+		(pts
+			(xy 71.12 97.79) (xy 80.01 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae5ea52-906a-4bc1-96da-6af0931d4faa")
+	)
+	(wire
+		(pts
+			(xy 222.25 86.36) (xy 224.79 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b34badc-f835-417c-ba06-a14692c8a12c")
+	)
+	(wire
+		(pts
+			(xy 96.52 72.39) (xy 105.41 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b86244b-426f-4dcc-830a-6b23fec8a943")
+	)
+	(wire
+		(pts
+			(xy 190.5 116.84) (xy 195.58 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dfd9c00-42d7-46f9-bc71-59bf20afc1cb")
+	)
+	(wire
+		(pts
+			(xy 80.01 41.91) (xy 92.71 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e3dd673-8788-4c13-bcec-65fe41588269")
+	)
+	(wire
+		(pts
+			(xy 71.12 72.39) (xy 71.12 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f442d53-8c62-4584-9176-57df61172077")
+	)
+	(wire
+		(pts
+			(xy 109.22 110.49) (xy 109.22 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "713ff3cc-e970-4a25-8534-8f320198edc0")
+	)
+	(wire
+		(pts
+			(xy 58.42 123.19) (xy 67.31 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71a3667b-4d9a-4110-b3c1-0d6cd47e10da")
+	)
+	(wire
+		(pts
+			(xy 190.5 116.84) (xy 190.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b9f998-129e-4788-875e-f3a0dd80cf51")
+	)
+	(wire
+		(pts
+			(xy 45.72 97.79) (xy 45.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75c65988-f559-4c44-a9a6-eedf0e6da167")
+	)
+	(wire
+		(pts
+			(xy 80.01 118.11) (xy 92.71 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77527328-0cdc-40a2-8797-4564ef4df759")
+	)
+	(wire
+		(pts
+			(xy 58.42 72.39) (xy 58.42 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77b45543-acd3-4032-8d22-b4f43888367f")
+	)
+	(wire
+		(pts
+			(xy 109.22 110.49) (xy 118.11 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "782909c3-83fe-4500-a0b9-fc2bf655684a")
+	)
+	(wire
+		(pts
+			(xy 45.72 46.99) (xy 54.61 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a87a39-b8c3-4ad9-b218-eaf1d3b5066f")
+	)
+	(wire
+		(pts
+			(xy 80.01 105.41) (xy 92.71 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a331ffb-888e-4405-a2e7-fdfa614c2065")
+	)
+	(wire
+		(pts
+			(xy 121.92 110.49) (xy 121.92 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a7a1604-d27c-4a1b-b3b8-b345d1650639")
+	)
+	(wire
+		(pts
+			(xy 83.82 97.79) (xy 92.71 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ba7ad72-6522-4f21-8b99-b69b4859236e")
+	)
+	(wire
+		(pts
+			(xy 187.96 96.52) (xy 191.77 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c07a0a8-8c8b-4c18-870d-377f2f76b152")
+	)
+	(wire
+		(pts
+			(xy 45.72 59.69) (xy 45.72 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0b11c5-b540-428e-8042-aa90d72fe378")
+	)
+	(wire
+		(pts
+			(xy 41.91 80.01) (xy 54.61 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eac4e09-ab73-4f77-ab99-ada5cdbc851c")
+	)
+	(wire
+		(pts
+			(xy 45.72 110.49) (xy 45.72 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fced8a5-cfad-4b86-ac81-8bd7c353b493")
+	)
+	(wire
+		(pts
+			(xy 96.52 85.09) (xy 96.52 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8174d8d9-c617-412b-a20c-8f9abdf7e97a")
+	)
+	(wire
+		(pts
+			(xy 33.02 85.09) (xy 41.91 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81e2da81-e373-4a39-9bdb-50b858311858")
+	)
+	(wire
+		(pts
+			(xy 121.92 85.09) (xy 121.92 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82b88823-bce2-422d-92b5-02b363480024")
+	)
+	(wire
+		(pts
+			(xy 71.12 97.79) (xy 71.12 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843f4b83-f10f-4e73-84c4-f0e1efe723df")
+	)
+	(wire
+		(pts
+			(xy 105.41 92.71) (xy 118.11 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "845ac20f-1e17-45db-ad29-6378514abd48")
+	)
+	(wire
+		(pts
+			(xy 121.92 46.99) (xy 130.81 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86098d1e-617e-486f-9dd6-aa1be289ad61")
+	)
+	(wire
+		(pts
+			(xy 83.82 29.21) (xy 83.82 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86dde415-8378-4682-ad92-4d9fb8aa5437")
+	)
+	(wire
+		(pts
+			(xy 58.42 85.09) (xy 67.31 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "888a4bc4-0bda-4f49-8451-dbd9aeb4024a")
+	)
+	(wire
+		(pts
+			(xy 41.91 130.81) (xy 54.61 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89f704ca-a76b-4e8a-8817-9bdeaf58af30")
+	)
+	(wire
+		(pts
+			(xy 29.21 80.01) (xy 41.91 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8be9600e-420f-4bfb-9582-ff6ebcd43abf")
+	)
+	(wire
+		(pts
+			(xy 105.41 67.31) (xy 118.11 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bebfc10-b027-4c6e-b94a-21fdbfa1d6e7")
+	)
+	(wire
+		(pts
+			(xy 67.31 130.81) (xy 80.01 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb8c06f-7522-4855-ac61-6902843215a4")
+	)
+	(wire
+		(pts
+			(xy 54.61 118.11) (xy 67.31 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec18bcf-42c8-487d-9fc2-60389c88d0ce")
+	)
+	(wire
+		(pts
+			(xy 222.25 93.98) (xy 224.79 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f50d796-61c0-4e27-967b-abba5eb0c4f1")
+	)
+	(wire
+		(pts
+			(xy 45.72 110.49) (xy 54.61 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908ec006-b4b0-4ba8-bf20-ffd2d5cd0500")
+	)
+	(wire
+		(pts
+			(xy 96.52 85.09) (xy 105.41 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "936a79b0-aadb-4bad-a76a-6fe8439e8509")
+	)
+	(wire
+		(pts
+			(xy 29.21 92.71) (xy 41.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93964059-56ae-442c-8498-f54ffb354c3c")
+	)
+	(wire
+		(pts
+			(xy 96.52 29.21) (xy 96.52 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95ecd8a2-8960-48b6-96be-a9d2631a9643")
+	)
+	(wire
+		(pts
+			(xy 92.71 41.91) (xy 105.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9680cf5c-f3fa-4283-b7b8-f77e165e8b82")
+	)
+	(wire
+		(pts
+			(xy 121.92 97.79) (xy 130.81 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a7b3ae1-2227-42c6-afb9-97d199ea41e8")
+	)
+	(wire
+		(pts
+			(xy 118.11 80.01) (xy 130.81 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7f47a2-eb34-4525-bd4a-08e1583618d1")
+	)
+	(wire
+		(pts
+			(xy 41.91 67.31) (xy 54.61 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ea09e85-0b7f-48f8-a520-f09cb47f9dbf")
+	)
+	(wire
+		(pts
+			(xy 83.82 59.69) (xy 92.71 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f53b5f9-48e6-41c6-b0ec-aad97580dea8")
+	)
+	(wire
+		(pts
+			(xy 45.72 97.79) (xy 54.61 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0538d1c-47a7-435f-b13a-bfdab83e1fae")
+	)
+	(wire
+		(pts
+			(xy 92.71 118.11) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0cccacc-930e-465c-b4ab-120caebe047a")
+	)
+	(wire
+		(pts
+			(xy 41.91 105.41) (xy 54.61 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a18f187e-4d4b-4e22-90bb-41999b7dd742")
+	)
+	(wire
+		(pts
+			(xy 121.92 59.69) (xy 130.81 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a192caeb-983f-4423-bed9-dbc8e6bf2a44")
+	)
+	(wire
+		(pts
+			(xy 67.31 67.31) (xy 80.01 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2cfb72e-2f17-4151-9683-17a5885bf367")
+	)
+	(wire
+		(pts
+			(xy 92.71 92.71) (xy 105.41 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e4f8be-ee07-4f33-afe6-fb14a9f00286")
+	)
+	(wire
+		(pts
+			(xy 83.82 34.29) (xy 92.71 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5564f9f-0a6b-4ede-bb88-cc9da72ec6df")
+	)
+	(wire
+		(pts
+			(xy 41.91 41.91) (xy 54.61 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d39fed-78e5-4430-9c42-48fbe37328fc")
+	)
+	(wire
+		(pts
+			(xy 121.92 46.99) (xy 121.92 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a758ce10-4568-4c2e-88e7-17e3e0d8717b")
+	)
+	(wire
+		(pts
+			(xy 71.12 85.09) (xy 80.01 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abfb5390-b4e2-4c99-ab73-da785d6787d3")
+	)
+	(wire
+		(pts
+			(xy 80.01 54.61) (xy 92.71 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acb25844-e953-468f-b976-64211b693764")
+	)
+	(wire
+		(pts
+			(xy 67.31 54.61) (xy 80.01 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae0019fc-b652-47aa-96fb-6c737c3c3558")
+	)
+	(wire
+		(pts
+			(xy 33.02 123.19) (xy 41.91 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aebe1c84-5f97-4d34-bb8f-fa875cda2a30")
+	)
+	(wire
+		(pts
+			(xy 41.91 92.71) (xy 54.61 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b15b5498-88ea-4fde-bc1d-d2efa73cc694")
+	)
+	(wire
+		(pts
+			(xy 33.02 110.49) (xy 41.91 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7064c54-9d5d-40a0-9c68-cdb954c446bf")
+	)
+	(wire
+		(pts
+			(xy 109.22 34.29) (xy 109.22 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b75c8037-5f92-4633-a87e-213a6c3d775d")
+	)
+	(wire
+		(pts
+			(xy 45.72 72.39) (xy 45.72 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7639d57-6dc3-4009-8c80-11650729d46c")
+	)
+	(wire
+		(pts
+			(xy 41.91 54.61) (xy 54.61 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8d92d24-4001-48d8-bdf1-f0aadfb67377")
+	)
+	(wire
+		(pts
+			(xy 109.22 85.09) (xy 118.11 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba930c3d-ceb3-4d51-bac8-ead74364b7b0")
+	)
+	(wire
+		(pts
+			(xy 58.42 110.49) (xy 58.42 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baaad6b9-646f-4133-b1fd-c18cf133dcf6")
+	)
+	(wire
+		(pts
+			(xy 121.92 97.79) (xy 121.92 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd225b2-5008-41fe-80b3-47056cb8d4be")
+	)
+	(wire
+		(pts
+			(xy 71.12 85.09) (xy 71.12 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bead8f29-d353-4c06-8d0a-d493ac3f9806")
+	)
+	(wire
+		(pts
+			(xy 92.71 80.01) (xy 105.41 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bee16344-3596-4a1a-844b-16641af7081b")
+	)
+	(wire
+		(pts
+			(xy 96.52 34.29) (xy 105.41 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08a9706-431d-4a5a-bd1f-b96922fd7a31")
+	)
+	(wire
+		(pts
+			(xy 96.52 59.69) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5e0f376-61da-4d89-afd3-52befdb7963d")
+	)
+	(wire
+		(pts
+			(xy 41.91 118.11) (xy 54.61 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c926a3db-74db-4396-a655-f9ebaa3a13b3")
+	)
+	(wire
+		(pts
+			(xy 96.52 123.19) (xy 105.41 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cba1862e-6e87-4be4-822f-1d493cf4024b")
+	)
+	(wire
+		(pts
+			(xy 121.92 110.49) (xy 130.81 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd5b5bdf-a02d-4193-b735-2fbadbe3f5f5")
+	)
+	(wire
+		(pts
+			(xy 92.71 130.81) (xy 105.41 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce1f03d2-27a0-430b-8701-a4a689644371")
+	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 58.42 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea54634-5d4c-4cfe-b98b-e245c49cb0d9")
+	)
+	(wire
+		(pts
+			(xy 45.72 29.21) (xy 45.72 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceacdf52-90e6-42b6-97a7-2901b2211d4e")
+	)
+	(wire
+		(pts
+			(xy 58.42 97.79) (xy 67.31 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf0e4ac2-3d37-4b0b-b61b-55f2f03e9b72")
+	)
+	(wire
+		(pts
+			(xy 83.82 123.19) (xy 92.71 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1a33fd8-9ce1-4296-a905-174bc1520ff0")
+	)
+	(wire
+		(pts
+			(xy 45.72 72.39) (xy 54.61 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1c97605-7404-4dfb-bdc1-2fa61d49ffba")
+	)
+	(wire
+		(pts
+			(xy 29.21 118.11) (xy 41.91 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e5b6dc-ac0c-4cd0-a11c-43fdcdd02563")
+	)
+	(wire
+		(pts
+			(xy 83.82 110.49) (xy 83.82 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d257fc55-556e-4369-96e2-0d02bf20e94f")
+	)
+	(wire
+		(pts
+			(xy 45.72 59.69) (xy 54.61 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3d889d8-6adc-4477-b57e-894f303cba5e")
+	)
+	(wire
+		(pts
+			(xy 118.11 54.61) (xy 130.81 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4c00691-4e36-4f77-bc69-8a6110e08509")
+	)
+	(wire
+		(pts
+			(xy 80.01 92.71) (xy 92.71 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e7fad7-e813-428c-9305-1a3bdf81545e")
+	)
+	(wire
+		(pts
+			(xy 83.82 72.39) (xy 92.71 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d618bbf3-d8c0-40e0-8551-2715dbde18d8")
+	)
+	(wire
+		(pts
+			(xy 105.41 118.11) (xy 118.11 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c9d957-3c54-49a0-a092-86eeba9e4b77")
+	)
+	(wire
+		(pts
+			(xy 33.02 97.79) (xy 41.91 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d70e0c11-e50a-44fd-856b-be0792d63c7c")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.39) (xy 41.91 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d71bd045-afee-4e53-99a4-d4baf9b40451")
+	)
+	(wire
+		(pts
+			(xy 118.11 92.71) (xy 130.81 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7298a15-cc8f-47b1-a4ff-f80cf6bef73c")
+	)
+	(wire
+		(pts
+			(xy 109.22 97.79) (xy 109.22 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d859f7bc-0674-4f74-bc35-b492f31a0d87")
+	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 67.31 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d898975b-2e81-4bb7-848e-21048bf871eb")
+	)
+	(wire
+		(pts
+			(xy 71.12 59.69) (xy 80.01 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90a296c-35e7-4e4f-9890-025a03055522")
+	)
+	(wire
+		(pts
+			(xy 54.61 80.01) (xy 67.31 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d94642be-eed0-4301-aae8-b164dd95e54d")
+	)
+	(wire
+		(pts
+			(xy 58.42 85.09) (xy 58.42 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ac0e46-7c82-48de-9c4e-d0dbc9015977")
+	)
+	(wire
+		(pts
+			(xy 109.22 59.69) (xy 118.11 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9efaaa3-e599-4b9d-a64d-93beb0b43616")
+	)
+	(wire
+		(pts
+			(xy 118.11 105.41) (xy 130.81 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9d6283-b1a9-4fdf-a0aa-82d5f58e65d4")
+	)
+	(wire
+		(pts
+			(xy 80.01 67.31) (xy 92.71 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd33d3dd-cde4-47de-b685-b9585321b315")
+	)
+	(wire
+		(pts
+			(xy 71.12 72.39) (xy 80.01 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deb9bc94-44c1-4e3e-83a2-c05d4007642a")
+	)
+	(wire
+		(pts
+			(xy 121.92 123.19) (xy 130.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e054752d-234a-4997-bf80-6daa6315efe5")
+	)
+	(wire
+		(pts
+			(xy 109.22 72.39) (xy 109.22 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0cf2bf7-3ae9-47a3-a251-be3bd4eae7c0")
+	)
+	(wire
+		(pts
+			(xy 92.71 105.41) (xy 105.41 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e315e9f3-d202-4be3-9274-5ab337931c1e")
+	)
+	(wire
+		(pts
+			(xy 58.42 34.29) (xy 67.31 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3cf75dc-481d-4dec-a9dc-41c9c05a88ea")
+	)
+	(wire
+		(pts
+			(xy 118.11 41.91) (xy 130.81 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8fc3301-1c36-47ef-8ce8-cf790a31b1dc")
+	)
+	(wire
+		(pts
+			(xy 83.82 46.99) (xy 83.82 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e96ceee7-a478-4878-a02d-a0bc44e4fb41")
+	)
+	(wire
+		(pts
+			(xy 67.31 92.71) (xy 80.01 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9a08a79-e47c-4eb2-bfd2-1bbffd3e3d67")
+	)
+	(wire
+		(pts
+			(xy 118.11 130.81) (xy 130.81 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea3efb9a-f960-46ee-be39-8cb795baca7a")
+	)
+	(wire
+		(pts
+			(xy 67.31 41.91) (xy 80.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea4f11bb-536c-4c97-983e-e579212d0cec")
+	)
+	(wire
+		(pts
+			(xy 92.71 54.61) (xy 105.41 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7dbabd-6040-4100-a2e6-9386a4bef9c9")
+	)
+	(wire
+		(pts
+			(xy 224.79 93.98) (xy 226.06 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb99c108-814e-4a7e-9f6d-8e65fe428b47")
+	)
+	(wire
+		(pts
+			(xy 54.61 105.41) (xy 67.31 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec0af9b3-36ff-406a-8657-3f28d4fe8775")
+	)
+	(wire
+		(pts
+			(xy 96.52 34.29) (xy 96.52 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edaf83d5-ec92-490b-af50-df778a6d243a")
+	)
+	(wire
+		(pts
+			(xy 118.11 67.31) (xy 130.81 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb85f4b-4408-4f27-afdb-7bb8806b48b5")
+	)
+	(wire
+		(pts
+			(xy 109.22 123.19) (xy 118.11 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef906109-e5bf-4dcd-a684-46eefc558050")
+	)
+	(wire
+		(pts
+			(xy 54.61 54.61) (xy 67.31 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff6f23f-c1db-4dd7-9ecb-b7429b7feaca")
+	)
+	(wire
+		(pts
+			(xy 121.92 85.09) (xy 130.81 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0336602-259d-403c-9058-aa3d58f6ee40")
+	)
+	(wire
+		(pts
+			(xy 71.12 59.69) (xy 71.12 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f172f0da-7dc8-422f-8034-814993c4ae63")
+	)
+	(wire
+		(pts
+			(xy 45.72 123.19) (xy 54.61 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f23a87eb-d961-4c9a-a59e-26cdf65fe201")
+	)
+	(wire
+		(pts
+			(xy 83.82 85.09) (xy 92.71 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3082169-8412-4949-a75d-7007e1b4f388")
+	)
+	(wire
+		(pts
+			(xy 121.92 34.29) (xy 121.92 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3106d93-60a3-4b9d-8705-3b390b5ab1dc")
+	)
+	(wire
+		(pts
+			(xy 45.72 34.29) (xy 54.61 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4de1b20-a5ad-41c9-b860-a83b7cbc0b8c")
+	)
+	(wire
+		(pts
+			(xy 54.61 67.31) (xy 67.31 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f606f1ba-5d7a-4cc1-b1a4-31603eb18c97")
+	)
+	(wire
+		(pts
+			(xy 33.02 110.49) (xy 33.02 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f60745bc-21e3-4b03-8612-fc86089bfe79")
+	)
+	(wire
+		(pts
+			(xy 29.21 67.31) (xy 41.91 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d71665-01b0-487a-8579-87ebeb85cb24")
+	)
+	(wire
+		(pts
+			(xy 222.25 91.44) (xy 222.25 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fab3736b-eae0-4433-9f00-c7ed552ea9db")
+	)
+	(wire
+		(pts
+			(xy 105.41 54.61) (xy 118.11 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd4f27a8-dfda-47e4-992c-74aec6ea9d63")
+	)
+	(wire
+		(pts
+			(xy 29.21 130.81) (xy 41.91 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff070361-579c-4ed0-92ab-6852aa5cef45")
+	)
+	(global_label "ROW5"
+		(shape input)
+		(at 96.52 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "083ceeb3-122c-41c9-bdf0-77c497bf7601")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.52 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW3"
+		(shape output)
+		(at 234.95 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18f2ff48-0163-460c-ae78-0398d4203e89")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM3"
+		(shape output)
+		(at 29.21 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1e4503f9-baa7-4257-b5eb-874ff5906306")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA_5V"
+		(shape bidirectional)
+		(at 222.25 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "371f2455-835c-49b3-b049-da39e9eaa463")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.1803 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW4"
+		(shape input)
+		(at 83.82 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "382708d3-70f3-472d-8521-6639aa72d86a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.82 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW3"
+		(shape input)
+		(at 71.12 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f92939d-4f18-48f0-abf8-d096351d395c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW7"
+		(shape input)
+		(at 121.92 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "581e5f1c-1d79-432d-a33b-32fc280040c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM4"
+		(shape output)
+		(at 29.21 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "596b7096-0833-4198-8db1-5e165ca1af8d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW0"
+		(shape input)
+		(at 33.02 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "60d76253-94d6-4942-bafd-9b9199be1a3c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.02 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM5"
+		(shape input)
+		(at 189.23 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "64257af5-f0e8-4f99-8837-fb7682467280")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW2"
+		(shape output)
+		(at 234.95 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "662a450e-8e32-4fa2-b65d-48daceb44e41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM4"
+		(shape input)
+		(at 189.23 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "666df410-c8b9-45b5-9713-c9ce25b8c817")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM2"
+		(shape input)
+		(at 189.23 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70081956-eada-4e5c-8bf1-4c813bb8fe12")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM0"
+		(shape output)
+		(at 29.21 41.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71f61f32-3a46-4fbc-ad16-bb3fe2feb00d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW5"
+		(shape output)
+		(at 234.95 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "781af647-e0cf-4413-bde2-e14a6da25c06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL_5V"
+		(shape bidirectional)
+		(at 234.95 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b90b8d5-3b15-4d39-b8cb-d8504f3b7f0b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.8198 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM6"
+		(shape output)
+		(at 29.21 118.11 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "85660998-9c01-450f-b090-99a5cf2fb3df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL_5V"
+		(shape bidirectional)
+		(at 195.58 124.46 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "888c7697-dcf1-4d05-aa1e-e36fac8604fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 135.3298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL_5V"
+		(shape bidirectional)
+		(at 222.25 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8edeb94b-cdfe-4645-9614-93104c2d210a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.1198 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW1"
+		(shape output)
+		(at 234.95 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92eb88a2-b3ad-46e9-9ec7-a0f5f1411d59")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW4"
+		(shape output)
+		(at 234.95 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "95399ef0-014d-4fa8-aac8-528f6ee9e1b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM1"
+		(shape output)
+		(at 29.21 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "98029b32-6686-4dc6-b621-cdd097057915")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM7"
+		(shape output)
+		(at 29.21 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9bc74c31-0c7b-4718-881e-6661fa3ddad0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM5"
+		(shape output)
+		(at 29.21 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a4824456-967a-4cc0-be3b-5cea83755480")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM7"
+		(shape input)
+		(at 189.23 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a560b907-93b4-4188-a9a7-29745e5f2ed6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM6"
+		(shape input)
+		(at 189.23 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b24f962b-32e6-4ba6-97f3-114adde97ee2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM0"
+		(shape input)
+		(at 189.23 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4d036a1-1ace-4158-884d-dc2792a88035")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM2"
+		(shape output)
+		(at 29.21 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be4f80f8-5e13-4280-8e27-265e24bee2d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.9634 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW1"
+		(shape input)
+		(at 45.72 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb9dcd15-59d0-4f4f-bf6f-1c332eb211d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW6"
+		(shape input)
+		(at 109.22 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cf33088d-2fec-45e2-a60e-fbe3428f1fbe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.22 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW2"
+		(shape input)
+		(at 58.42 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d41d6fcc-3e94-48bb-8846-0e26f48f7388")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 58.42 20.9634 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW7"
+		(shape output)
+		(at 234.95 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d4fd7e7f-38af-4ff2-949a-90f1bf6161b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA_5V"
+		(shape bidirectional)
+		(at 185.42 124.46 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7a507a2-df2c-41ef-904e-68c6fe957740")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.42 135.3903 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW0"
+		(shape output)
+		(at 234.95 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df2fc723-6063-4384-9754-c4e9227dfaee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW6"
+		(shape output)
+		(at 234.95 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e797dee9-5408-46f2-9d2d-8b017b4ae6df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.1966 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA_5V"
+		(shape bidirectional)
+		(at 234.95 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed7859d3-cbfa-4282-8985-7db9a91e2b57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 245.8803 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM3"
+		(shape input)
+		(at 189.23 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7957b44-b90c-4a2d-9d4a-70e409ab0bd5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COM1"
+		(shape input)
+		(at 189.23 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffeea2da-bdcc-4e6c-80f2-901c8ec50d07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.9834 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "LED_DRIVER_SDA"
+		(shape bidirectional)
+		(at 187.96 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4794e2fc-ebf0-4fe1-a847-fee335bfd7bc")
+	)
+	(hierarchical_label "LED_DRIVER_SCL"
+		(shape bidirectional)
+		(at 187.96 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "875f495f-4798-4196-b3a0-a8432e9bd220")
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "033244f6-3eb5-40bd-b4e2-a38014be456d")
+		(property "Reference" "D40"
+			(at 124.46 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24b7baa6-186d-4c8e-8ee6-e457d9dc5c46")
+		)
+		(pin "1"
+			(uuid "74ce9065-b451-46d1-9c67-74ef6fd15f05")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0488bed6-3a33-4488-816d-9ec69083e9c2")
+		(property "Reference" "D63"
+			(at 111.76 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c669bc2d-d0cc-4791-b7ef-eccabf3e8e0e")
+		)
+		(pin "1"
+			(uuid "d4bc8f83-a47e-406c-b443-f9573df7eb6d")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0591c5f2-492e-4265-83ab-9e37c6056b3c")
+		(property "Reference" "D13"
+			(at 86.36 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cc8a743e-542c-45c0-a6c7-00f1781f19cd")
+		)
+		(pin "1"
+			(uuid "be2a7c9b-8e99-4c54-ab2a-676cd28cc0a5")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ba707c2-d147-4236-9127-636a5ecefb51")
+		(property "Reference" "D30"
+			(at 99.06 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "98b1f849-2695-477b-85ec-9a527597fa66")
+		)
+		(pin "1"
+			(uuid "0c171a4e-ac0e-48a8-ac2f-181ae942d2ee")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bef66f2-d7c4-4b72-b09c-c8e4b79aa8b2")
+		(property "Reference" "D18"
+			(at 48.26 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "376123a6-99c1-47e7-99bf-d3deec96cd0e")
+		)
+		(pin "1"
+			(uuid "d2b0ca2d-326c-47ca-ae6d-d46f7dccd927")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ca15668-dda7-4e09-aabd-8b9ec0dc4a5e")
+		(property "Reference" "D43"
+			(at 60.96 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "66ce20e8-a6ea-43c3-8ab3-78f868250d1b")
+		)
+		(pin "1"
+			(uuid "f7f2c249-c38d-47b3-bba4-78a99372165f")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f31528f-f2a8-4b01-8a79-241edeba9277")
+		(property "Reference" "D6"
+			(at 99.06 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24b35d06-81c9-48bc-8815-c542f9073b3e")
+		)
+		(pin "1"
+			(uuid "f83833fc-5693-4e16-9987-a1c6517b4bc9")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f8cec9b-ca7a-41a4-92f1-558e6ae2cd4b")
+		(property "Reference" "D20"
+			(at 73.66 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cc44190e-a95b-46b1-b259-f182e572609b")
+		)
+		(pin "1"
+			(uuid "59c80f78-f85f-4926-abca-3d2de9136d1f")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13d19219-eca6-464d-99ca-ed51b284bbc6")
+		(property "Reference" "D42"
+			(at 48.26 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "48527a4a-04df-47d8-9b16-cb09acd659b1")
+		)
+		(pin "1"
+			(uuid "c2801b31-44e0-4e25-a880-771755038847")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "160889cd-f80c-428a-a2dd-a106b96fd66f")
+		(property "Reference" "D52"
+			(at 73.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "adf824a5-1ca6-4f9f-81bd-cef722cbe9ce")
+		)
+		(pin "1"
+			(uuid "815290bc-fd37-46e1-a4ee-5bd0c6a4c087")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA:HT16K33A-28SOP")
+		(at 212.09 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17058cd3-45e2-4868-9a25-e0633b4b9217")
+		(property "Reference" "U2"
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HT16K33A-28SOP"
+			(at 212.09 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hackeriot_2025:SOP-28_L17.9-W7.5-P1.27-LS10.3-BL"
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 212.09 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C5444737"
+			(at 212.09 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5444737"
+			(at 212.09 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "24"
+			(uuid "99d288dc-a05e-4640-ac5c-dd118d069177")
+		)
+		(pin "4"
+			(uuid "ccba00a4-3291-4ca7-a004-b7d367528118")
+		)
+		(pin "14"
+			(uuid "61e4b0a4-cce4-4551-b25d-864eea90ea3e")
+		)
+		(pin "5"
+			(uuid "e21827da-a435-48f9-a397-5f4215521c8a")
+		)
+		(pin "6"
+			(uuid "74b67736-88ba-4c0f-bda6-966feab44911")
+		)
+		(pin "27"
+			(uuid "71ecfa9d-4247-43c5-82e8-c39f3d59d1b8")
+		)
+		(pin "12"
+			(uuid "0ad249f0-1fbc-4da6-9c37-188f93b190f8")
+		)
+		(pin "11"
+			(uuid "dd8aad3d-9485-436e-9caf-56588ac179e4")
+		)
+		(pin "25"
+			(uuid "8076c83f-7eb5-4d08-825b-5642e2592544")
+		)
+		(pin "3"
+			(uuid "be44bec7-fbb2-498b-99ab-1385f3341b75")
+		)
+		(pin "15"
+			(uuid "23cd0baf-8d30-463c-8970-47efb3b01323")
+		)
+		(pin "10"
+			(uuid "4821fedb-5dc0-49d0-a1d5-3d474585eb1e")
+		)
+		(pin "9"
+			(uuid "6df56c4d-ef86-48e3-986d-c5fa1e9a3bcc")
+		)
+		(pin "2"
+			(uuid "1acaefa3-0d53-4d3f-ad34-b57e2b824709")
+		)
+		(pin "8"
+			(uuid "916e93d6-5962-4430-889c-4dee548c2ecc")
+		)
+		(pin "7"
+			(uuid "c8f554c9-efd0-4954-a413-b0e1feac59b1")
+		)
+		(pin "1"
+			(uuid "5faab717-13e3-4b60-bca8-9b91133e29fc")
+		)
+		(pin "13"
+			(uuid "770df339-b7f3-42b4-8e95-f5142b55ec4b")
+		)
+		(pin "21"
+			(uuid "5eb4782d-3c28-4265-97d2-6b0add9925e3")
+		)
+		(pin "28"
+			(uuid "a9d731dd-0e39-47e9-b554-62d4f3562f77")
+		)
+		(pin "20"
+			(uuid "8e4708d9-8fed-4432-b465-bd7fcc04e272")
+		)
+		(pin "26"
+			(uuid "e29e396a-25be-4eb0-a5e1-98d9b702e460")
+		)
+		(pin "18"
+			(uuid "8d24080a-135a-46ac-9261-ce8766e8e994")
+		)
+		(pin "17"
+			(uuid "1b9fafa4-ef33-469d-a438-28a627208a1b")
+		)
+		(pin "16"
+			(uuid "02c24fe1-a552-483d-aa58-8177626327b4")
+		)
+		(pin "23"
+			(uuid "acb355e9-b326-46fb-8f5e-b7a7763c64ae")
+		)
+		(pin "22"
+			(uuid "a86b2c7d-1bfd-48a7-a0fd-ee2976dfc4c7")
+		)
+		(pin "19"
+			(uuid "653b4146-fe3b-471b-8da9-1a801e3a766c")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c9da61b-66d2-49d5-aaa6-fffe19611bf0")
+		(property "Reference" "D62"
+			(at 99.06 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8dc24c54-a29d-4d31-b4a2-79795663ad17")
+		)
+		(pin "1"
+			(uuid "84ed7953-94e4-4006-ab85-4b4e7ee88b04")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27d8643b-8dbf-4995-8d2b-d7b55010e90e")
+		(property "Reference" "D56"
+			(at 124.46 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e0969267-5eb7-4dd3-86a5-4cfefacd3d73")
+		)
+		(pin "1"
+			(uuid "05fc787c-4328-41f2-9092-8104199c5ecb")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27ebcb5e-fc9d-47bd-83cf-9ebd870893f5")
+		(property "Reference" "D9"
+			(at 35.56 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a6e39817-e213-438d-a2cd-20627136246f")
+		)
+		(pin "1"
+			(uuid "ab8e4758-9ae3-4bd2-ba92-be157a1b6a17")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28b0f73b-3f6b-4759-a85a-d2b57cc63444")
+		(property "Reference" "D29"
+			(at 86.36 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4ac2fffc-c003-4380-b1ec-b5e16250acfb")
+		)
+		(pin "1"
+			(uuid "c98d950f-aa5b-4b79-98e9-87d919aa7ab0")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28c8a72a-fce4-4cb4-96b6-b3393cf9c6fc")
+		(property "Reference" "D5"
+			(at 86.36 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6eb12da2-069f-448a-bd71-8f68a2be8c1c")
+		)
+		(pin "1"
+			(uuid "9f4279c5-3453-47df-997b-9dc2dfbb6e47")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ae05179-1ca1-4bef-9e5a-6ab8c7a7f9b0")
+		(property "Reference" "D22"
+			(at 99.06 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8b2cd0c-2979-451c-8c49-c11f1a015cb2")
+		)
+		(pin "1"
+			(uuid "9b8781a5-e462-4437-a649-3229fc98cca3")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 191.77 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "307265ab-aa13-42fb-8275-f3f238fb7ecc")
+		(property "Reference" "#PWR029"
+			(at 195.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 187.96 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c556e4ed-46de-48da-a057-8d8f6145a821")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "344bcc17-3b00-4121-abef-5a380068295e")
+		(property "Reference" "D15"
+			(at 111.76 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0d7a872f-90fc-4569-b32e-8048ae1d2e5c")
+		)
+		(pin "1"
+			(uuid "c10fddf8-8450-4b77-ad23-93bf68fda537")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hackeriot_2025:PCA9306DCUR")
+		(at 207.01 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37547e0d-a4f6-43a5-8e63-13397f4d6aa8")
+		(property "Reference" "U4"
+			(at 207.01 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PCA9306DCUR"
+			(at 207.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hackeriot_2025:SSOP-8_L2.0-W2.3-P0.50-LS3.1-BR"
+			(at 207.01 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Interface-ICs_TI_PCA9306DCUR_PCA9306DCUR_C33196.html"
+			(at 207.01 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C33196"
+			(at 207.01 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4ce9143e-753a-44de-a3f8-7fde4b2afbb2")
+		)
+		(pin "1"
+			(uuid "caf4879a-43b9-470a-9b63-ee0b5dba0d87")
+		)
+		(pin "2"
+			(uuid "be55b4b6-0707-41a3-9c55-c5bdc028c28a")
+		)
+		(pin "7"
+			(uuid "0045471b-55f8-4644-9144-36a46e7535ef")
+		)
+		(pin "6"
+			(uuid "034f2e94-cca5-494b-b819-ebcc6b863e3b")
+		)
+		(pin "4"
+			(uuid "54e43e7d-3824-4363-80ec-40da375cc9e0")
+		)
+		(pin "5"
+			(uuid "e4369ad2-e212-472d-803d-4a8e85b6c798")
+		)
+		(pin "8"
+			(uuid "40ada92f-c862-4af7-b854-bd65ac0207c3")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38cdac4c-2fb6-4ecb-b1dd-85612db24f50")
+		(property "Reference" "D32"
+			(at 124.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2534efc1-34f9-499f-86ec-5a4592c33dff")
+		)
+		(pin "1"
+			(uuid "dc925115-7795-4133-bfb0-509227505b7a")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3997368f-4187-46c1-a9f8-298b208d44f7")
+		(property "Reference" "D1"
+			(at 35.56 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0afdbb0a-4bf8-42d3-9aab-97c182ee56a0")
+		)
+		(pin "1"
+			(uuid "18299ff5-affe-4d5f-97df-ca363d3f59e6")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ee38400-1c1b-4710-8351-df5e35245f7f")
+		(property "Reference" "D35"
+			(at 60.96 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2178914-4d43-411b-9340-155b56af3069")
+		)
+		(pin "1"
+			(uuid "cf6f268c-9fc4-48d6-a48a-2f463bef6211")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40181eb3-d2d1-4998-a418-d6fc1dbd0ce0")
+		(property "Reference" "D27"
+			(at 60.96 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a19bd42-8b3b-4055-9f2c-1d6d6330de04")
+		)
+		(pin "1"
+			(uuid "9f2fc1fb-befa-4cfa-a5c5-8fa68062060e")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40284ae2-ebf7-4e9e-bd23-1b0dc07d308a")
+		(property "Reference" "D59"
+			(at 60.96 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cc1c28b7-2738-4215-8f66-bb3e64a1d7c6")
+		)
+		(pin "1"
+			(uuid "8e44543e-60cd-4f9e-a076-c9028910a0a3")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 190.5 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40f0e443-45b2-456b-987a-b8641a14c0de")
+		(property "Reference" "#PWR041"
+			(at 190.5 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 190.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 190.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77f5ee06-9c65-4ea5-bb88-4f7557b13f47")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43b2d7d4-cd3b-4e4a-b312-c624a515a015")
+		(property "Reference" "D21"
+			(at 86.36 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "597547de-4e02-4aad-a2d7-85a31b717fb2")
+		)
+		(pin "1"
+			(uuid "aba462c7-717f-4401-b23f-c0fc9c210ea4")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a1f58a3-9482-4712-9f6b-fe38f1d7c435")
+		(property "Reference" "D17"
+			(at 35.56 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d798afcd-5c22-4432-bcd7-2af34dd6ea25")
+		)
+		(pin "1"
+			(uuid "78feab35-fd58-4504-b3b2-9c308228191e")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f4fdd14-6219-4ff1-87ee-7f49a57afa3b")
+		(property "Reference" "D3"
+			(at 60.96 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1f38b0fa-03f6-4067-9234-550c0a28fb30")
+		)
+		(pin "1"
+			(uuid "a7fedca7-a9c5-40aa-a9ff-c659165b2f76")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52d7ba4f-81ac-4823-aceb-95481386ef4a")
+		(property "Reference" "D10"
+			(at 48.26 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5a96fe47-b324-43eb-b85d-bce5cf8aa411")
+		)
+		(pin "1"
+			(uuid "3a5a5365-dfdb-40ea-89c4-7fd3308ea3cb")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "564f1688-9f11-49e0-884c-d32c727c52a7")
+		(property "Reference" "D61"
+			(at 86.36 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "75df929d-8148-4780-84a4-c6fcdc48023e")
+		)
+		(pin "1"
+			(uuid "1f40df42-02e8-4a3f-bea2-9d9a67ccdbae")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195.58 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d8cd78f-3924-4adf-8ea7-3eb74dedc7ae")
+		(property "Reference" "R10"
+			(at 198.12 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 198.12 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.802 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 195.58 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17414"
+			(at 195.58 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81396532-1ad5-4174-bb4e-76761c2b71c5")
+		)
+		(pin "2"
+			(uuid "f2bb7b63-ef18-4f09-8e19-3162bad468fb")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61aebeb0-773f-4584-9cd9-94fd4bfb07af")
+		(property "Reference" "D57"
+			(at 35.56 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d00709a8-1d77-444d-bfd4-24f46107ff90")
+		)
+		(pin "1"
+			(uuid "f5135848-bf13-41ce-a9d6-b6c92b160c5e")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62a86967-3775-422d-b89d-6849e2b3a389")
+		(property "Reference" "D37"
+			(at 86.36 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb4445db-4380-4a17-bd4a-9a1afee69583")
+		)
+		(pin "1"
+			(uuid "ff8a0462-c372-474a-9eda-995b1663f208")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 185.42 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62acd10e-e31a-49e3-84b8-74a0137e68b1")
+		(property "Reference" "R9"
+			(at 187.96 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 187.96 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 183.642 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 185.42 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C17414"
+			(at 185.42 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21c91ba9-96c2-44f5-8f5c-ceab5eedd7be")
+		)
+		(pin "2"
+			(uuid "0ae87ebc-787e-4e56-a195-c99884772f51")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a46f9bd-e752-47db-9e99-ba15fa37cc8c")
+		(property "Reference" "D11"
+			(at 60.96 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b8b957c5-87b2-4b3a-91f8-05f07d2191b3")
+		)
+		(pin "1"
+			(uuid "2d1889da-1d9e-41ef-9687-faae274e4225")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b0df8ef-0866-41f7-8fbd-84dd9557abc3")
+		(property "Reference" "D41"
+			(at 35.56 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "92a6abfc-08ee-488e-b408-250d60215136")
+		)
+		(pin "1"
+			(uuid "f828d015-248f-448e-9c7c-4bf13646397f")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "707661f0-5c19-4fa7-8aa2-3b0693b77568")
+		(property "Reference" "D48"
+			(at 124.46 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0fcdab89-0217-4b71-b197-a84b667a7647")
+		)
+		(pin "1"
+			(uuid "22d3a80a-b370-407e-adef-5cc645c1dd84")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70a6cc45-cdf9-4dfa-a472-bdb31719ac3c")
+		(property "Reference" "D12"
+			(at 73.66 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "581189e8-85b6-479c-8ee5-4fe4d83f5d14")
+		)
+		(pin "1"
+			(uuid "76f034da-8689-4e2d-8225-2c4550fafa2b")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73c3882c-93a9-40d0-9ce4-49fa39d5d6fa")
+		(property "Reference" "D36"
+			(at 73.66 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d576d39-eebd-42dc-bb6f-8b1fe5817220")
+		)
+		(pin "1"
+			(uuid "f16bda14-1567-4c80-b863-df5d5c2def20")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78172180-eb64-4ab1-91e6-016bd6025f8c")
+		(property "Reference" "D64"
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "91ad5d9b-3ef8-4c2a-a5f3-f21e0932bd94")
+		)
+		(pin "1"
+			(uuid "b775bf8b-d4a7-4f9c-b158-f3dae9bd376d")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d178ff5-786e-4e22-b1a7-bb13d957fa7e")
+		(property "Reference" "D38"
+			(at 99.06 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8372df2-6e32-4b45-a3bb-601682ed2f32")
+		)
+		(pin "1"
+			(uuid "c736f15a-bb67-45d5-8248-56cdc5b2b645")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d2c32e0-5c23-45f9-b46f-97883db39417")
+		(property "Reference" "D60"
+			(at 73.66 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c9c044b-eb71-4b5b-a124-4acea9298014")
+		)
+		(pin "1"
+			(uuid "3c0755a2-1761-432a-9975-9c9bb1622cec")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8474d91a-ecfc-45db-97b4-318626798246")
+		(property "Reference" "D50"
+			(at 48.26 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "febf1813-e95e-4774-af48-af5454993b4d")
+		)
+		(pin "1"
+			(uuid "2e770bcc-6f6e-4324-89f3-586825c1b47d")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a7be436-3732-4d88-8d9f-992c02f8ef43")
+		(property "Reference" "D49"
+			(at 35.56 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d192a63-b9c0-4b13-a190-055f7bc33de0")
+		)
+		(pin "1"
+			(uuid "27368983-3bdc-4429-989c-e6151c12e9a7")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 191.77 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f763188-5f74-47a9-8e58-a8300c70733d")
+		(property "Reference" "#PWR028"
+			(at 185.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 191.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d79b8fd7-c254-4076-afa6-9adc4e0f7918")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "909f0a45-f3ed-4677-8951-49f58b3a5667")
+		(property "Reference" "D26"
+			(at 48.26 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18261de3-ee89-40c5-93bd-8d8130e23977")
+		)
+		(pin "1"
+			(uuid "c7db1939-8285-4c56-89a1-d9d1c3eec04f")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92325b77-08b4-4b0c-844f-b16a5ba703f6")
+		(property "Reference" "D7"
+			(at 111.76 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1afbbe96-8b4f-492d-8ab6-6d502723e818")
+		)
+		(pin "1"
+			(uuid "2083fd67-6d28-4462-8294-dff136f4e0df")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95e34e15-3c99-4691-b98b-47e07bdd6495")
+		(property "Reference" "D4"
+			(at 73.66 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0887056f-12fa-47fd-af95-589d59eb8fb1")
+		)
+		(pin "1"
+			(uuid "908b4d34-8c2d-4cc1-b481-ea0249e44089")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "978fc6f8-6806-48af-a57f-bb4c5d9e3d1d")
+		(property "Reference" "D46"
+			(at 99.06 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e91ed5b-25f3-4bb5-a7c8-f8c4d0e59766")
+		)
+		(pin "1"
+			(uuid "29757a60-c33a-4d09-9c49-27990f425f6d")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9847d4c7-da61-443d-ac0c-f97131a8b21a")
+		(property "Reference" "D8"
+			(at 124.46 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2bd7c77e-2672-4322-82d1-92a3dfc78654")
+		)
+		(pin "1"
+			(uuid "6e449379-f645-4678-94aa-9dcb381cb206")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a46c353-d904-44f3-9b33-06c6cf1cc503")
+		(property "Reference" "D44"
+			(at 73.66 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6107f24a-e036-4bba-8e3f-719a9b11bd36")
+		)
+		(pin "1"
+			(uuid "a2025e20-dcda-44f0-b757-f1294b735140")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ba7088b-7a7a-4a46-b3cb-55a6f16a28f6")
+		(property "Reference" "D33"
+			(at 35.56 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "10cf9902-c13e-4be5-8e03-0758a847fb2e")
+		)
+		(pin "1"
+			(uuid "f1076ddb-afea-45ac-9154-005198dd71ca")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 234.95 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bc1f219-d350-459c-a619-bc9b609d0ffd")
+		(property "Reference" "#PWR018"
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 238.76 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 234.95 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0a5b473-cdee-4bd6-86ca-a19e347c4d3a")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 224.79 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0441e57-7c27-4d8c-ad20-43c3e8d55f39")
+		(property "Reference" "R5"
+			(at 227.33 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 227.33 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.012 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 224.79 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76616ace-6d05-4efb-bb04-c3712bfa76e6")
+		)
+		(pin "2"
+			(uuid "3664e9e0-90dc-4206-a102-cb41bbf4720d")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1776dd4-2bd7-447f-a643-f5f3d1a74428")
+		(property "Reference" "D14"
+			(at 99.06 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 52.3875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dd0f1761-c862-438d-ad7e-b25002b8d025")
+		)
+		(pin "1"
+			(uuid "8d948183-adac-470a-916d-4d5c07ff4ded")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 226.06 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a455d646-6c44-4c97-9361-be205098f6f6")
+		(property "Reference" "#PWR030"
+			(at 222.25 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 229.87 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 226.06 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47b1bdf4-6842-460c-8a5f-626cf8a1c250")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a924f1b3-ab5e-4485-9695-ebda70398862")
+		(property "Reference" "D53"
+			(at 86.36 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0df13993-e158-4afc-a1df-542bd786e2da")
+		)
+		(pin "1"
+			(uuid "2d6b825e-d86a-499c-9d95-583888ea0831")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 80.01 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a92a4f53-0720-46ea-bb32-86b50f71cee5")
+		(property "Reference" "D28"
+			(at 73.66 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 76.2 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 80.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 80.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 80.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "53cbbef6-7ca2-4de9-a871-8e2fa4b17234")
+		)
+		(pin "1"
+			(uuid "572bbd8b-bca8-4a67-8c5e-0f5108b62a00")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af1a6c21-0ad7-4d33-b2d2-2cea225e2685")
+		(property "Reference" "D23"
+			(at 111.76 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "86b1de13-b357-45b2-96a4-a3a25850f800")
+		)
+		(pin "1"
+			(uuid "cfb4ec70-b6c6-41d1-ae52-d494e22c8868")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b202c36a-a855-45b5-bf81-007d2a88493e")
+		(property "Reference" "D51"
+			(at 60.96 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c18f0d32-2ddc-4ea4-8024-e73f5fac2c63")
+		)
+		(pin "1"
+			(uuid "a9da709d-679b-47b8-842a-98176889a370")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 189.23 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be52315e-7207-4644-8234-17822770ad84")
+		(property "Reference" "#PWR06"
+			(at 182.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1664667a-4384-4620-858c-0c292344369d")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4d32ce9-99e4-4279-84d4-b8a724a0e66e")
+		(property "Reference" "D16"
+			(at 124.46 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "768e3567-8fbf-4215-af7a-258ed3281766")
+		)
+		(pin "1"
+			(uuid "6ff15bff-ec8e-44f9-96e3-1e6d7b9eff84")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5cf0809-65f0-4b53-abe2-7f2711d3541e")
+		(property "Reference" "D2"
+			(at 48.26 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 39.6875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "70ec1dd8-42c8-4bdf-9960-e860ef5cebad")
+		)
+		(pin "1"
+			(uuid "e60cfb44-68ff-4503-b0ae-8c0f775e67df")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 105.41 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c68adb4d-f228-4dab-b0e6-38b3d43b90ed")
+		(property "Reference" "D54"
+			(at 99.06 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 101.6 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5893499-6e4f-4142-af89-be80a323b21b")
+		)
+		(pin "1"
+			(uuid "b7493347-9c1a-4741-aeee-405b94cb5fd6")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8b2c782-4e74-4228-9bf5-4390e3388c6e")
+		(property "Reference" "D55"
+			(at 111.76 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 115.8875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "93594936-cca3-485b-b30f-a9ebfba33d9c")
+		)
+		(pin "1"
+			(uuid "9272006b-bc26-40a9-804c-a5fce69747d5")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb087b3b-5f45-4a0e-a522-407799399eb0")
+		(property "Reference" "D45"
+			(at 86.36 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 88.9 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 92.71 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9086afa3-d41c-4053-a91f-a4d086354be0")
+		)
+		(pin "1"
+			(uuid "8106ea4a-3ec6-467a-b8ca-19bde31e70e7")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2a6b2f4-12f4-46a3-8f05-8878ef9aaf90")
+		(property "Reference" "D58"
+			(at 48.26 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 128.5875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b24ff74-0a75-4ecc-8c1e-b10295addb1b")
+		)
+		(pin "1"
+			(uuid "722ca93b-c121-4e11-9da9-2f37c2f2da23")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d73db119-6992-4a2f-bc00-265c6cce2fe6")
+		(property "Reference" "D47"
+			(at 111.76 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 103.1875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4c4a65d5-4916-46dd-a86b-966091a564cd")
+		)
+		(pin "1"
+			(uuid "663d3a3f-2690-4dcc-97bb-bb9e6b0d8f75")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db1132c7-c5b9-46e9-a69d-02f32f467f2d")
+		(property "Reference" "D39"
+			(at 111.76 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "98c24e54-0d37-435c-87fe-a23f4dc74e76")
+		)
+		(pin "1"
+			(uuid "c569425c-0185-42c3-8740-8fd2bd14b674")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 41.91 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db6631a6-6145-4a08-9afb-16c9d28e8355")
+		(property "Reference" "D25"
+			(at 35.56 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 38.1 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 41.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 41.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "508bc5a7-34b3-43bd-ab20-c1e88862f960")
+		)
+		(pin "1"
+			(uuid "e0d650c4-2bfd-4f07-8f7c-a8220b64ae16")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 130.81 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ded6096a-d6b4-4228-a57e-1950e879ffe0")
+		(property "Reference" "D24"
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 127 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 130.81 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 130.81 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "72ea6482-7eeb-448a-8451-d41adb667c85")
+		)
+		(pin "1"
+			(uuid "5e0b496f-cf57-4173-8d6f-0a77542d9b40")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 118.11 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e097da87-aa40-4df1-960d-521d4726f343")
+		(property "Reference" "D31"
+			(at 111.76 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 114.3 77.7875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "38ba036c-4d32-4222-99d7-95029616ff66")
+		)
+		(pin "1"
+			(uuid "9975fdcd-f8c8-46f4-aa4f-7f0d3b2f2f79")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3affe50-0fe2-4e43-97a4-ac95e6d4cf90")
+		(property "Reference" "D34"
+			(at 48.26 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 50.8 90.4875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 54.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "94162df0-4eef-4dfc-8650-896d80d8830b")
+		)
+		(pin "1"
+			(uuid "c6ed3d19-b9a1-40ff-bb1b-ac6a190c0010")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f02af24a-9c6c-4362-bfaf-801f58dcd67f")
+		(property "Reference" "D19"
+			(at 60.96 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 63.5 65.0875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 67.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 67.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cd11a23b-49a3-4f08-92c8-d73b7711d227")
+		)
+		(pin "1"
+			(uuid "afafcd25-f05a-4453-a7d0-bdab544609c4")
+		)
+		(instances
+			(project "hackeriot_board_2025"
+				(path "/71dacf9c-cacc-456e-97c3-cc7c752bf6c1/c573d936-90a4-4de3-8300-f06f50bd4c21"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
