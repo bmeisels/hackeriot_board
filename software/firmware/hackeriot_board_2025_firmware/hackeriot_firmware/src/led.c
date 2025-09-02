@@ -127,7 +127,7 @@ uint64_t led_glyph(char c) {
 	if (c >= 'A' && c <= 'Z')
 		return font_uppercase[c-'A'];
 	if (c >= 'a' && c <= 'z')
-		return font_uppercase[c-'a'];
+		return font_lowercase[c-'a'];
 	uint8_t uc = c;
 	if (uc >= 0x80 && uc <= 0x9b)
 		return font_hebrew[uc-0x80];
