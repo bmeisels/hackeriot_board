@@ -9,6 +9,13 @@
 #define __LED_H__
 
 
+#ifdef BREADBOARD
+	// Adafruit's dual-colored HT16K33
+	#define POS_TO_LED(x) ((x&7) | ((x&~7) << 1))
+#else
+	// board2025 monochromatic HT16K33, rotated
+	#define POS_TO_LED(x) (((63-x)&7) | (((63-x)&~7) << 1))
+#endif
 
 void led_swipe(const struct device *led, uint64_t cur, uint64_t new,
 	char direction, uint32_t delay);
