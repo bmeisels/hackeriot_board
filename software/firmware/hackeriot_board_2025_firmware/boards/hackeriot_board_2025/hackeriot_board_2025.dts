@@ -25,32 +25,32 @@
 		compatible = "gpio-keys";
 
    		button-0 {
-   			gpios = <&gpioa 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+   			gpios = <&gpioa 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
    			label = "Up";
 			zephyr,code = <INPUT_BTN_DPAD_UP>;
    		};
    		button-1 {
-   			gpios = <&gpioa 1 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+   			gpios = <&gpioa 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
    			label = "Left";
 			zephyr,code = <INPUT_BTN_DPAD_LEFT>;
    		};
    		button-2 {
-   			gpios = <&gpioa 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+   			gpios = <&gpioa 5 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
    			label = "Down";
 			zephyr,code = <INPUT_BTN_DPAD_DOWN>;
    		};
    		button-3 {
-   			gpios = <&gpioa 5 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+   			gpios = <&gpioa 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
    			label = "Right";
 			zephyr,code = <INPUT_BTN_DPAD_RIGHT>;
    		};
    		button-4 {
-   			gpios = <&gpioa 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+   			gpios = <&gpioa 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
    			label = "A";
 			zephyr,code = <INPUT_BTN_A>;
    		};
    		button-5 {
-   			gpios = <&gpioa 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+   			gpios = <&gpioa 1 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
    			label = "B";
 			zephyr,code = <INPUT_BTN_B>;
    		};
