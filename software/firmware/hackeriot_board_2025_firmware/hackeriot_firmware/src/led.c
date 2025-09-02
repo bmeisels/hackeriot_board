@@ -15,9 +15,6 @@
 #define LED_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(holtek_ht16k33)
 #define H_MASK 0x0101010101010101ULL
 
-// for Benny's dual-colored HT16K33
-#define POS_TO_LED(x) ((x&7) | ((x&~7) << 1))
-
 const uint64_t font_digits[] = {
 	0x386CC6D6C66C3800UL,	// Char 048 (0)
 	0x1838181818187E00UL,	// Char 049 (1)

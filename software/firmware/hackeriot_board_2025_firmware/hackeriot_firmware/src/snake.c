@@ -10,6 +10,7 @@
 #include <zephyr/random/random.h>
 #include <zephyr/sys/printk.h>
 
+#include "led.h"
 #include "snake.h"
 
 void snake_button_cb(struct input_event *evt, void *userdata)
@@ -51,9 +52,6 @@ inline bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 	return false;
 }
 
-// for Benny's dual-colored HT16K33
-#define POS_TO_LED(x) ((x&7) | ((x&~7) << 1))
-
 static void snake_update(const struct device *led, struct snake_data_t *sd)
 {
 	if (sd->pause) return;	// no updates while paused
@@ -64,13 +62,19 @@ static void snake_update(const struct device *led, struct snake_data_t *sd)
 		led_set_brightness(led, 0, 100);
 		for (unsigned i = 0; i < 64; i++) {
 			led_off(led, POS_TO_LED(i));
-			led_off(led, POS_TO_LED(i) | 8); // TODO: monochrome fix
+#ifdef BREADBOARD
+			led_off(led, POS_TO_LED(i) | 8);
+#endif
 		}
 		snake_data_init(sd);
 		led_on(led, POS_TO_LED(sd->pos[0]));
 
 		unsigned tpos = sd->target_pos;
-		led_on(led, POS_TO_LED(tpos) | 8); // TODO: monochrome fix
+#ifdef BREADBOARD
+		led_on(led, POS_TO_LED(tpos) | 8);
+#else
+		led_on(led, POS_TO_LED(tpos));
+#endif
 
 		printk("New snake game\n");
 	} 
@@ -124,7 +128,9 @@ static void snake_update(const struct device *led, struct snake_data_t *sd)
 	// check if target reached
 	if (head == sd->target_pos) {
 		printk("Target at pos=%d acquired\n", head);
-		led_off(led, POS_TO_LED(head)|8);
+#ifdef BREADBOARD
+		led_off(led, POS_TO_LED(head) | 8);
+#endif
 
 		++sd->grow;
 		++sd->points;
@@ -136,7 +142,11 @@ static void snake_update(const struct device *led, struct snake_data_t *sd)
 		while(snake_inside(sd, tpos));
 		sd->target_pos = tpos;
 		printk("New target at pos=%d\n", tpos);
-		led_on(led, POS_TO_LED(tpos)|8);
+#ifdef BREADBOARD
+		led_on(led, POS_TO_LED(tpos) | 8);
+#else
+		led_on(led, POS_TO_LED(tpos));
+#endif
 	}
 }
 
