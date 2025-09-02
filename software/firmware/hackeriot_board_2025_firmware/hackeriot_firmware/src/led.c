@@ -187,20 +187,20 @@ void boot_animation(const struct device *led)
 	for (const char *c = s1; *c; ++c) {
 		uint64_t old = cur;
 		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'L', 100);
+		led_swipe(led, old, cur, 'L', 10);
 	}
 
-	k_msleep(500);
+	k_msleep(100);
 
 	// האקריות
 	const char s2[] = {0x84, 0x80, 0x97, 0x98, 0x89, 0x85, 0x9a, 0};
 	for (const char *c = s2; *c; ++c) {
 		uint64_t old = cur;
 		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'R', 100);
+		led_swipe(led, old, cur, 'R', 10);
 	}
 
-	k_msleep(500);
+	k_msleep(100);
 
 	// clear
 	led_swipe(led, cur, 0, 'R', 0);
