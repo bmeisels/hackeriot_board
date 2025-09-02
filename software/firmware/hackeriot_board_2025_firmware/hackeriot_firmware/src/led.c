@@ -10,6 +10,7 @@
 #include <zephyr/drivers/led.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "led.h"
 
 #define LED_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(holtek_ht16k33)
@@ -201,28 +202,34 @@ void boot_animation(const struct device *led)
 	printk("boot animation started\n");
 
 	uint64_t cur = 0;
-	const char s1[] = "Hackeriot";
+	bool skip = false;
 
-	for (const char *c = s1; *c; ++c) {
+	for (const char *c = "Hackeriot"; *c && !skip; ++c) {
 		uint64_t old = cur;
 		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'L', 10);
+		led_swipe(led, old, cur, 'L', 50);
+
+		if (buttons_get(NULL, K_NO_WAIT)) skip = true;
 	}
 
-	k_msleep(100);
+	k_msleep(skip ? 0 : 200);
 
 	// האקריות
 	const char s2[] = {0x84, 0x80, 0x97, 0x98, 0x89, 0x85, 0x9a, 0};
-	for (const char *c = s2; *c; ++c) {
+	for (const char *c = s2; *c && ! skip; ++c) {
 		uint64_t old = cur;
 		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'R', 10);
+		led_swipe(led, old, cur, 'R', 50);
+
+		if (buttons_get(NULL, K_NO_WAIT)) skip = true;
 	}
 
-	k_msleep(100);
+	k_msleep(skip ? 0 : 200);
 
 	// clear
 	led_swipe(led, cur, 0, 'R', 0);
+
+	printk("boot animation %sed\n", skip ? "skipp" : "finish");
 }
 
 void breath_thread_func(void*, void*, void*)
