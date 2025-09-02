@@ -1,0 +1,14 @@
+identifier: hackeriot_board_2025_breadboard
+name: Hackeriot Board 2025 Breadboard
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - gpio
+  - i2c
+  - spi
+ram: 8
+flash: 32
+vendor: st

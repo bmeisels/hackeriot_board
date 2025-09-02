@@ -1,0 +1,21 @@
+:name: Hackeriot board 2025
+:description: This script runs on Hackeriot board 2025.
+
+using sysbus
+$name?="Hackeriot board 2025"
+mach create $name
+machine LoadPlatformDescription @platforms/cpus/stm32g0.repl
+
+cpu PerformanceInMips 59
+
+$bin ?= $CWD/hackeriot_firmware/build/hackeriot_board_2025/zephyr/zephyr.elf
+
+showAnalyzer sysbus.usart2
+
+macro reset
+"""
+    sysbus LoadELF $bin
+"""
+runMacro $reset
+
+machine StartGdbServer 3333
