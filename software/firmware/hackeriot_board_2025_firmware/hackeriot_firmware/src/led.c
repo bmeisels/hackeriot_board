@@ -150,8 +150,8 @@ uint64_t led_glyph(char c) {
 	if (c >= '!' && c <= '~')
 		return font_printable_ascii[c-'!'];
 	uint8_t uc = c;
-	if (uc >= 0x80 && uc <= 0x9b)
-		return font_hebrew[uc-0x80];
+	if (uc >= 0x90 && uc <= 0xab)
+		return font_hebrew[uc-0x90];
 
 	return 0xA5A5A5A5A5A5A5A5ULL; // unknown glyph
 }
@@ -208,13 +208,14 @@ void boot_animation(const struct device *led)
 	uint64_t cur = 0;
 	bool skip = false;
 
-	const char *msg = ( ! hebrew) ? "Hackeriot" : 
-		"\x84\x80\x97\x98\x89\x85\x9a"; // האקריות
+	const char *msg = hebrew ? "האקריות" : "Hackeriot";
 	char dir = hebrew ? 'R' : 'L';
 
 	while( ! skip && *msg) {
 		uint64_t old = cur;
-		cur = led_glyph(*msg++);
+		char ch = *msg++;
+		if (ch == 0xd7) ch = *msg++;
+		cur = led_glyph(ch);
 		led_swipe(led, old, cur, dir, 50);
 
 		if (buttons_get(NULL, K_NO_WAIT)) skip = true;

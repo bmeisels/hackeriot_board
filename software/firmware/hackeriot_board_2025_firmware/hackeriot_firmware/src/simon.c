@@ -107,12 +107,13 @@ unsigned play_simon(const struct device *led)
     uint64_t cur = 0, old;
 
     // display Ready321
-    const char *msg = ( ! hebrew) ? "Ready?" 
-        : "\x8e\x85\x8b\x90\x84?"; // מוכנה?
+    const char *msg = hebrew ? "מוכנה?" : "Ready?";
     char dir = hebrew ? 'R' : 'L';
 	while (*msg) {
 		old = cur;
-		cur = led_glyph(*msg++);
+        char ch = *msg++;
+        if (ch == 0xd7) ch = *msg++;
+		cur = led_glyph(ch);
 		led_swipe(led, old, cur, dir, 50);
 	}
     for (unsigned i = 3; i; --i) {

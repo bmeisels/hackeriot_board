@@ -30,9 +30,9 @@ uint8_t do_menu(const struct device *led)
 		"3.Maze",
 	};
 	static const char * const hmenu_options[] = { 
-		"1.\x91\x90\x89\x89\x97", 		// 1.סנייק
-		"2.\x91\x89\x89\x8e\x85\x8f",	// 2.סיימון
-		"3.\x8e\x81\x85\x8a",			// 3.מבוך
+		"1.סנייק",
+		"2.סיימון",
+		"3.מבוך",
 	};
 	const char * const *menu_options = hebrew ? hmenu_options : emenu_options;
 	char dir = hebrew ? 'R' : 'L';
@@ -45,6 +45,7 @@ uint8_t do_menu(const struct device *led)
 	char ch;
 	while (1) {
 		ch = menu_item[i++];
+		if (ch == 0xd7) ch = menu_item[i++];
 		if ( ! ch) { i = 0; ch = ' '; }
 		cur = led_glyph(ch);
 		led_swipe(led, old, cur, dir, 50);
@@ -83,22 +84,23 @@ uint8_t do_menu(const struct device *led)
 
 bool show_score(const struct device *led, uint8_t points)
 {
-	char emsg[12] = "Score:";
-	char hmsg[12] = {0x90, 0x89, 0x97, 0x85, 0x83, 0x3a}; // ניקוד:
+	char emsg[10] = "Score:";
+	char hmsg[20] = "ניקוד:";
 	char *msg = hebrew ? hmsg : emsg;
 	char dir = hebrew ? 'R' : 'L';
 
 	// uint8_t to bidi string
 	if (points < 10) {
-		msg[6] = '0' + (points % 10);
+		msg[hebrew ? 11 : 6] = '0' + (points % 10);
 	} else {
-		msg[6 ^ hebrew] = '0' + (points / 10);
-		msg[7 ^ hebrew] = '0' + (points % 10);
+		msg[hebrew ? 12 : 6] = '0' + (points / 10);
+		msg[hebrew ? 11 : 7] = '0' + (points % 10);
 	}
 	unsigned i = 0;
 	uint64_t old = 0;
 	while(1) {
 		char ch = msg[i++];
+		if (ch == 0xd7) ch = msg[i++];
 		if ( ! ch) { i = 0; ch = ' '; }
 		uint64_t cur = led_glyph(ch);
 		led_swipe(led, old, cur, dir, 50);
