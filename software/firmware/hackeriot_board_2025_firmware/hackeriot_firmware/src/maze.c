@@ -6,13 +6,13 @@
  */
 
 #include <zephyr/drivers/led.h>
-#include <zephyr/input/input.h>
 #include <zephyr/random/random.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "maze.h"
 
-void play_maze(const struct device *led)
+unsigned play_maze(const struct device *led)
 {
-
+    return 0;
 }

@@ -9,6 +9,7 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "led.h"
 #include "maze.h"
 #include "simon.h"
@@ -23,17 +24,91 @@
 
 uint8_t do_menu(const struct device *led)
 {
-	static const char * const menu_options[] = {
-		"Snake ",	// keep terminal space
-		"Simon ",	// keep terminal space
-		"Maze ",	// keep terminal space
+	static const char * const emenu_options[] = {
+		"1.Snake",
+		"2.Simon",
+		"3.Maze",
 	};
+	static const char * const hmenu_options[] = { 
+		"1.\x91\x90\x89\x89\x97", 		// 1.סנייק
+		"2.\x91\x89\x89\x8e\x85\x8f",	// 2.סיימון
+		"3.\x8e\x81\x85\x8a",			// 3.מבוך
+	};
+	const char * const *menu_options = hebrew ? hmenu_options : emenu_options;
+	char dir = hebrew ? 'R' : 'L';
 
 	uint8_t menu_pos = 0;
 
-	// TODO: implement menu navigation
+	uint64_t old = 0, cur;
+    char const *menu_item = menu_options[menu_pos];
+	unsigned i = 0;
+	char ch;
+	while (1) {
+		ch = menu_item[i++];
+		if ( ! ch) { i = 0; ch = ' '; }
+		cur = led_glyph(ch);
+		led_swipe(led, old, cur, dir, 50);
+		old = cur;
 
-	return menu_pos;
+		ch = buttons_get("UDAB", K_NO_WAIT);
+		unsigned menu_pos_step = ARRAY_SIZE(emenu_options);
+		switch(ch) {
+			case 'A':
+				led_swipe(led, old, 0, dir, 50);
+				return menu_pos;
+			case 'B':
+				hebrew = ! hebrew;
+				ch = dir = hebrew ? 'R' : 'L';
+				menu_options = hebrew ? hmenu_options : emenu_options;
+				break;
+			case 'D':
+				++menu_pos_step;
+				break;
+			case 'U':
+				--menu_pos_step;
+				break;
+			default:
+			 	continue;
+		}
+		menu_pos = (menu_pos + menu_pos_step) % ARRAY_SIZE(emenu_options);
+		menu_item = menu_options[menu_pos];
+		i = 0;
+		cur = led_glyph(menu_item[i++]);
+		led_swipe(led, old, cur, ch, 50);
+		old = cur;
+	}
+
+	// never reached
+}
+
+bool show_score(const struct device *led, uint8_t points)
+{
+	char emsg[12] = "Score:";
+	char hmsg[12] = {0x90, 0x89, 0x97, 0x85, 0x83, 0x3a}; // ניקוד:
+	char *msg = hebrew ? hmsg : emsg;
+	char dir = hebrew ? 'R' : 'L';
+
+	// uint8_t to bidi string
+	if (points < 10) {
+		msg[6] = '0' + (points % 10);
+	} else {
+		msg[6 ^ hebrew] = '0' + (points / 10);
+		msg[7 ^ hebrew] = '0' + (points % 10);
+	}
+	unsigned i = 0;
+	uint64_t old = 0;
+	while(1) {
+		char ch = msg[i++];
+		if ( ! ch) { i = 0; ch = ' '; }
+		uint64_t cur = led_glyph(ch);
+		led_swipe(led, old, cur, dir, 50);
+		old = cur;
+
+		ch = buttons_get("AB", K_NO_WAIT);
+		if (ch == 'A') return true;
+		if (ch == 'B') return false;
+	}
+	// never reached
 }
 
 int main(void)
@@ -53,20 +128,37 @@ int main(void)
 
 	boot_animation(led);
 
-	uint8_t choice = do_menu(led);
+	while (1) {
+		uint8_t choice = do_menu(led);
+		printk("Menu selection: %d\n", choice);
 
-	switch(choice) {
-		case GAME_SNAKE:
-			play_snake(led);
-			break;	// not reachable
+		unsigned points = 0;
+		do {
+			// clear screen and blink
+			led_blink(led, 0, 0, 0);
+			led_set_brightness(led, 0, 100);
+			for (unsigned i = 0; i < 64; i++) {
+				led_off(led, POS_TO_LED(i));
+			#ifdef BREADBOARD
+				led_off(led, POS_TO_LED(i) | 8);
+			#endif
+			}
 
-		case GAME_SIMON:
-			play_simon(led);
-			break;	// not reachable
+			switch(choice) {
+				case GAME_SNAKE:
+					points = play_snake(led);
+					break;
 
-		case GAME_MAZE:
-			play_maze(led);
-			break;	// not reachable
+				case GAME_SIMON:
+					points = play_simon(led);
+					break;
+
+				case GAME_MAZE:
+					points = play_maze(led);
+					break;
+			}
+		} while(show_score(led, points));
+
 	}
 
 	return 0;

@@ -5,45 +5,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <zephyr/drivers/led.h>
-#include <zephyr/input/input.h>
 #include <zephyr/random/random.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "led.h"
 #include "snake.h"
-
-void snake_button_cb(struct input_event *evt, void *userdata)
-{
-	struct snake_data_t *const sd = userdata;
-	if ( ! evt->value) return; // ignore button release
-	switch (evt->code) {
-		case INPUT_BTN_DPAD_UP:		sd->direction = 0; break;
-		case INPUT_BTN_DPAD_LEFT:	sd->direction = 1; break;
-		case INPUT_BTN_DPAD_DOWN:	sd->direction = 2; break;
-		case INPUT_BTN_DPAD_RIGHT:	sd->direction = 3; break;
-		case INPUT_BTN_A:			sd->pause = ! sd->pause; break;
-		case INPUT_BTN_B:			++sd->base; break;
-	}
-	//printk("dir=%c pause=%c\n", 
-	//	"ULDR"[sd->direction], sd->pause ? 'Y' : 'N');
-}
-
-struct snake_data_t snake_data;
-INPUT_CALLBACK_DEFINE(NULL, snake_button_cb, &snake_data);
-
-void snake_data_init(struct snake_data_t *sd)
-{
-	sd->points		= 0;
-	sd->direction	= sys_rand8_get() & 3;
-	sd->len			= 1;
-	sd->grow		= INITIAL_SNAKE_LEN - 1;
-    sd->base        = INITIAL_SNAKE_SPEED;
-	sd->pause		= false;
-	// randomize distinct target and snake
-	sd->pos[0]		= sys_rand8_get() & 63;
-	sd->target_pos	= sd->pos[0] ^ (sys_rand32_get() % 63);
-}
 
 inline bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 {
@@ -52,33 +19,8 @@ inline bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 	return false;
 }
 
-static void snake_update(const struct device *led, struct snake_data_t *sd)
+static bool do_update(const struct device *led, struct snake_data_t *sd)
 {
-	if (sd->pause) return;	// no updates while paused
-
-	if (! sd->len) {  // new game
-		// clear screen and blink
-		led_blink(led, 0, 0, 0);
-		led_set_brightness(led, 0, 100);
-		for (unsigned i = 0; i < 64; i++) {
-			led_off(led, POS_TO_LED(i));
-#ifdef BREADBOARD
-			led_off(led, POS_TO_LED(i) | 8);
-#endif
-		}
-		snake_data_init(sd);
-		led_on(led, POS_TO_LED(sd->pos[0]));
-
-		unsigned tpos = sd->target_pos;
-#ifdef BREADBOARD
-		led_on(led, POS_TO_LED(tpos) | 8);
-#else
-		led_on(led, POS_TO_LED(tpos));
-#endif
-
-		printk("New snake game\n");
-	} 
-
 	// debug prints
 	printk("points=%u target=%u len=%u grow=%u dir=%c pos=", 
 		sd->points, sd->target_pos, sd->len, sd->grow, "ULDR"[sd->direction]);
@@ -114,17 +56,14 @@ static void snake_update(const struct device *led, struct snake_data_t *sd)
 			head += (head & 7) ? -1 : 7;
 			break;
 	}
-	// handle crash
 	if (snake_inside(sd, head)) {
 		printk("Crash at pos=%d\n", head);
-		sd->len = 0;
-		sd->pause = true;
-		led_blink(led, 0, 500, 500);
-		led_set_brightness(led, 0, 100);
-	} else {
-		sd->pos[0] = head;
-		led_on(led, POS_TO_LED(head));
+		return false;
 	}
+
+	sd->pos[0] = head;
+	led_on(led, POS_TO_LED(head));
+
 	// check if target reached
 	if (head == sd->target_pos) {
 		printk("Target at pos=%d acquired\n", head);
@@ -148,15 +87,59 @@ static void snake_update(const struct device *led, struct snake_data_t *sd)
 		led_on(led, POS_TO_LED(tpos));
 #endif
 	}
+	return true;
 }
 
-void play_snake(const struct device *led)
+unsigned play_snake(const struct device *led)
 {
-	while (1) {
-		snake_update(led, &snake_data);
-		
+	printk("[%s] new game\n", __func__);
+
+	// init data
+	struct snake_data_t sd = {
+		.points		= 0,
+		.direction	= sys_rand8_get() & 3,
+		.len 		= 1,
+		.grow		= INITIAL_SNAKE_LEN - 1,
+		.base     	= INITIAL_SNAKE_SPEED,
+		.target_pos = sys_rand8_get() & 63,
+	};
+	// randomize distinct target and snake
+	sd.pos[0] = sd.target_pos ^ (sys_rand32_get() % 63);
+
+	// init board
+	led_on(led, POS_TO_LED(sd.pos[0]));
+
+	#ifdef BREADBOARD
+	led_on(led, POS_TO_LED(sd.target_pos) | 8);
+	#else
+	led_on(led, POS_TO_LED(sd.target_pos));
+	#endif
+
+	while (do_update(led, &sd)) {
 		// increase speed every 5 points
-		unsigned speed = snake_data.base + (snake_data.points / 5);
-		k_msleep(1400 / speed);
+		unsigned speed = sd.base + (sd.points / 5);
+
+		char ch = buttons_get("UDLR", K_MSEC(1400 / speed));
+		switch (ch) {
+			case 'U':	sd.direction = 0; break;
+			case 'L':	sd.direction = 1; break;
+			case 'D':	sd.direction = 2; break;
+			case 'R':	sd.direction = 3; break;
+		}
+		//if (ch) printk("[%s] ch=%c\n", __func__, ch);
 	}
+	
+	// erase snake and target
+	for (unsigned i = 1; i <= sd.len; i++) {
+		led_off(led, POS_TO_LED(sd.pos[sd.len - i]));
+		k_msleep(100);
+	}
+	#ifdef BREADBOARD
+	led_off(led, POS_TO_LED(sd.target_pos) | 8);
+	#else
+	led_off(led, POS_TO_LED(sd.target_pos));
+	#endif
+
+	printk("[%s] game ended, score=%u\n", __func__, sd.points);
+	return sd.points;
 }
