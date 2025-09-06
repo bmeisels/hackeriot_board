@@ -7,7 +7,6 @@
 
 #include <zephyr/kernel.h>
 #include <zephyr/devicetree.h>
-#include <zephyr/drivers/led.h>
 #include <zephyr/sys/printk.h>
 
 #include "buttons.h"

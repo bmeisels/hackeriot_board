@@ -8,6 +8,8 @@
 #ifndef __LED_H__
 #define __LED_H__
 
+#include <zephyr/drivers/led.h>
+
 extern bool hebrew;
 
 #ifdef BREADBOARD
