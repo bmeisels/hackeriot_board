@@ -8,6 +8,7 @@
 #ifndef __LED_H__
 #define __LED_H__
 
+extern bool hebrew;
 
 #ifdef BREADBOARD
 	// Adafruit's dual-colored HT16K33

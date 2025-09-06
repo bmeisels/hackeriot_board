@@ -16,6 +16,8 @@
 #define LED_NODE DT_COMPAT_GET_ANY_STATUS_OKAY(holtek_ht16k33)
 #define H_MASK 0x0101010101010101ULL
 
+bool hebrew = true;
+
 const uint64_t font_printable_ascii[] = {
 	0x183C3C1818001800,	// Char 033 (!)
 	0x6C6C6C0000000000,	// Char 034 (")
@@ -179,10 +181,13 @@ void led_swipe(const struct device *led, uint64_t cur, uint64_t new,
 				cur = ((cur & ~H_MASK) >> 1) | ((new & H_MASK) << 7);
 				new >>= 1;
 				break;
+			default:
+				printk("[%s] unexpected dir=%c\n", __func__, direction);
 		}
 
 		// flip modified LEDs
 		uint64_t xor = old ^ cur;
+		//uint64_t xor = -1 /*old ^ cur*/;
 		for (unsigned j = 0; j < 64; j++) {
 			if ((xor >> j) & 1) {
 				if ((cur >> j) & 1)
@@ -204,22 +209,14 @@ void boot_animation(const struct device *led)
 	uint64_t cur = 0;
 	bool skip = false;
 
-	for (const char *c = "Hackeriot"; *c && !skip; ++c) {
+	const char *msg = ( ! hebrew) ? "Hackeriot" : 
+		"\x84\x80\x97\x98\x89\x85\x9a"; // האקריות
+	char dir = hebrew ? 'R' : 'L';
+
+	while( ! skip && *msg) {
 		uint64_t old = cur;
-		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'L', 50);
-
-		if (buttons_get(NULL, K_NO_WAIT)) skip = true;
-	}
-
-	k_msleep(skip ? 0 : 200);
-
-	// האקריות
-	const char s2[] = {0x84, 0x80, 0x97, 0x98, 0x89, 0x85, 0x9a, 0};
-	for (const char *c = s2; *c && ! skip; ++c) {
-		uint64_t old = cur;
-		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'R', 50);
+		cur = led_glyph(*msg++);
+		led_swipe(led, old, cur, dir, 50);
 
 		if (buttons_get(NULL, K_NO_WAIT)) skip = true;
 	}
@@ -227,7 +224,7 @@ void boot_animation(const struct device *led)
 	k_msleep(skip ? 0 : 200);
 
 	// clear
-	led_swipe(led, cur, 0, 'R', 0);
+	led_swipe(led, cur, 0, 'D', 0);
 
 	printk("boot animation %sed\n", skip ? "skipp" : "finish");
 }

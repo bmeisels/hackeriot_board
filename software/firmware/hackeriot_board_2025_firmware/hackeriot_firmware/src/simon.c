@@ -99,15 +99,21 @@ static bool do_one_round(const struct device *led, struct simon_data_t *sd)
 unsigned play_simon(const struct device *led)
 {
     printk("[%s] new game\n", __func__);
-    struct simon_data_t sd = {.points = 0, .len=INITIAL_SIMON_LEN};
+    struct simon_data_t sd = {
+        .points = 0,
+        .len = INITIAL_SIMON_LEN,
+    };
 
     uint64_t cur = 0, old;
 
     // display Ready321
-	for (const char *c = "Ready?"; *c; ++c) {
+    const char *msg = ( ! hebrew) ? "Ready?" 
+        : "\x8e\x85\x8b\x90\x84?"; // מוכנה?
+    char dir = hebrew ? 'R' : 'L';
+	while (*msg) {
 		old = cur;
-		cur = led_glyph(*c);
-		led_swipe(led, old, cur, 'L', 50);
+		cur = led_glyph(*msg++);
+		led_swipe(led, old, cur, dir, 50);
 	}
     for (unsigned i = 3; i; --i) {
         k_msleep(SIMON_DELAY);
@@ -123,7 +129,7 @@ unsigned play_simon(const struct device *led)
         ++sd.len;
         ++sd.points;
 
-    	led_swipe(led, SIMON_GLYPH_OK, 0, 'L', 50);
+    	led_swipe(led, SIMON_GLYPH_OK, 0, dir, 50);
     }
 
     printk("[%s] game ended, score=%u\n", __func__, sd.points);
