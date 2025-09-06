@@ -20,10 +20,9 @@ struct snake_data_t {
 	unsigned grow 		: 2; 	// assuming INITIAL_SNAKE_LEN < 4
 	unsigned target_pos	: 6;
 	unsigned base		: 3; 	// base speed
-	unsigned pause 		: 1;
 	uint8_t pos[MAX_SNAKE_LEN]; // head first
 };
 
-void play_snake(const struct device *led);
+unsigned play_snake(const struct device *led);
 
 #endif // __SNAKE_H__

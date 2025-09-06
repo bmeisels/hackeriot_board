@@ -69,6 +69,32 @@ uint8_t do_menu(const struct device *led)
 	// never reached
 }
 
+bool show_score(const struct device *led, uint8_t points)
+{
+	char msg[10] = "Score:00";
+	if (points < 10) {
+		msg[6] += points % 10;
+		msg[7] = '\0';
+	} else {
+		msg[6] += points / 10;
+		msg[7] += points % 10;
+	}
+	unsigned i = 0;
+	uint64_t old = 0;
+	while(1) {
+		char ch = msg[i++];
+		if ( ! ch) { i = 0; ch = ' '; }
+		uint64_t cur = led_glyph(ch);
+		led_swipe(led, old, cur, 'L', 50);
+		old = cur;
+
+		ch = buttons_get("AB", K_NO_WAIT);
+		if (ch == 'A') return true;
+		if (ch == 'B') return false;
+	}
+	// never reached
+}
+
 int main(void)
 {
 	printk("Hello World %s! [%s]\n", CONFIG_BOARD, __TIMESTAMP__);
@@ -90,19 +116,33 @@ int main(void)
 		uint8_t choice = do_menu(led);
 		printk("Menu selection: %d\n", choice);
 
-		switch(choice) {
-			case GAME_SNAKE:
-				play_snake(led);
-				break;
+		unsigned points = 0;
+		do {
+			// clear screen and blink
+			led_blink(led, 0, 0, 0);
+			led_set_brightness(led, 0, 100);
+			for (unsigned i = 0; i < 64; i++) {
+				led_off(led, POS_TO_LED(i));
+			#ifdef BREADBOARD
+				led_off(led, POS_TO_LED(i) | 8);
+			#endif
+			}
 
-			case GAME_SIMON:
-				play_simon(led);
-				break;
+			switch(choice) {
+				case GAME_SNAKE:
+					points = play_snake(led);
+					break;
 
-			case GAME_MAZE:
-				play_maze(led);
-				break;
-		}
+				case GAME_SIMON:
+					points = play_simon(led);
+					break;
+
+				case GAME_MAZE:
+					points = play_maze(led);
+					break;
+			}
+		} while(show_score(led, points));
+
 	}
 
 	return 0;

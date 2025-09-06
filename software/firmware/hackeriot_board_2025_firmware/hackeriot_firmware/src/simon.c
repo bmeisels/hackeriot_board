@@ -34,7 +34,7 @@ static uint64_t simon_glyph(char ch)
         case 'U':   return 0x183C7EFF18181818;
         case 'D':   return 0x18181818FF7E3C18;
         case 'L':   return 0x103070FFFF703010;
-        case 'R':   return 0x080CDEFFFF0E0C08;
+        case 'R':   return 0x080C0EFFFF0E0C08;
         case 'A':   return 0x3C7EE7C3FFFFC3C3;
         case 'B':   return 0xFEC3C3FEFEC3C3FE;
         default:    return 0;
@@ -62,9 +62,7 @@ static bool do_one_round(const struct device *led, struct simon_data_t *sd)
     }
     printk("\n");
 
-#if 0
     buttons_clear();
-#endif
 
     old = cur;
     cur = led_glyph('?');
@@ -88,6 +86,7 @@ static bool do_one_round(const struct device *led, struct simon_data_t *sd)
     printk("\n");
 
     if (game_on) {
+        k_msleep(SIMON_DELAY);
         led_swipe(led, cur, SIMON_GLYPH_OK, 'L', 50);
         printk("OK\n");
     }
@@ -97,9 +96,9 @@ static bool do_one_round(const struct device *led, struct simon_data_t *sd)
     return game_on;
 }
 
-// returns score
-static unsigned do_one_game(const struct device *led)
+unsigned play_simon(const struct device *led)
 {
+    printk("[%s] new game\n", __func__);
     struct simon_data_t sd = {.points = 0, .len=INITIAL_SIMON_LEN};
 
     uint64_t cur = 0, old;
@@ -127,40 +126,6 @@ static unsigned do_one_game(const struct device *led)
     	led_swipe(led, SIMON_GLYPH_OK, 0, 'L', 50);
     }
 
+    printk("[%s] game ended, score=%u\n", __func__, sd.points);
     return sd.points;
-}
-
-void play_simon(const struct device *led)
-{
-    while (1) {
-        printk("[%s] new game\n", __func__);
-        unsigned points = do_one_game(led);
-
-        printk("[%s] game ended, score=%u\n", __func__, points);
-
-        // TODO: check for new highscore
-        
-        // display score
-        char score[10] = "Score: 00";
-        if (points < 10) {
-            score[7] += points % 10;
-            score[8] = '\0';
-        } else {
-            score[7] += points / 10;
-            score[9] += points % 10;
-        }
-        unsigned i = 0;
-        uint64_t old = 0;
-        while(1) {
-            char ch = score[i++];
-            if ( ! ch) { i = 0; ch = ' '; }
-            uint64_t cur = led_glyph(ch);
-            led_swipe(led, old, cur, 'L', 50);
-            old = cur;
-
-            ch = buttons_get("AB", K_NO_WAIT);
-            if (ch == 'A') break;   // another game
-            if (ch == 'B') return;  // to menu
-        }
-    }
 }

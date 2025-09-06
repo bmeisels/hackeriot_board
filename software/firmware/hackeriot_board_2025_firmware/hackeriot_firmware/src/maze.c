@@ -12,7 +12,7 @@
 #include "buttons.h"
 #include "maze.h"
 
-void play_maze(const struct device *led)
+unsigned play_maze(const struct device *led)
 {
-
+    return 0;
 }
