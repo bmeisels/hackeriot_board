@@ -86,21 +86,23 @@ int main(void)
 
 	boot_animation(led);
 
-	uint8_t choice = do_menu(led);
-	printk("Menu selection: %d\n", choice);
+	while (1) {
+		uint8_t choice = do_menu(led);
+		printk("Menu selection: %d\n", choice);
 
-	switch(choice) {
-		case GAME_SNAKE:
-			play_snake(led);
-			break;	// not reachable
+		switch(choice) {
+			case GAME_SNAKE:
+				play_snake(led);
+				break;
 
-		case GAME_SIMON:
-			play_simon(led);
-			break;	// not reachable
+			case GAME_SIMON:
+				play_simon(led);
+				break;
 
-		case GAME_MAZE:
-			play_maze(led);
-			break;	// not reachable
+			case GAME_MAZE:
+				play_maze(led);
+				break;
+		}
 	}
 
 	return 0;
