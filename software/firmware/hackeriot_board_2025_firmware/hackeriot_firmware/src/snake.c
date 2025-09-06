@@ -6,31 +6,12 @@
  */
 
 #include <zephyr/drivers/led.h>
-#include <zephyr/input/input.h>
 #include <zephyr/random/random.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "led.h"
 #include "snake.h"
-
-void snake_button_cb(struct input_event *evt, void *userdata)
-{
-	struct snake_data_t *const sd = userdata;
-	if ( ! evt->value) return; // ignore button release
-	switch (evt->code) {
-		case INPUT_BTN_DPAD_UP:		sd->direction = 0; break;
-		case INPUT_BTN_DPAD_LEFT:	sd->direction = 1; break;
-		case INPUT_BTN_DPAD_DOWN:	sd->direction = 2; break;
-		case INPUT_BTN_DPAD_RIGHT:	sd->direction = 3; break;
-		case INPUT_BTN_A:			sd->pause = ! sd->pause; break;
-		case INPUT_BTN_B:			++sd->base; break;
-	}
-	//printk("dir=%c pause=%c\n", 
-	//	"ULDR"[sd->direction], sd->pause ? 'Y' : 'N');
-}
-
-struct snake_data_t snake_data;
-INPUT_CALLBACK_DEFINE(NULL, snake_button_cb, &snake_data);
 
 void snake_data_init(struct snake_data_t *sd)
 {
@@ -152,11 +133,24 @@ static void snake_update(const struct device *led, struct snake_data_t *sd)
 
 void play_snake(const struct device *led)
 {
+	struct snake_data_t sd = {.len = 0, .pause = 0};
+	
 	while (1) {
-		snake_update(led, &snake_data);
-		
+		snake_update(led, &sd);
+
 		// increase speed every 5 points
-		unsigned speed = snake_data.base + (snake_data.points / 5);
-		k_msleep(1400 / speed);
+		unsigned speed = sd.base + (sd.points / 5);
+
+		char ch = buttons_get("UDLRAB", K_MSEC(1400 / speed));
+		switch (ch) {
+			case 'U':	sd.direction = 0; break;
+			case 'L':	sd.direction = 1; break;
+			case 'D':	sd.direction = 2; break;
+			case 'R':	sd.direction = 3; break;
+			case 'A':	sd.pause ^= 1; break;
+			case 'B':	++sd.base; break;
+		}
+		//if (ch) printk("[%s] ch=%c\n", __func__, ch);
+
 	}
 }

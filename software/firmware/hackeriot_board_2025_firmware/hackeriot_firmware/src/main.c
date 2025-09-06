@@ -9,6 +9,7 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "led.h"
 #include "maze.h"
 #include "simon.h"
@@ -54,7 +55,8 @@ int main(void)
 	boot_animation(led);
 
 	uint8_t choice = do_menu(led);
-
+	printk("Menu selection: %d\n", choice);
+	
 	switch(choice) {
 		case GAME_SNAKE:
 			play_snake(led);

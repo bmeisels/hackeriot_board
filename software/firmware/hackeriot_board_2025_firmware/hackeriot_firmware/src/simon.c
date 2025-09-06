@@ -6,10 +6,10 @@
  */
 
 #include <zephyr/drivers/led.h>
-#include <zephyr/input/input.h>
 #include <zephyr/random/random.h>
 #include <zephyr/sys/printk.h>
 
+#include "buttons.h"
 #include "simon.h"
 
 void play_simon(const struct device *led)

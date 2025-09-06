@@ -9,7 +9,7 @@
 #define __SNAKE_H__
 
 
-#define MAX_SNAKE_LEN 50
+#define MAX_SNAKE_LEN 60
 #define INITIAL_SNAKE_LEN 3
 #define INITIAL_SNAKE_SPEED 2
 
