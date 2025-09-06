@@ -11,5 +11,6 @@
 #include <zephyr/kernel.h>
 
 char buttons_get(const char *filter, k_timeout_t timeout);
+void buttons_clear();
 
 #endif // __BUTTONS_H__
