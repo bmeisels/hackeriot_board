@@ -25,16 +25,48 @@
 uint8_t do_menu(const struct device *led)
 {
 	static const char * const menu_options[] = {
-		"Snake ",	// keep terminal space
-		"Simon ",	// keep terminal space
-		"Maze ",	// keep terminal space
+		"1.Snake",
+		"2.Simon",
+		"3.Maze",
 	};
 
 	uint8_t menu_pos = 0;
 
-	// TODO: implement menu navigation
+	uint64_t old = 0, cur;
+    char const *menu_item = menu_options[menu_pos];
+	unsigned i = 0;
+	char ch;
+	while (1) {
+		ch = menu_item[i++];
+		if ( ! ch) { i = 0; ch = ' '; }
+		cur = led_glyph(ch);
+		led_swipe(led, old, cur, 'L', 50);
+		old = cur;
 
-	return menu_pos;
+		ch = buttons_get("UDA", K_NO_WAIT);
+		unsigned menu_pos_step = ARRAY_SIZE(menu_options);
+		switch(ch) {
+			case 'A':
+				led_swipe(led, old, 0, 'L', 50);
+				return menu_pos;
+			case 'D':
+				++menu_pos_step;
+				break;
+			case 'U':
+				--menu_pos_step;
+				break;
+			default:
+			 	continue;
+		}
+		menu_pos = (menu_pos + menu_pos_step) % ARRAY_SIZE(menu_options);
+		menu_item = menu_options[menu_pos];
+		i = 0;
+		cur = led_glyph(menu_item[i++]);
+		led_swipe(led, old, cur, ch, 50);
+		old = cur;
+	}
+
+	// never reached
 }
 
 int main(void)
@@ -56,7 +88,7 @@ int main(void)
 
 	uint8_t choice = do_menu(led);
 	printk("Menu selection: %d\n", choice);
-	
+
 	switch(choice) {
 		case GAME_SNAKE:
 			play_snake(led);
