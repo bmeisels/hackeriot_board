@@ -20,6 +20,6 @@ struct simon_data_t {
     char seq[SIMON_MAX_LEN];
 };
 
-unsigned play_simon(const struct device *led);
+unsigned play_simon();
 
 #endif // __SIMON_H__

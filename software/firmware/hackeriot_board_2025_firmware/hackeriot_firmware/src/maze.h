@@ -14,6 +14,6 @@ struct maze_data_t {
 
 };
 
-unsigned play_maze(const struct device *led);
+unsigned play_maze();
 
 #endif // __MAZE_H__
