@@ -18,6 +18,29 @@ static K_THREAD_STACK_DEFINE(breath_thread_stack, 500);
 static struct k_thread breath_thread;
 static k_tid_t breath_tid = 0;
 
+// LED breath thread entry point
+static void breath_thread_func(void*, void*, void*)
+{
+	const struct device *const led = DEVICE_DT_GET(LED_NODE);
+	if ( ! device_is_ready(led)) {
+		printk("[%s] LED device not ready\n", __func__);
+		return;
+	}
+	// n=15; [int(.48+(1000*2/math.pi)*(math.asin((i+1)/n)-math.asin(i/n))) for i in range(n)][::-1]
+	static const uint8_t delta[] = {
+		234, 99, 77, 66, 59, 55, 52, 49, 47, 46, 44, 44, 43, 43, 42};
+	while(1) {
+		for (int i = 0; i < 15; i++) {
+			led_set_brightness(led, 0, (15-i)*100/15);
+			k_usleep(delta[i]*400);
+		}
+		for (int i = 0; i < 15; i++) {
+			led_set_brightness(led, 0, i*100/15);
+			k_usleep(delta[14-i]*400);
+		}
+	}
+}
+
 static void kc_button_cb(struct input_event *evt, void *userdata)
 {
 	struct konami_code_t * const kc = userdata;

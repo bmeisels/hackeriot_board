@@ -10,9 +10,10 @@
 #include <zephyr/sys/printk.h>
 
 #include "buttons.h"
+#include "screen.h"
 #include "maze.h"
 
-unsigned play_maze(const struct device *led)
+unsigned play_maze()
 {
     return 0;
 }

@@ -9,17 +9,17 @@
 #include <zephyr/sys/printk.h>
 
 #include "buttons.h"
-#include "led.h"
+#include "screen.h"
 #include "snake.h"
 
-inline bool snake_inside(struct snake_data_t *sd, uint8_t pos)
+static bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 {
 	for (unsigned i = 0; i < sd->len; i++)
 		if (pos == sd->pos[i]) return true;
 	return false;
 }
 
-static bool do_update(const struct device *led, struct snake_data_t *sd)
+static bool do_update(struct snake_data_t *sd)
 {
 	// debug prints
 	printk("points=%u target=%u len=%u grow=%u dir=%c pos=", 
@@ -33,11 +33,11 @@ static bool do_update(const struct device *led, struct snake_data_t *sd)
 		++sd->len;
 		--sd->grow;
 	} else 
-		led_off(led, POS_TO_LED(sd->pos[sd->len - 1]));
+		screen_pixel_off(sd->pos[sd->len - 1]);
 	
 	// update body
 	for (unsigned i = sd->len - 1; i > 0; i--) {
-		sd->pos[i] = sd->pos[i-1];
+		sd->pos[i] = sd->pos[i - 1];
 	}
 	
 	// update head
@@ -59,17 +59,14 @@ static bool do_update(const struct device *led, struct snake_data_t *sd)
 	if (snake_inside(sd, head)) {
 		printk("Crash at pos=%d\n", head);
 		return false;
+	} else {
+		sd->pos[0] = head;
+		screen_pixel_on(head);
 	}
-
-	sd->pos[0] = head;
-	led_on(led, POS_TO_LED(head));
 
 	// check if target reached
 	if (head == sd->target_pos) {
 		printk("Target at pos=%d acquired\n", head);
-#ifdef BREADBOARD
-		led_off(led, POS_TO_LED(head) | 8);
-#endif
 
 		++sd->grow;
 		++sd->points;
@@ -81,16 +78,12 @@ static bool do_update(const struct device *led, struct snake_data_t *sd)
 		while(snake_inside(sd, tpos));
 		sd->target_pos = tpos;
 		printk("New target at pos=%d\n", tpos);
-#ifdef BREADBOARD
-		led_on(led, POS_TO_LED(tpos) | 8);
-#else
-		led_on(led, POS_TO_LED(tpos));
-#endif
+		screen_pixel_blink(tpos, true);
 	}
 	return true;
 }
 
-unsigned play_snake(const struct device *led)
+unsigned play_snake()
 {
 	printk("[%s] new game\n", __func__);
 
@@ -106,39 +99,32 @@ unsigned play_snake(const struct device *led)
 	// randomize distinct target and snake
 	sd.pos[0] = sd.target_pos ^ (sys_rand32_get() % 63);
 
-	// init board
-	led_on(led, POS_TO_LED(sd.pos[0]));
+	// init screen
+	screen_set(0);
+	screen_pixel_on(sd.pos[0]);
+	screen_pixel_blink(sd.target_pos, true);
 
-	#ifdef BREADBOARD
-	led_on(led, POS_TO_LED(sd.target_pos) | 8);
-	#else
-	led_on(led, POS_TO_LED(sd.target_pos));
-	#endif
-
-	while (do_update(led, &sd)) {
+	// game loop
+	while (do_update(&sd)) {
 		// increase speed every 5 points
 		unsigned speed = sd.base + (sd.points / 5);
 
-		char ch = buttons_get("UDLR", K_MSEC(1400 / speed));
-		switch (ch) {
+		char btn = buttons_get("UDLR", K_MSEC(1400 / speed));
+		switch (btn) {
 			case 'U':	sd.direction = 0; break;
 			case 'L':	sd.direction = 1; break;
 			case 'D':	sd.direction = 2; break;
 			case 'R':	sd.direction = 3; break;
 		}
-		//if (ch) printk("[%s] ch=%c\n", __func__, ch);
+		//if (btn) printk("[%s] btn=%c\n", __func__, btn);
 	}
 	
 	// erase snake and target
 	for (unsigned i = 1; i <= sd.len; i++) {
-		led_off(led, POS_TO_LED(sd.pos[sd.len - i]));
+		screen_pixel_off(sd.pos[sd.len - i]);
 		k_msleep(100);
 	}
-	#ifdef BREADBOARD
-	led_off(led, POS_TO_LED(sd.target_pos) | 8);
-	#else
-	led_off(led, POS_TO_LED(sd.target_pos));
-	#endif
+	screen_pixel_off(sd.target_pos);
 
 	printk("[%s] game ended, score=%u\n", __func__, sd.points);
 	return sd.points;
