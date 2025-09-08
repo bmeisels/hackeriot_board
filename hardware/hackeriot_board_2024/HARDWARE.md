@@ -1,14 +1,14 @@
 ## Hardware
-## Hackeriot Board
+## Hackeriot Board 2024
 The Hackeriot board has:
 * 4 WS2812B RGB LEDs
 * AT24C04C 4Kbit EEPROM
 * 2 Functions buttons + Reset button
 * SWD + UART (Over [Debug edge](https://debug-edge.io/))
 
-![Hackeriot BoardSchematic](/images/hackeriot_board_schematic.png)
+![Hackeriot BoardSchematic](/images/2024/hackeriot_board_schematic.png)
 
-Hackeriot BoardBOM
+Hackeriot Board BOM
 |Reference|Description|Quantity|
 |:---|:---:|:---:|
 | C1, C2, C6 | 0805 100nF Capacitor | 3
@@ -31,6 +31,6 @@ Hackeriot BoardBOM
 | J6 |  PinSocket 1x05P 2.54mm | 1
 
 
-![Hackeriot Board](/images/hackeriot_board_layout.png)
+![Hackeriot Board](/images/2024/hackeriot_board_layout.png)
 
-![Hackeriot Board](/images/hackeriot_board_preview.png)
+![Hackeriot Board](/images/2024/hackeriot_board_preview.png)
