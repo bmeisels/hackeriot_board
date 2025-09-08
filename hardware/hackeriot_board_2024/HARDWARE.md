@@ -1,5 +1,5 @@
 ## Hardware
-## Hackeriot Board
+## Hackeriot Board 2024
 The Hackeriot board has:
 * 4 WS2812B RGB LEDs
 * AT24C04C 4Kbit EEPROM
@@ -8,7 +8,7 @@ The Hackeriot board has:
 
 ![Hackeriot BoardSchematic](/images/2024/hackeriot_board_schematic.png)
 
-Hackeriot BoardBOM
+Hackeriot Board BOM
 |Reference|Description|Quantity|
 |:---|:---:|:---:|
 | C1, C2, C6 | 0805 100nF Capacitor | 3
