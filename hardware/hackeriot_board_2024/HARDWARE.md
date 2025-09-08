@@ -6,7 +6,7 @@ The Hackeriot board has:
 * 2 Functions buttons + Reset button
 * SWD + UART (Over [Debug edge](https://debug-edge.io/))
 
-![Hackeriot BoardSchematic](/images/hackeriot_board_schematic.png)
+![Hackeriot BoardSchematic](/images/2024/hackeriot_board_schematic.png)
 
 Hackeriot BoardBOM
 |Reference|Description|Quantity|
@@ -31,6 +31,6 @@ Hackeriot BoardBOM
 | J6 |  PinSocket 1x05P 2.54mm | 1
 
 
-![Hackeriot Board](/images/hackeriot_board_layout.png)
+![Hackeriot Board](/images/2024/hackeriot_board_layout.png)
 
-![Hackeriot Board](/images/hackeriot_board_preview.png)
+![Hackeriot Board](/images/2024/hackeriot_board_preview.png)
