@@ -12,8 +12,7 @@
 #include "buttons.h"
 #include "led.h"
 #include "screen.h"
-
-enum language lang = LANG_HE;
+#include "persist.h"
 
 #define H_MASK 0x0101010101010101ULL
 #define UTF8_HEBREW_MSB 0xd7

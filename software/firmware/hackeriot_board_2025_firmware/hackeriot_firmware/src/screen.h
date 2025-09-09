@@ -15,14 +15,6 @@
 #define SCREEN_BLINK_FAST   10
 #define SCREEN_BLINK_SLOW   2
 
-extern enum language {
-    LANG_EN = 0,
-    LANG_HE = 1,
-    LANG_END /* keep last */
-} lang;
-
-#define LANG_DIR "LR"[lang]
-
 // blinkall functions
 enum blink_speed {
     BLINK_NONE = 0,

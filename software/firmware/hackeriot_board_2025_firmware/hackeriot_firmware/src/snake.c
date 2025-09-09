@@ -11,6 +11,7 @@
 #include "buttons.h"
 #include "screen.h"
 #include "snake.h"
+#include "persist.h"
 
 static bool snake_inside(struct snake_data_t *sd, uint8_t pos)
 {

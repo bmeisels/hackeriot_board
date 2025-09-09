@@ -12,6 +12,9 @@
 #include "buttons.h"
 #include "screen.h"
 #include "simon.h"
+#include "persist.h"
+
+#define SIMON_OPTIONS   "UDLRAB"
 
 static char simon_dir(char dir)
 {
@@ -44,38 +47,32 @@ static uint64_t simon_glyph(char ch)
 
 static bool do_one_round(struct simon_data_t *sd)
 {
-    static const char options[] = "UDLRAB";
-
-    // randomize sequence
-    for (unsigned i = 0; i < sd->len; i++)
-        sd->seq[i] = options[sys_rand32_get() % (ARRAY_SIZE(options)-1)];
-
     // display sequence
     printk("Simon:");
     for (unsigned i = 0; i < sd->len; i++) {
         char ch = sd->seq[i];
         printk(" %c", ch);
-        screen_swipe(simon_glyph(ch), simon_dir(ch), K_MSEC(50), "");
+        screen_swipe(simon_glyph(ch), simon_dir(ch), PIXEL_DELAY, "");
         k_msleep(SIMON_DELAY);
     }
     printk("\n");
     buttons_clear();
-    screen_swipe(get_glyph('?'), LANG_DIR, K_MSEC(50), "");
+    screen_swipe(get_glyph('?'), LANG_DIR, PIXEL_DELAY, "");
 
     bool game_on = true;
     // query sequence
     printk("Player:");
     for (unsigned i = 0; i < sd->len && game_on; i++) {
-        char ch = buttons_get(options, K_MSEC(2 * SIMON_DELAY));
+        char ch = buttons_get(SIMON_OPTIONS, K_MSEC(2 * SIMON_DELAY));
         if (ch) printk(" %c", ch); else printk(" (none)");
         uint64_t bitmap = simon_glyph(ch);
-        screen_swipe(bitmap, simon_dir(ch), K_MSEC(50), "");
+        screen_swipe(bitmap, simon_dir(ch), PIXEL_DELAY, "");
         if (ch != sd->seq[i]) game_on = false;
     }
     printk(" %s\n", game_on ? "OK" : "error");
 
     if (game_on) {
-        screen_swipe(SIMON_GLYPH_OK, 'R', K_MSEC(50), "");
+        screen_swipe(SIMON_GLYPH_OK, 'R', PIXEL_DELAY, "");
         k_msleep(2000);
     } else {
         screen_blinkall(BLINK_2HZ);
@@ -92,13 +89,16 @@ unsigned play_simon()
         .points = 0,
         .len = INITIAL_SIMON_LEN,
     };
+    // randomize sequence
+    for (unsigned i = 0; i < ARRAY_SIZE(sd.seq); i++)
+        sd.seq[i] = SIMON_OPTIONS[sys_rand32_get() % (ARRAY_SIZE(SIMON_OPTIONS)-1)];
 
     // display Ready-3-2-1
     const char *msg[] = {"Ready?", "מוכנה?"};
-    screen_scroll_once(msg[lang], LANG_DIR, K_MSEC(50), "");
+    screen_scroll_once(msg[settings.lang], LANG_DIR, PIXEL_DELAY, "");
     for (const char *c = "321 "; *c; c++) {
         k_msleep(SIMON_DELAY);
-        screen_swipe(get_glyph(*c), 'D', K_MSEC(50), "");
+        screen_swipe(get_glyph(*c), 'D', PIXEL_DELAY, "");
     }
 
     // game loop
