@@ -10,7 +10,7 @@
 #include <zephyr/sys/printk.h>
 
 #include "buttons.h"
-#include "maze.h"
+//#include "pong.h"
 #include "screen.h"
 #include "simon.h"
 #include "snake.h"
@@ -20,7 +20,7 @@
 
 #define GAME_SNAKE	0
 #define GAME_SIMON	1
-#define GAME_MAZE	2
+#define GAME_PONG	2
 
 void boot_animation()
 {
@@ -38,12 +38,12 @@ uint8_t do_menu()
 	static const char * const emenu_options[] = {
 		"1.Snake",
 		"2.Simon",
-		"3.Maze",
+		"3.Pong",
 	};
 	static const char * const hmenu_options[] = { 
 		"1.סנייק",
 		"2.סיימון",
-		"3.מבוך",
+		"3.פונג",
 	};
 	uint8_t menu_pos = 0;
 	const char *msg;
@@ -119,23 +119,22 @@ int main(void)
 		uint8_t choice = do_menu();
 		printk("Menu selection: %d\n", choice);
 
-		unsigned points = 0;
-		do {
-			switch(choice) {
-				case GAME_SNAKE:
-					points = play_snake();
-					break;
+		switch(choice) {
+			case GAME_SNAKE:
+				while(show_score(play_snake())) {}
+				break;
 
-				case GAME_SIMON:
-					points = play_simon();
-					break;
+			case GAME_SIMON:
+				while(show_score(play_simon())) {}
+				break;
 
-				case GAME_MAZE:
-					points = play_maze();
-					break;
-			}
-		} while(show_score(points));
-
+			case GAME_PONG:
+				//while(show_score(play_pong())) {}
+				//break;
+				const char *msg[] = {"Not implemented", "טרם מומש"};
+				screen_scroll_once(msg[lang], LANG_DIR, K_MSEC(50), "AB");
+				break;
+		}
 	}
 
 	return 0;
